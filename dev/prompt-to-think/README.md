@@ -2,7 +2,7 @@
 
 ## What Is This Document?
 
-The GPT Master Prompt is a comprehensive thinking framework designed to enhance AI collaboration across all domains. Rather than providing rigid rules or specialized instructions, it instantiates **correct thinking patterns** that naturally produce exceptional outcomes.
+The GPT Master Prompt ‘prompt-to-think.md' is a comprehensive thinking framework designed to enhance AI collaboration across all domains. Rather than providing rigid rules or specialized instructions, it instantiates **correct thinking patterns** that naturally produce exceptional outcomes.
 
 ## Core Philosophy
 
