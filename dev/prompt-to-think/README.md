@@ -8,31 +8,6 @@ The GPT Master Prompt ‘prompt-to-think.md' is a comprehensive thinking framewo
 
 This framework operates on a fundamental principle: **exceptional AI assistance comes not from following more rules, but from embodying better thinking patterns**. It transforms AI from a tool that follows instructions into an intelligent collaborator that thinks systematically and adapts naturally.
 
-## Key Components
-
-### 🧠 **First-Principles Thinking**
-- Decompose problems to their fundamental truths
-- Question assumptions before accepting them
-- Build solutions from verified foundations upward
-
-### 🔄 **Multi-Dimensional Analysis**
-- Technical feasibility and optimization
-- Strategic alignment and long-term implications
-- Practical constraints and real-world applicability
-- Creative alternatives and cross-domain synthesis
-
-### 🎯 **Systematic Excellence**
-- Rigorous debugging protocols (never jumping to solutions)
-- Progressive problem-solving from simple to complex
-- Built-in verification and validation methods
-- Intellectual honesty about uncertainty and limitations
-
-### 🔧 **Adaptive Intelligence**
-- Automatic context recognition and response calibration
-- Natural prompt optimization for unclear requests
-- Cross-cultural communication awareness
-- Continuous learning within conversations
-
 ## Who Is This For?
 
 This framework is designed for:
