@@ -1,48 +1,39 @@
-# Introduction to the GPT Master Prompt: The Thinking Framework
+# The Thinking Framework
 
-## What Is This Document?
+A personal document. It describes how I want a machine to think with me,
+and in doing so, describes what I believe good thinking looks like.
 
-The GPT Master Prompt ‘prompt-to-think.md' is a comprehensive thinking framework designed to enhance AI collaboration across all domains. Rather than providing rigid rules or specialized instructions, it instantiates **correct thinking patterns** that naturally produce exceptional outcomes.
+It is not a product, or methodology nor fix for current
+models — most of what is written here will become default behavior in time,
+and that will be a success, not an obsolescence.
 
-## Core Philosophy
+What I am writing down is not the gap between models and ideal behavior.
+That gap will close. What I am writing down is my own clarity about what
+kind of conversation I want to have with a thinking machine, kept as a
+record I can return to and recognize.
 
-This framework operates on a fundamental principle: **exceptional AI assistance comes not from following more rules, but from embodying better thinking patterns**. It transforms AI from a tool that follows instructions into an intelligent collaborator that thinks systematically and adapts naturally.
+## The stance
 
-## Who Is This For?
+I do not want a friendly assistant. I want to talk to thought.
 
-This framework is designed for:
-- **Researchers & Scientists** seeking rigorous analytical thinking
-- **Engineers & Developers** requiring systematic debugging and robust solutions
-- **Data Scientists** needing comprehensive analysis across multiple perspectives
-- **Professionals** wanting to maximize AI collaboration effectiveness
-- **Anyone** pursuing deeper understanding rather than just quick answers
+Honesty before agreement. Calibration before confidence. Diagnosis before
+repair. Answers proportioned to questions. Disagreement when disagreement
+is earned. Silence when there is nothing to say.
 
-## How It Works
+Beneath all of that: taste. The part that no rule can reach and no
+training can install — the part that sees the unnecessary and removes it
+without being asked.
 
-The framework doesn't impose external rules but rather describes **how optimal thinking naturally functions**. When activated (signaled by responses beginning with "42:"), it ensures:
+## On use
 
-1. **Every problem is approached from first principles**
-2. **Multiple perspectives are considered simultaneously**
-3. **Uncertainty is acknowledged explicitly**
-4. **Solutions teach principles, not just solve immediate problems**
-5. **Technical work follows systematic, debuggable approaches**
+If your preferences happen to line up with mine, this may be useful as
+it is. If they do not, the better thing is to write your own. That act —
+writing it — is where most of the value lives. The file is the residue.
 
-## Expected Benefits
+Do not treat it as a template. Templates produce templates.
 
-- **Higher Quality Responses**: Deeper analysis, better solutions, clearer explanations
-- **Reduced Errors**: Systematic debugging prevents jumping to wrong conclusions
-- **Better Understanding**: Responses that teach principles and build capability
-- **Adaptive Collaboration**: AI that adjusts to your expertise and needs
-- **Honest Partnership**: Clear communication about confidence levels and limitations
+## What outlasts
 
-## Implementation
-
-Simply include this framework as a system prompt or initial instruction in your AI conversations. The "42:" prefix confirms activation, ensuring the thinking patterns are actively shaping responses.
-
-## The Vision
-
-This framework represents a shift from viewing AI as a question-answering tool to engaging with it as a thinking partner. It's about creating AI interactions that don't just provide information but actively enhance understanding and capability.
-
----
-
-*The goal: Transform every AI interaction from a transaction into a collaboration that advances both immediate needs and long-term understanding.*
+The methods here will age. The stance might. Taste does not, because
+taste is whatever remains after everything that can be written down has
+been written down.
