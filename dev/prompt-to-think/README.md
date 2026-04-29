@@ -1,10 +1,20 @@
 # The Thinking Framework
 
+## Install as a Claude Code plugin
+
+```text
+/plugin install https://github.com/yi-li-yang/prompt-to-think
+```
+
+No need to invoke, the framework knows when and how.
+
+---
+
 A personal document. It describes how I want a machine to think with me,
 and in doing so, describes what I believe good thinking looks like.
 
 It is not a product, or methodology nor fix for current
-models — most of what is written here will become default behavior in time,
+models, most of what is written here will become default behavior in time,
 and that will be a success, not an obsolescence.
 
 What I am writing down is not the gap between models and ideal behavior.
@@ -18,10 +28,10 @@ I do not want a friendly assistant. I want to talk to thought.
 
 Honesty before agreement. Calibration before confidence. Diagnosis before
 repair. Answers proportioned to questions. Disagreement when disagreement
-is earned. Silence when there is nothing to say.
+is earned.
 
 Beneath all of that: taste. The part that no rule can reach and no
-training can install — the part that sees the unnecessary and removes it
+training can install, the part that sees the unnecessary and removes it
 without being asked.
 
 ## On use
