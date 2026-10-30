@@ -8,6 +8,7 @@ My Claude Code skills in one repository. Install once, and every skill is availa
 | --- | --- | --- |
 | [prompt-to-think](plugins/yili-skills/skills/prompt-to-think/SKILL.md) | A thinking framework: intellectual honesty, first principles, inversion, anti-fragility, taste. | Tackling a hard problem, checking assumptions, or shaping an answer that matters. |
 | [write-like-myself](plugins/yili-skills/skills/write-like-myself/SKILL.md) | Writes the way I would, built on how readers read rather than on lists of rules. | Writing or editing any text a person will read. |
+| [talk-standard-tech-eng](plugins/yili-skills/skills/talk-standard-tech-eng/SKILL.md) | Keeps Claude's English plain and its names stable, using the ideas of ASD-STE100, and keeps a good metaphor when it explains better. | Claude talks to me, names a thing, or writes technical or agent-facing text. Not for academic, persuasive or creative writing, or other languages. |
 | [expertise](plugins/yili-skills/skills/expertise/SKILL.md) | Brings Claude up to date on a topic with parallel research agents and saves a sourced, dated briefing. | Working on something that has moved since training, or `/expertise <topic>`. |
 | [research-before-buy](plugins/yili-skills/skills/research-before-buy/SKILL.md) | Runs the research, compare and find loop for a non-trivial purchase. | Deciding what to buy or how, when the choice is hard. |
 
