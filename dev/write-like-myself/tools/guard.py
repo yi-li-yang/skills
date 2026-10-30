@@ -308,7 +308,7 @@ class Checker:
             for rule, pattern in PATTERNS.items():
                 for match in pattern.finditer(line):
                     if rule == "email address" and ("noreply" in match.group().lower() or (
-                            name in EMAIL_OK_FILES and match.group().lower() == (self.owner_email or "").lower())):
+                            re.sub(r"^[0-9a-f]{8} ", "", name) in EMAIL_OK_FILES and match.group().lower() == (self.owner_email or "").lower())):
                         continue  # public no-reply addresses, such as commit trailers, and the owner in manifests
                     self.flag(where, rule)
                     break
@@ -443,6 +443,8 @@ def selftest():
     checker.findings = []
     checker.text(".claude-plugin/marketplace.json", 1, ['"email": "owner' + "@" + 'example.org"'])
     expect("owner email in manifest", checker.findings, [])
+    checker.text("abc12345 .claude-plugin/marketplace.json", 1, ['"email": "owner' + "@" + 'example.org"'])
+    expect("owner email in manifest, in a commit", checker.findings, [])
 
     for name, blocked in [(SKILL_DEV + "corpus/records.md", True), ("notes/a.jsonl", True),
                           (SKILL_DEV + "evals/private/t.json", True), ("draft.tex", True),
