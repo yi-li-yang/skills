@@ -47,7 +47,7 @@ dev/<skill>/                        evals, research, tools and notes; never inst
 
 ## History
 
-Each skill began in its own repository, and its full history was imported under `dev/<skill>/`: [prompt-to-think](https://github.com/yi-li-yang/prompt-to-think), [write-like-myself](https://github.com/yi-li-yang/write-like-myself), [deep-research](https://github.com/yi-li-yang/deep-research) (now `expertise`) and [research-before-buy](https://github.com/yi-li-yang/research-before-buy). Those repositories are archived.
+Each skill began in its own repository, and its full history was imported under `dev/<skill>/`: [prompt-to-think](https://github.com/yi-li-yang/prompt-to-think), [write-like-myself](https://github.com/yi-li-yang/write-like-myself), [deep-research](https://github.com/yi-li-yang/deep-research) (now `expertise`) and [research-before-buy](https://github.com/yi-li-yang/research-before-buy). Those repositories now point here and are no longer updated.
 
 ## Licence
 
