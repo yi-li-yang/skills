@@ -1,0 +1,11 @@
+{
+  "name": "prompt-to-think",
+  "description": "A thinking framework skill: stance, first principles, inversion, anti-fragility, and taste.",
+  "version": "3.0.0",
+  "author": {
+    "name": "Yili Yang"
+  },
+  "homepage": "https://github.com/yi-li-yang/prompt-to-think",
+  "repository": "https://github.com/yi-li-yang/prompt-to-think",
+  "license": "MIT"
+}

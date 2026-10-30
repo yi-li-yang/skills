@@ -1,0 +1,23 @@
+{
+  "name": "prompt-to-think",
+  "owner": {
+    "name": "Yili Yang",
+    "email": "yyl.eli@gmail.com"
+  },
+  "metadata": {
+    "description": "A thinking framework for machines: stance, first principles, inversion, anti-fragility, and taste.",
+    "version": "3.0.0"
+  },
+  "plugins": [
+    {
+      "name": "prompt-to-think",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/yi-li-yang/prompt-to-think.git"
+      },
+      "description": "A structured thinking framework. Invoke to reason with intellectual honesty, first principles, inversion, anti-fragility, and taste.",
+      "version": "3.0.0",
+      "strict": true
+    }
+  ]
+}
