@@ -1,0 +1,11 @@
+{
+  "name": "yili-skills",
+  "description": "Yili Yang's skills in one plugin: prompt-to-think, write-like-myself, expertise and research-before-buy.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Yili Yang"
+  },
+  "homepage": "https://github.com/yi-li-yang/skills",
+  "repository": "https://github.com/yi-li-yang/skills",
+  "license": "MIT"
+}

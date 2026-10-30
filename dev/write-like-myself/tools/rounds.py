@@ -13,7 +13,7 @@
 
 Every run is a fresh, headless `claude -p` session in its own folder, with no user plugins, hooks or MCP
 servers. The baseline condition gets Yili's current Writing Rules block as its CLAUDE.md; the skill condition
-gets this repository as a plugin and nothing else. Texts, keys and verdicts live in the private folder.
+gets this skill as a plugin and nothing else. Texts, keys and verdicts live in the private folder.
 """
 import argparse
 import hashlib
@@ -25,6 +25,7 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import tomllib
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
@@ -32,7 +33,22 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 PUBLIC_TASKS = REPO / "evals" / "tasks.json"
+SKILL_DIR = REPO.parent.parent / "plugins" / "yili-skills" / "skills" / "write-like-myself"
 MODEL = "claude-opus-5-5"
+_skill_plugin = None
+
+
+def skill_only_plugin():
+    """A throwaway plugin that holds just this skill. The shared plugin carries other skills, which
+    must not be able to fire during an evaluation."""
+    global _skill_plugin
+    if _skill_plugin is None:
+        _skill_plugin = Path(tempfile.mkdtemp(prefix="write-like-myself-plugin-"))
+        (_skill_plugin / ".claude-plugin").mkdir()
+        (_skill_plugin / ".claude-plugin" / "plugin.json").write_text(
+            json.dumps({"name": "write-like-myself", "version": "0.0.0"}), encoding="utf-8")
+        shutil.copytree(SKILL_DIR, _skill_plugin / "skills" / "write-like-myself")
+    return _skill_plugin
 
 
 def find_claude():
@@ -160,7 +176,7 @@ def run_one(task, condition, run_dir, plugin=None):
         rules = (PRIVATE / "tasks_private" / "baseline_CLAUDE.md").read_text(encoding="utf-8")
         (run_dir / "CLAUDE.md").write_text(rules, encoding="utf-8")
     elif condition == "skill":
-        command += ["--plugin-dir", str(plugin or REPO / "plugins" / "write-like-myself")]
+        command += ["--plugin-dir", str(plugin or skill_only_plugin())]
     else:
         sys.exit(f"rounds: unknown condition {condition}")
     env = {k: v for k, v in os.environ.items() if k not in ("CLAUDECODE", "CLAUDE_CODE_ENTRYPOINT")}

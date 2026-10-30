@@ -1,21 +1,21 @@
 #!/usr/bin/env python3
-"""Keep private writing material out of this public repository.
+"""Keep private writing material out of this public repository, which holds every skill.
 
 The skill in this repository is distilled from private sources: an unpublished
 manuscript and its review history, emails and drafts. This script blocks any
-commit or push that would publish them. It runs as the git hooks in .githooks/
+commit or push that would publish them. It runs as the git hooks in .githooks/ at the repository root
 and on demand:
 
-    python -X utf8 tools/guard.py --staged       check staged changes (pre-commit)
-    python -X utf8 tools/guard.py --message F    check a commit message (commit-msg)
-    python -X utf8 tools/guard.py --push         check commits being pushed (pre-push)
-    python -X utf8 tools/guard.py --tree         check every tracked file
-    python -X utf8 tools/guard.py --history      check every commit reachable from HEAD
-    python -X utf8 tools/guard.py --build-index  index the private sources
-    python -X utf8 tools/guard.py --selftest     check that every rule fires
+    python -X utf8 dev/write-like-myself/tools/guard.py --staged       check staged changes (pre-commit)
+    python -X utf8 dev/write-like-myself/tools/guard.py --message F    check a commit message (commit-msg)
+    python -X utf8 dev/write-like-myself/tools/guard.py --push         check commits being pushed (pre-push)
+    python -X utf8 dev/write-like-myself/tools/guard.py --tree         check every tracked file
+    python -X utf8 dev/write-like-myself/tools/guard.py --history      check every commit reachable from HEAD
+    python -X utf8 dev/write-like-myself/tools/guard.py --build-index  index the private sources
+    python -X utf8 dev/write-like-myself/tools/guard.py --selftest     check that every rule fires
 
 A finding names the file, line and rule, never the private text that matched.
-The private folder is named in tools/local.toml, which is not committed.
+The private folder is named in dev/write-like-myself/tools/local.toml, which is not committed.
 """
 import argparse
 import glob
@@ -29,13 +29,21 @@ import tomllib
 from datetime import datetime, timezone
 from pathlib import Path
 
-REPO = Path(__file__).resolve().parent.parent
-LOCAL = REPO / "tools" / "local.toml"
-ALLOW = REPO / "tools" / "allow.txt"
+TOOLS = Path(__file__).resolve().parent
+REPO = TOOLS.parent.parent.parent  # the master repository; this skill's folder is dev/write-like-myself
+LOCAL = TOOLS / "local.toml"
+ALLOW = TOOLS / "allow.txt"
 
 MAX_BYTES = 200_000
-BLOCKED_DIRS = ("corpus/", "private/", "rounds/", "results/", "workspace/",
-                "evals/private/", "evals/results/")
+SKILL_DEV = "dev/write-like-myself/"
+BLOCKED_DIRS = tuple(SKILL_DEV + d for d in ("corpus/", "private/", "rounds/", "results/", "workspace/",
+                                              "evals/private/", "evals/results/"))
+# Skills that were public, and held no private material, before they joined this repository. Their imported
+# history and files are not checked, since the private index and denylist would flag them without cause.
+# A skill added later is checked until it is listed here.
+UNGUARDED = ("dev/expertise/", "dev/prompt-to-think/", "dev/research-before-buy/",
+             "plugins/yili-skills/skills/expertise/", "plugins/yili-skills/skills/prompt-to-think/",
+             "plugins/yili-skills/skills/research-before-buy/")
 BLOCKED_EXT = {".jsonl", ".pdf", ".tex", ".bib", ".doc", ".docx", ".eml", ".mbox",
                ".msg", ".sqlite", ".db", ".pkl"}
 INDEXED_EXT = {".tex", ".md", ".txt", ".json", ".jsonl"}
@@ -56,7 +64,7 @@ PATTERNS = {
     "manuscript id": re.compile(r"\b[A-Z]{2,5}-S-\d{2}-\d{4,6}\b"),
 }
 # The owner's address may appear in the plugin manifests, as in other public plugins.
-EMAIL_OK_FILES = {".claude-plugin/marketplace.json", "plugins/write-like-myself/.claude-plugin/plugin.json"}
+EMAIL_OK_FILES = {".claude-plugin/marketplace.json", "plugins/yili-skills/.claude-plugin/plugin.json"}
 
 LATEX_COMMAND = re.compile(r"\\[A-Za-z@]+\*?(?:\[[^\]]*\])?")
 
@@ -169,10 +177,10 @@ def load_index(folder):
     path = folder / "index.sqlite"
     if not path.exists():
         sys.exit("guard: the private index is missing, so nothing can be checked. "
-                 "Run: python -X utf8 tools/guard.py --build-index")
+                 "Run: python -X utf8 dev/write-like-myself/tools/guard.py --build-index")
     index = Index(path)
     if index.size() == 0:
-        sys.exit("guard: the private index is empty. Run: python -X utf8 tools/guard.py --build-index")
+        sys.exit("guard: the private index is empty. Run: python -X utf8 dev/write-like-myself/tools/guard.py --build-index")
     return index
 
 
@@ -276,9 +284,10 @@ class Checker:
         self.findings = []
 
     def exempt(self, name, term):
-        # name may carry a commit label before the path, as in "abc12345 CLAUDE.md"
-        return any(name == path or name.endswith(" " + path) for path, terms in self.exceptions.items()
-                   if term.lower() in terms)
+        # name may carry a commit label before the path, as in "abc12345 dev/write-like-myself/CLAUDE.md";
+        # paths in the private config are relative to this skill's folder
+        return any(name == SKILL_DEV + path or name.endswith(" " + SKILL_DEV + path)
+                   for path, terms in self.exceptions.items() if term.lower() in terms)
 
     def flag(self, where, rule):
         self.findings.append(f"{where}  {rule}")
@@ -357,9 +366,10 @@ def added_blocks(diff):
 
 def check_changes(checker, names, diff, size_of, label=""):
     for name in filter(None, names):
-        checker.path(name, size_of(name), where=f"{label}{name}")
+        if not name.startswith(UNGUARDED):
+            checker.path(name, size_of(name), where=f"{label}{name}")
     for name, first, lines in added_blocks(diff.decode("utf-8", errors="replace")):
-        if name and Path(name).suffix.lower() not in BLOCKED_EXT:
+        if name and not name.startswith(UNGUARDED) and Path(name).suffix.lower() not in BLOCKED_EXT:
             checker.text(f"{label}{name}", first, lines)
 
 
@@ -399,7 +409,7 @@ def report(checker, what):
         print(f"guard: blocked {what}. Each line names a place and the rule it broke:", file=sys.stderr)
         for finding in dict.fromkeys(checker.findings):
             print(f"  {finding}", file=sys.stderr)
-        print("Remove or rewrite the text, or, for a quote that may be published, add it to tools/allow.txt "
+        print("Remove or rewrite the text, or, for a quote that may be published, add it to dev/write-like-myself/tools/allow.txt "
               "and rebuild the index.", file=sys.stderr)
         return 1
     print(f"guard: {what} clean.")
@@ -434,8 +444,9 @@ def selftest():
     checker.text(".claude-plugin/marketplace.json", 1, ['"email": "owner' + "@" + 'example.org"'])
     expect("owner email in manifest", checker.findings, [])
 
-    for name, blocked in [("corpus/records.md", True), ("notes/a.jsonl", True), ("evals/private/t.json", True),
-                          ("draft.tex", True), ("skills/write-like-myself/SKILL.md", False)]:
+    for name, blocked in [(SKILL_DEV + "corpus/records.md", True), ("notes/a.jsonl", True),
+                          (SKILL_DEV + "evals/private/t.json", True), ("draft.tex", True),
+                          ("plugins/yili-skills/skills/write-like-myself/SKILL.md", False)]:
         checker.findings = []
         checker.path(name, 10)
         expect(f"path {name}", bool(checker.findings), blocked)
@@ -461,7 +472,7 @@ def selftest():
     checker.text("x.md", 1, ["Thanks to jane doe for comments."])
     expect("denylist", bool(checker.findings), True)
     checker.findings = []
-    checker.text("abc12345 NOTES.md", 1, ["Thanks to jane doe for comments."])
+    checker.text("abc12345 " + SKILL_DEV + "NOTES.md", 1, ["Thanks to jane doe for comments."])
     expect("denylist exception in its own file", checker.findings, [])
     checker.findings = []
     checker.text("commit message", 1, ["Co-Authored-By: A Bot <" + "noreply" + "@" + "example.com>"])
@@ -472,7 +483,7 @@ def selftest():
 
     folder = private_dir()
     if folder is None:
-        print("guard: no tools/local.toml, so this checkout runs the path and pattern rules only.")
+        print("guard: no dev/write-like-myself/tools/local.toml, so this checkout runs the path and pattern rules only.")
     elif (folder / "index.sqlite").exists():
         print(f"guard: private index has {Index(folder / 'index.sqlite').size():,} runs.")
     else:
@@ -504,7 +515,7 @@ def main():
     folder = private_dir()
     if args.build_index:
         if folder is None:
-            sys.exit("guard: tools/local.toml names no private folder.")
+            sys.exit("guard: dev/write-like-myself/tools/local.toml names no private folder.")
         build_index(folder)
         return 0
 
@@ -529,6 +540,8 @@ def main():
         return report(checker, f"history of {len(commits)} commits")
     if args.tree:
         for name in filter(None, git("ls-files").decode("utf-8", errors="replace").split("\n")):
+            if name.startswith(UNGUARDED):
+                continue
             blob = git("show", f":{name}")
             checker.path(name, len(blob))
             if b"\0" not in blob and Path(name).suffix.lower() not in BLOCKED_EXT:

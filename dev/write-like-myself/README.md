@@ -23,7 +23,7 @@ Inside a Claude Code session, run these two commands instead.
 /plugin install write-like-myself@write-like-myself
 ```
 
-For another agent, give it the file [SKILL.md](plugins/write-like-myself/skills/write-like-myself/SKILL.md) as instructions.
+For another agent, give it the file [SKILL.md](../../plugins/yili-skills/skills/write-like-myself/SKILL.md) as instructions.
 
 ## Testing
 

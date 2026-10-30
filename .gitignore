@@ -1,0 +1,27 @@
+# Machine-specific settings, including the path to the private folder of write-like-myself
+dev/write-like-myself/tools/local.toml
+
+# Private material never lives in this repository, but guard against strays
+dev/write-like-myself/corpus/
+dev/write-like-myself/private/
+dev/write-like-myself/rounds/
+dev/write-like-myself/results/
+dev/write-like-myself/workspace/
+dev/write-like-myself/evals/private/
+dev/write-like-myself/evals/results/
+*.jsonl
+*.sqlite
+*.pdf
+*.eml
+*.mbox
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Other
+dist/
+*.zip
+.DS_Store
+.claude/settings.local.json

@@ -5,7 +5,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURES = ROOT / "tests" / "fixtures"
-spec = importlib.util.spec_from_file_location("transcript", ROOT / "skills/expertise/scripts/transcript.py")
+spec = importlib.util.spec_from_file_location("transcript", ROOT.parent.parent / "plugins/yili-skills/skills/expertise/scripts/transcript.py")
 transcript = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(transcript)
 
