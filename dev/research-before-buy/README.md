@@ -10,8 +10,6 @@ It works the same whether you're buying a *thing*, a *service* (which builder?),
 
 **Research Before Buy** is the opposite of a recommendation engine. It doesn't rank products for you — it *becomes the expert for the category*, works out what kind of decision you're actually in, strips out the affiliate-driven noise, and hands back a short, honest call. Because it's reasoning from real expertise, it also knows when to stop: when both options are fine and the gap is below what you care about, it says *buy the reliable one and move on* — that's not laziness, it's what an expert who knows the field does. You don't lift a finger for any of it.
 
-And because it decides like an expert, it knows when to stop. An expert doesn't over-research — they command the field well enough to tell when more digging won't change the answer, so they call it and move on. That's why it can say "both are fine here, buy the cheaper one" without hand-wringing: knowing where *enough* is isn't laziness, it's what expertise looks like from the outside.
-
 ## The loop it kills
 
 Every non-trivial purchase runs you through the same circuit: research → compare → find → still unsure → research again. The point isn't to skip that circuit — it's that *you* should never be the one walking it. The agent runs it for you, once, and hands back the decision.
@@ -28,6 +26,9 @@ Every non-trivial purchase runs you through the same circuit: research → compa
 - **It distrusts what you're shown.** Star averages are inflated, "best of" lists are paid placements. It weights failure reports, longevity evidence, and real community consensus over the marketing layer — and tells you plainly where the evidence is thin instead of faking a verdict.
 - **It hands you tradeoffs, not a fake winner.** You get two or three candidates, each tied to *your* use and what it costs you — not a single "objectively best" pick that doesn't exist.
 - **It separates *what* from *where*.** Decide the product first; only then weigh platform and country (landed cost, warranty, the China-vs-local question) as their own decision.
+- **It shows you it is running.** Every answer opens with one line, `🛒 research-before-buy 已启用 · 类型 · 决策轴 · 力度`, so you never have to ask whether the skill fired. The line also shows how it read the decision.
+- **It gives you the field's rules of thumb.** Once it can pass its own expert check (the mechanism, how things fail, where marketing departs from the mechanism, what would flip the ranking), it designs 3–5 short rules (口诀) of its own for the category, each with the mechanism behind it and the condition under which it fails. If it cannot pass the check, it says so and gives none.
+- **It reads live prices where it can, and says so where it can't.** Cloud agents are often blocked by retailers or sit in the wrong country. So decision prices are read through your own Chrome first; if the session cannot reach it, the brief ends with a ready-to-paste list for the Chrome side panel; and a price with no read time is marked unverified rather than stated as current.
 
 ## What using it feels like
 
@@ -37,9 +38,17 @@ It doesn't hand you the pros-and-cons table you've already read five times. It a
 
 You get the answer in two parts. First a **short brief** — the call and the full reasoning behind it, readable in a minute. Then a **complete report** of everything it found — the market, the materials, where the money goes, what the trade knows, and an honest list of what it's *not* sure about — which you can read in full or just scan. The brief is so you can act; the report is so you can check its work and know the call is reliable. The only thing you're required to read is the short part.
 
+## The process this skill replicates
+
+This is a personal skill: it reproduces how its author researches a purchase alone, not a claim about the one best method. The record below comes from an interview (November 2026) and holds only the steps, never what was bought. When the skill changes, keep it consistent with this.
+
+- **Four research moves, in no fixed order, all of them done:** the use, the map of the category, how people in the trade choose, and what fails or gets regretted.
+- **Who to trust when sources disagree:** repeated, specific failures in negative reviews; long-term or insider reports; rule out whoever earns a commission first; check against the mechanism. **Your own judgment ranks above what others say.**
+- **When to stop:** when further research would not change the choice. The skill's *flip test* is this rule.
+
 ## Install (about one minute, in claude.ai)
 
-1. Download `research-before-buy.skill` from the latest [Release](../../releases).
+1. Build `research-before-buy.skill` by zipping the skill folder, with the folder as the top level of the zip: `cd plugins/yili-skills/skills && zip -r research-before-buy.skill research-before-buy`. (This repository has no Releases. Installing the plugin in Claude Code needs no file; see the repository README.)
 2. [one time setting] In claude.ai, turn on **Code execution and file creation** under **Settings → Capabilities**.
 3. Go to **Sidebar → Customize → Skills**, upload the file, and toggle it on.
 

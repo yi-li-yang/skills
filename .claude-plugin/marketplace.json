@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Yili Yang's Claude Code skills in one plugin: a thinking framework, writing in his own voice, plain technical English, topic briefings, and purchase research.",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "plugins": [
     {
       "name": "yili-skills",
       "source": "./plugins/yili-skills",
       "description": "Five skills: prompt-to-think (structured reasoning), write-like-myself (writing in Yili Yang's voice), talk-standard-tech-eng (plain, stable technical English), expertise (sourced, dated topic briefings), research-before-buy (purchase research).",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "strict": true
     }
   ]
