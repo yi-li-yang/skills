@@ -46,13 +46,19 @@ This is a personal skill: it reproduces how its author researches a purchase alo
 - **Who to trust when sources disagree:** repeated, specific failures in negative reviews; long-term or insider reports; rule out whoever earns a commission first; check against the mechanism. **Your own judgment ranks above what others say.**
 - **When to stop:** when further research would not change the choice. The skill's *flip test* is this rule.
 
-## Install (about one minute, in claude.ai)
+## Install
 
-1. Build `research-before-buy.skill` by zipping the skill folder, with the folder as the top level of the zip: `cd plugins/yili-skills/skills && zip -r research-before-buy.skill research-before-buy`. (This repository has no Releases. Installing the plugin in Claude Code needs no file; see the repository README.)
+This skill ships inside the `yili-skills` plugin. Install the plugin, not the skill alone: one install and one update cover every skill. The steps for Claude Code and for claude.ai are in the [repository README](../../README.md). There is nothing to invoke afterwards: just ask Claude to help you decide something, and it engages on its own.
+
+### Fallback: upload this one skill by hand
+
+Only if you cannot add a marketplace. An uploaded copy does not update when the repository does, and it competes with the plugin's copy for the skill listing, so remove one of the two.
+
+1. Build `research-before-buy.skill` by zipping the skill folder, with the folder as the top level of the zip: `cd plugins/yili-skills/skills && zip -r research-before-buy.skill research-before-buy`. (This repository has no Releases.)
 2. [one time setting] In claude.ai, turn on **Code execution and file creation** under **Settings → Capabilities**.
 3. Go to **Sidebar → Customize → Skills**, upload the file, and toggle it on.
 
-That's it. There's nothing to invoke — just ask Claude to help you decide something, and it engages on its own. (Plan eligibility for custom skills changes from time to time; the live source of truth is Anthropic's [Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude) help article.)
+(Plan eligibility for custom skills changes from time to time; the live source of truth is Anthropic's [Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude) help article.)
 
 ## The one promise
 
