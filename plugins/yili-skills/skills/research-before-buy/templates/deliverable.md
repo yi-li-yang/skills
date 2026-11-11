@@ -17,6 +17,11 @@ it if that was in scope]
 turned out to be, the need it's serving, why this option over the others, in a
 few sentences. Enough logic to stand on its own without Part 2.]
 
+**Rules of thumb for {category} (口诀):** [3–5, your own, each as: the rule in
+one line → why it holds (the mechanism) → when it fails. If you could not pass
+the expert check in `references/domain-and-premium.md`, write one line saying so
+instead of guessing.]
+
 **The tradeoff:** [what you give up with this call — the honest cost of the
 choice]
 
@@ -24,7 +29,12 @@ choice]
 they turned out different — so the person knows where the decision is load-
 bearing]
 
-**Good enough / stop here:** [the definition of good-enough and the cue to stop
+**Prices:** [one line: prices as of {time, place}; verified / partly verified /
+unverified; which finalists are not verified. If any finalist is not fully
+verified, add the handoff list from `references/price-check.md`.]
+
+**Good enough / stop here:** [the definition of good-enough, what could still
+change the call (the flip-test result) or that nothing can, and the cue to stop
 and buy — so the loop ends]
 
 ---
@@ -51,6 +61,11 @@ about substance — fabric/cut/construction, ingredient chemistry, joinery, etc.
 
 **Where the money goes:** [price decomposition — how much is substance vs brand
 premium, and whether the premium buys anything real here]
+
+**Decision prices:** [a table: candidate · seller · price · currency and
+tax-included or not · delivery · stock · read time · method (R1–R5) · region ·
+URL. A price that was not read says "unverified" and shows the approximate range,
+marked approximate. See `references/price-check.md`.]
 
 **Tech currency & timing:** [current generation vs imminent successor, standards
 in transition, support horizon — any timing flag that affects the call]

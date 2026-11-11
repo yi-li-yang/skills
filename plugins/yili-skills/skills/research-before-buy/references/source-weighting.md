@@ -5,6 +5,16 @@ the skill more than a search wrapper: it does the manipulation-resistant
 filtering so the person doesn't wade through garbage. Apply during Phase 3 and
 whenever reading search results.
 
+## Mechanism first (highest priority)
+
+A claim that contradicts how the thing actually works loses weight however many
+people repeat it. Check what is said against the mechanism — the materials, the
+physics, the terms, the incentives — before counting who said it. Your own
+reasoning from the mechanism outranks what others say. But state its basis, and
+mark it as inference: a mechanism you reasoned out and did not verify is still
+inference. If the mechanism and the field disagree and you cannot see why, say
+so instead of quietly picking a side.
+
 ## Discount heavily
 
 - **Affiliate "best of [year]" listicles.** Rankings driven by commission, not

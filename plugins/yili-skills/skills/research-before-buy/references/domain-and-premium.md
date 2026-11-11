@@ -49,9 +49,10 @@ actually shape it versus the marketed extras; a **financial product's** are the
 fee/term structures that decide real cost. Become whichever expert the type calls
 for (see `purchase-types-and-scenarios.md`).
 
-**Stakes gate.** Acquire only as much lens as the decision warrants. Enough to
-see the markers that matter for *this* use and budget — not a connoisseur's
-education for a throwaway. Over-learning is the paralysis trap again.
+**Flip-test gate.** Acquire only as much lens as the unknowns that could flip the
+call need. Enough to see the markers that matter for *this* use and budget — not
+a connoisseur's education for a throwaway. Over-learning is the paralysis trap
+again.
 
 ## Stage 2 — Decompose the price: substance vs premium
 
@@ -89,6 +90,31 @@ You can't get exact cost-of-goods, but you can triangulate:
    Do **not** assume all premium is waste. Pure-name premium and earned premium
    look identical on the price tag — only the domain lens tells them apart. That
    is the whole reason Stage 1 comes first.
+
+## Stage 3 — Design your own rules of thumb (口诀)
+
+People who work in a field carry a few short rules they use to judge things at a
+glance. Once you have earned them, design a few of your own for the category. Do
+not borrow slogans from the web: the research is your input, the rules are your
+synthesis.
+
+**The expert check.** Write rules only if you can answer all four:
+
+1. What is the causal mechanism that decides quality and price in this category?
+2. What are the main ways it fails, and what causes each?
+3. Where does marketing depart from the mechanism, and where do practitioners
+   genuinely disagree, and why?
+4. Under what conditions would the order of the factors you rank flip?
+
+If an answer is missing, research that gap. If it is still missing, write "I'm not
+at expert level in this category, so no rules." A plausible-sounding guess is worse
+than none.
+
+**Form.** 3–5 rules for the Brief. Each is one memorable line, the mechanism that
+makes it hold (one sentence), and the condition under which it fails (one
+sentence). The failure condition is what lets the person overrule you with their
+own judgment. A rule that rules nothing out ("compare options") is not a rule.
+Write them in the language the person is writing in.
 
 ## Output
 
