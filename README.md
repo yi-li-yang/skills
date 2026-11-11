@@ -14,16 +14,24 @@ My Claude Code skills in one repository. Install once, and every skill is availa
 
 ## Install
 
+**Claude Code**
+
 ```
 /plugin marketplace add yi-li-yang/skills
 /plugin install yili-skills@yili-skills
 ```
 
+**claude.ai**: open **Customize → Plugins → Add marketplace**, enter `yi-li-yang/skills`, then install `yili-skills`. Per [Anthropic's Cowork documentation](https://claude.com/docs/cowork/guide/plugins), a plugin you install is saved to your account, so its skills are also available in chat and in Claude Code. If you uploaded one of these skills by hand earlier, remove that copy so it does not compete with the plugin's.
+
 ## Update
+
+**Claude Code**
 
 ```
 /plugin marketplace update yili-skills
 ```
+
+**claude.ai**: on the marketplace, select **Check for updates**, or turn on **Sync automatically**.
 
 All skills come in one plugin, so one update refreshes them all. Each skill still fires on its own from its description; to call one by hand, use `/yili-skills:<skill>`.
 
