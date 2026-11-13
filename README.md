@@ -11,6 +11,7 @@ My Claude Code skills in one repository. Install once, and every skill is availa
 | [talk-standard-tech-eng](plugins/yili-skills/skills/talk-standard-tech-eng/SKILL.md) | Keeps Claude's English plain and its names stable, using the ideas of ASD-STE100, and keeps a good metaphor when it explains better. | Claude talks to me, names a thing, or writes technical or agent-facing text. Not for academic, persuasive or creative writing, or other languages. |
 | [expertise](plugins/yili-skills/skills/expertise/SKILL.md) | Brings Claude up to date on a topic with parallel research agents and saves a sourced, dated briefing. | Working on something that has moved since training, or `/expertise <topic>`. |
 | [research-before-buy](plugins/yili-skills/skills/research-before-buy/SKILL.md) | Runs the research, compare and find loop for a non-trivial purchase. | Deciding what to buy or how, when the choice is hard. |
+| [interview-before-answer](plugins/yili-skills/skills/interview-before-answer/SKILL.md) | Learns how I think about a domain, interviewing me if needed, answers through that lens with expert rigour, then argues against the answer from the masters' view. | A question, decision or task where my own judgment matters. Not for facts or lookups. |
 
 ## Install
 
