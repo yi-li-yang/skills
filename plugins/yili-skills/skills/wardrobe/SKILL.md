@@ -30,15 +30,28 @@ If the wardrobe is empty or unknown, say that pairing cannot be judged, and judg
 
 These are lenses, not a score sheet. Weigh them for this piece and this person; a scarf lives or dies on colour, a coat on cut and fibre, a running top on function.
 
+Each rule carries how far it can be trusted, and `evidence.md` (next to this file) gives the source and date for each:
+
+- **[standard]** a test standard, law or textile institution
+- **[practitioner]** tailors and reviewers who measure or take garments apart
+- **[study]** peer-reviewed research
+- **[owners]** many owner reports
+- **[convention]** trade habit with no evidence found
+
+Other labels name the kind of source when none of these fits (a retailer, a maker, a seller).
+
+When a rule tagged [convention] decides the call, say so; the person should know the call rests on habit, not evidence.
+
 ### Colour
 
-Colour seasons are a useful map, not a law. What they encode: temperature (warm or cool undertone), value (light or deep), chroma (clear or muted), and the person's natural contrast between hair, skin and eyes. Use those four ideas, not the season name, to reason.
+Colour seasons are shorthand, not a validated system. The one controlled test found the same effect of a red shirt across four colour types [study]. Use the four ideas underneath them (temperature, value, chroma and the person's contrast between hair, skin and eyes) to reason, and treat the season name as guidance [convention].
 
-- **Distance from the face decides how strict to be.** A top, a collar, a scarf, a coat's neckline and jewellery sit next to the face and either light it or drain it. Trousers, shoes and bags have far more freedom; they mostly need to sit well with the rest of the outfit.
-- **Contrast is part of colour.** A muted, low-contrast person in a black-and-white outfit looks overpowered even if each colour were fine alone. A high-contrast person in all mid-tones can look washed out. Judge the outfit's contrast against the person's.
-- **Near-misses usually have a fix.** True black can become charcoal, espresso or deep olive; stark white can become cream or oatmeal; an icy pastel can become a dusty one. Say the fix instead of a flat no.
-- **Pattern scale follows the person.** Bold, high-contrast or large-scale prints suit people who carry contrast and scale; small, soft, tonal patterns suit the rest. Texture can do the work that contrast would.
-- Metals and jewellery follow the same temperature and chroma logic.
+- **Eyes may matter more than skin.** When people matched clothing colour to a face, iris colour dominated and skin colour had little influence [study, single author]. Take eye colour into account when choosing what sits by the face.
+- **Distance from the face decides how strict to be.** Tops, collars, scarves, necklines and jewellery sit by the face; trousers, shoes and bags have more freedom [convention].
+- **Contrast is part of colour.** Judge the outfit's contrast against the person's [convention].
+- **Near-misses usually have a fix.** True black → charcoal, espresso or deep olive; stark white → cream or oatmeal; an icy pastel → a dusty one. Say the fix instead of a flat no.
+- **Pattern scale follows the person** [convention]. Texture can do the work that contrast would.
+- **Light changes colour.** Judge colour from a daylight photo or in person; phone photos and warm indoor light shift undertone, so a season guessed from photos is a hypothesis [vendor test; physics]. Say so when the season was guessed.
 
 ### Versatility
 
@@ -54,39 +67,54 @@ Versatility is a requirement, not a bonus. A piece earns its place by working ac
 The test of a new piece is how many real outfits it makes with things already in the closet.
 
 - **Name the outfits.** Build two or three complete outfits from owned items, by name. If you cannot, the piece is an orphan, and an orphan usually needs a second purchase to be worn.
-- **Gap or duplicate.** A piece that fills a real gap (the first warm mid-layer, the only pair of trousers that works with three tops) is worth more than its price suggests. A near-duplicate of something they own is worth little unless it replaces a worn-out one. Say which it is.
-- **Neutrals multiply, statements divide.** A piece in one of their core neutrals pairs widely. A statement piece can be right, but it should pair with the basics they own, not need its own supporting cast.
+- **Gap or duplicate.** A piece that fills a real gap is worth more than its price suggests. A near-duplicate is worth little unless it replaces a worn-out one. Say which it is.
+- **Neutrals multiply, statements divide.** A statement piece can be right, but it should pair with the basics they own.
 
-### Proportion on their body
+### Proportion and fit on their body
 
-Look at where the garment's edges fall on this particular body. A hem, a waistband and a shoulder seam each draw a horizontal line; those lines decide how long the legs and torso look.
+Look at where the garment's edges fall on this particular body. A hem, a waistband and a shoulder seam each draw a horizontal line.
 
-- **Use the measurements.** A size chart's garment length, inseam or skirt length, set against the person's height, tells you where the hem lands (mid-hip, top of thigh, knee, ankle). Average body proportions are a guide; say that the result is an estimate.
-- **For a shorter person:** a higher waist lengthens the leg; jackets work at the waist or long and in one column, and are weakest when they stop at the widest part of the hip; details, pockets and prints read better at a smaller scale; heavy, stiff fabric can swamp the frame; wide trousers need the right length and some lift at the shoe.
-- **For a taller person:** check that sleeves and trousers are long enough, that the shoulder seam sits on the shoulder point, and that cropped lengths are deliberate, not short.
-- **For an athletic build:** room through the shoulders, chest or thighs often matters more than the size label; a tapered or straight leg and a fabric with some body tend to sit better than clingy knits.
-- Necklines that the person knows suit them (from colour or style analysis) are strong evidence; respect them.
-- **What they asked clothes to do.** If they want longer-looking legs or less width at the shoulder, say plainly whether this piece helps or works against it, and why (where the line falls, the volume, the contrast break).
+- **Use the measurements.** A size chart's garment length or inseam, set against the person's height, tells you where the hem lands. Say that the result is an estimate.
+- **Waist height and hem length change how long the leg looks.** A higher waist and a shorter skirt made legs look longer in a perception study [study]. Stripes are unresolved: horizontal stripes looked narrower on drawings and mannequins but slightly wider on a real woman [study, conflicting]; do not promise either effect.
+- **Body-type systems** (Kibbe, fruit shapes, essences) have no research behind them [convention]. Reason from the person's measurements and what they asked for, not from a type.
+- **Fit points that matter most** [practitioner]: the shoulder seam sits on the shoulder point; a jacket ends about halfway between collar and floor and shows ¼–½ inch of shirt cuff; check the trouser rise and the collar gap.
+- **What can be fixed.** Trouser hems, waists, sleeve length and shirt sides are cheap to alter; shoulders, chest, collar gap, seat and thighs are not worth altering [practitioner]. Makers leave little seam allowance, so taking in is easy and letting out is hard [practitioner]. A piece that is wrong in the shoulders is a skip, whatever else is right.
+- **For a petite person (about 160 cm and under):** petite ranges shorten rise, sleeve and torso as well as the leg (for example, Next takes 1.5 cm off the rise, 5 cm off the inside leg and up to 4 cm off the sleeve) [retailer]. Check those lengths, not just the inseam. Jackets work at the waist or long in one column; small-scale details read better; heavy, stiff fabric can swamp the frame [convention].
+- **For an athletic build:** the size that fits the shoulders and chest is often too big at the waist, and slim fits can pull; look for trousers sold in thigh builds and for room through the seat and thigh [maker; seller, weak].
+- **For a taller person:** check sleeve and trouser length and that cropped lengths are deliberate.
+- Necklines the person knows suit them are strong evidence; respect them.
+- **What they asked clothes to do.** If they want longer-looking legs or less width at the shoulder, say plainly whether this piece helps or works against it, and why.
 
 ### Material and make
 
-Price says what the brand charges. Fibre, weight and construction say what you get.
+Price says what the brand charges; research with the University of Leeds found durable clothes at every price and few guarantees at any [study]. Fibre, yarn, fabric and construction say what you get.
 
-- **Read the composition.** Wool, cashmere, cotton, linen, silk and good blends age well; a high share of acrylic or cheap polyester in a knit predicts pilling and a flat look within a season. Small amounts of elastane or nylon for stretch and strength are fine.
-- **Weight and weave matter as much as fibre.** A heavy cotton jersey or a dense merino holds its shape; a thin one twists and goes see-through. Say when the listing hides this and what to look for (fabric weight, a close photo, reviews about shape after washing).
-- **Construction tells:** matched patterns at seams, clean finishing inside, real buttonholes, enough seam allowance, lining where it is needed.
-- **Function counts for sportswear:** sweat handling, stretch recovery, chafe-free seams, and fit when moving, not standing.
-- **Will this brand's piece last?** Say what the brand, and this line of it, is known for: how its knits pill, how its cotton holds shape after washing, how its seams and zips wear. A brand is a prior, not a verdict: quality varies by line and changes over the years, and the composition and make of this item decide. When you are not sure how the brand makes things now, say so and check current owner reviews about wear, or name what to look at before ordering.
+- **Fibre and yarn.** Longer, more uniform fibres make stronger, smoother yarn; combed and long-staple cotton is a good sign [standard]. That Pima or Supima pills less is a likely inference, not a measured result.
+- **Pilling.** Strong synthetics (polyester, nylon, acrylic) hold pills on the surface; wool pills break off over time. Loose knits, brushed surfaces and low-twist yarn pill more [secondary source]. A knit with a high share of acrylic or polyester will look tired early.
+- **Cashmere and merino.** Labels give no fibre grade, so the brand's track record and owner reports are the evidence. A cheap merino may use slightly coarser fibre with an anti-pill finish that washes off [practitioner].
+- **Viscose** has low wet strength and can shrink up to 10% untreated; modal washes like cotton [extension service]. Treat 100% viscose as wash-sensitive. Lyocell and small amounts of elastane are probably fine, but no independent data was found.
+- **Recycled wool** keeps its strength but loses fibre length, most in long wools [study]; expect it blended and less smooth.
+- **Fabric weight (grams per square metre, GSM), twill against plain weave and 2-ply yarn** are useful hints, but the bands come from retailers, not tests [convention]. A thin jersey that twists or goes see-through is the thing to check, through a close photo or reviews after washing.
+- **Construction** [practitioner]: even, dense stitching (about 16–22 stitches per inch on a good shirt); no puckered seams; stripes and checks that meet at yoke, placket, pockets and armholes; clean finishing inside. In knitwear, diagonal fashioning marks at the armhole and neck mean a fully fashioned knit. In tailoring, pinch below the top button to feel for canvas; half canvas is a fine budget choice; a fused jacket can bubble for good after steam or bad dry cleaning.
+- **Function for sportswear:** sweat handling, stretch recovery, chafe-free seams, opacity when stretched, and fit when moving.
+- **Will this brand's piece last?** A brand is a prior, not a verdict: quality varies by line and changes over the years. Use `evidence.md` and the person's own experience of the brand; if the evidence is older than about a year or thin, say so and check current owner reviews about wear.
 
 ### Value
 
-- **Cost per wear** is price divided by (wears per year × years it will last). It turns "expensive" into a real number and makes a good coat look cheap and a fast-fashion party top look dear.
-- **Where to spend:** pieces worn often, next to the skin, or that set the whole look (coats, shoes, bags, good knitwear, a trouser that fits) earn their price. Basics, trend pieces and experiments in a new style are best bought cheap; a good basics brand is the right tool there, not a compromise.
-- If a cheaper piece does the same job, or a better one costs a little more, say so in one line. Look first in the brands they already buy, then in brands suggested to them, and only then further afield.
+- **Cost per wear** is price divided by (wears per year × years it will last). It turns "expensive" into a real number.
+- **Where to spend:** pieces worn often, next to the skin, or that set the whole look (coats, shoes, bags, good knitwear, a trouser that fits) earn their price. Basics, trend pieces and experiments are best bought cheap.
+- If a cheaper piece does the same job, or a better one costs a little more, say so in one line. Look first in the brands they already buy, then in brands suggested to them, then further afield.
 
 ### Suggesting brands
 
-When asked which brands fit a person, suggest a handful, each with the reason it fits this person (their style, colouring, body, life and budget), what to buy there, and the catch (sizing that runs long for a shorter person, quality that varies by line, a price worth waiting for a sale). Spread them across price levels so the cheap basics and the worth-it pieces each have a home. A brand's quality and range change over the years, so check current owner reviews before calling a brand reliable, and say when you could not. A suggestion is a direction, not an endorsement of every piece the brand makes.
+Suggest only brands with independent evidence: reviewers who measure garments or take them apart, many owner reports over months, or lab tests. Marketing, affiliate listicles and reputation are not evidence. For each brand give:
+
+- what it is actually good at (the line or item, not the whole brand), with the evidence and its date
+- the price tier
+- the catch (inconsistent quality, sizing that runs long or slim, a finish that washes off)
+- how strong the evidence is
+
+Say which brands you left out for lack of evidence. Spread suggestions across price tiers so cheap basics and worth-it pieces each have a home.
 
 ### Style
 
