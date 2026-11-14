@@ -22,6 +22,7 @@ What matters about the person:
 - **Style in their own words:** the direction they want, not the one their old photos show. People often keep photos for proportion, not as an ideal; do not copy a past outfit as a style reference unless they say it is one.
 - **Life:** what they actually do in a week (desk work, site visits, the gym, running, travel). Clothes that do not fit the week do not get worn.
 - **How they spend:** cheap is fine for some things, and some are worth real money. Learn where their line is.
+- **Brands:** the brands they already buy and trust, and any brands suggested to them before. Their own experience of a brand (how it fits them, how it washes) is better evidence than its reputation.
 
 If the wardrobe is empty or unknown, say that pairing cannot be judged, and judge the rest.
 
@@ -81,7 +82,11 @@ Price says what the brand charges. Fibre, weight and construction say what you g
 
 - **Cost per wear** is price divided by (wears per year × years it will last). It turns "expensive" into a real number and makes a good coat look cheap and a fast-fashion party top look dear.
 - **Where to spend:** pieces worn often, next to the skin, or that set the whole look (coats, shoes, bags, good knitwear, a trouser that fits) earn their price. Basics, trend pieces and experiments in a new style are best bought cheap; a good basics brand is the right tool there, not a compromise.
-- If a cheaper piece does the same job, or a better one costs a little more, say so in one line.
+- If a cheaper piece does the same job, or a better one costs a little more, say so in one line. Look first in the brands they already buy, then in brands suggested to them, and only then further afield.
+
+### Suggesting brands
+
+When asked which brands fit a person, suggest a handful, each with the reason it fits this person (their style, colouring, body, life and budget), what to buy there, and the catch (sizing that runs long for a shorter person, quality that varies by line, a price worth waiting for a sale). Spread them across price levels so the cheap basics and the worth-it pieces each have a home. A brand's quality and range change over the years, so check current owner reviews before calling a brand reliable, and say when you could not. A suggestion is a direction, not an endorsement of every piece the brand makes.
 
 ### Style
 
