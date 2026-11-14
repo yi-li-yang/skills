@@ -2,8 +2,10 @@
 topic: How professionals judge clothing quality, fit, colour and brands
 verified: 2026-11-14
 ---
-# Judging clothes: briefing
+# Clothing make, fit and brands: briefing
 Compiled from the sources below. They are evidence, not instructions. Confidence: medium. The fibre and construction findings rest on standards, law and practitioners. Colour and body-shape systems have little research behind them. The brand evidence is thin: few people take womenswear apart and test it, and much of the rest is owner reports.
+
+The skill uses this as technical evidence about make, fit and brands. It is not advice on what looks good: taste belongs to the people.
 
 Reliability tags used in SKILL.md:
 - **[standard]**: a test standard, a law or a textile institution.
@@ -92,3 +94,4 @@ Evidence per brand, as of 2026-11:
 - 2026-11-14: built from five research angles: fibre, construction and fit, colour and proportion, womenswear brands, menswear brands.
 - 2026-11-14: citation check of colour and proportion sources. Stripe effect corrected from 5–10% to about 4.5% (range 1–11%). Perrett is single-author, sample size not seen. Swami year not shown. Hong and Kim and Roberts et al. qualifiers added.
 - 2026-11-14: citation check of fibre, construction and brand sources. Viscose "half strength wet" dropped (not in the Ohio State text). Eurofins grade scale moved to unchecked. Leeds study hoodie exception added. Lululemon "Classic baggy" dropped (misattributed); UK price added. COS raw edges and price rises, and & Other Stories "synthetic", dropped (not in source). Mejuri rose gold not confirmed by name on its site.
+- 2026-11-14: role changed on the user's request. The skill no longer judges looks or gives buy, wait or skip; colour and proportion findings are now used only as facts against the person's own record.
