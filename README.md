@@ -2,6 +2,10 @@
 
 My Claude Code skills in one repository. Install once, and every skill is available; update once, and every skill updates.
 
+## How the skills are written
+
+This is a personal set of ways to think through different parts of my life and work. Each skill describes a way of thinking and does not set rules. A rule is hard: it misses the case nobody expected, and it goes out of date. A way of thinking still applies to a case it has not seen, so each skill gives its reasoning and leaves the judgment to Claude.
+
 ## Skills
 
 | Skill | What it does | Fires when |

@@ -1,7 +1,7 @@
-# Sourcing — Channel & Country (WHERE)
+# Sourcing — Where to Buy It (geographic arbitrage, 地理套利)
 
-Used in Phase 5, **only after the WHAT is settled.** Channel and country are a
-separate decision about price vs risk vs logistics. Do not fold them into the
+Used in Phase 5, **only after the WHAT is settled.** Where to get it is a
+separate decision about price vs risk vs logistics. Do not fold it into the
 product choice.
 
 > ⚠️ This file's facts decay — duty thresholds, VAT rules, customs allowances,
@@ -9,19 +9,49 @@ product choice.
 > live search before quoting it.** The *method* below is durable; the numbers are
 > not. Never state a customs/VAT/allowance figure from memory.
 
-## Always price both sources
+## The question
 
-For any non-trivial purchase, pull **both the UK price and the China-domestic
-price** so the comparison is real rather than assumed. The direction is not
-fixed: imported Western/luxury brands are often *dearer* in China; domestic and
-commodity goods and China-only products are often much cheaper. Don't guess which
-way it goes — check.
+Is there a place where this is much cheaper or much better, and does the gap
+survive the cost of getting it? That is geographic arbitrage. The answer can be
+"don't buy it here, buy it from Japan and ship it", or "switch your app-store
+region to Hong Kong", or "the same plan costs a third as much in another market".
+It is not only for objects. Digital goods, subscriptions, services and bookings
+all have prices and terms that differ by place.
 
-## The three channels to weigh
+## Why a place differs
 
-For a UK-based buyer with China access, there are three concrete routes, with
-different economics. Pick per item; often the answer depends on size, urgency,
-warranty need, and whether a batch is already moving.
+Prices and options differ because of where a thing is made or sold at home, tax
+and subsidy, competition, local demand, import duty, and versions or terms that a
+seller offers in one market only. The direction is not fixed. Imported luxury
+brands are often dearer where they are imported, and home-market goods are often
+cheaper at home. Check, don't assume.
+
+## Keep the search cheap
+
+Looking up every country costs a lot and rarely pays. Reason from the item
+instead. Where is it made, and what is its home market? Where are tax or subsidy
+low? Which one or two places most likely hold a big gap? Look once. If the gap is
+small, stop and buy locally, because the gap must beat the friction. Go deeper
+only when the first look shows a big gap, and then compare landed cost.
+
+## What eats the gap
+
+Shipping, or the cost of carrying it; duty and VAT; forwarder and handling fees;
+a warranty that does not cross borders; returns; region lock on firmware, content
+or apps; voltage and plug; time. For digital goods, also ask whether the
+provider's terms allow a changed store region or payment country, and say plainly
+when a trick may break them. Urgency, warranty need, region lock and voltage can
+each force the local channel whatever the gap.
+
+## Worked example: a UK buyer with China access
+
+This is one person's real setup, kept to show the method at work. The person
+can price both the UK source and the China-domestic source, and there are three
+routes, with different economics. Pick per item; the answer often depends on
+size, urgency, warranty need, and whether a batch is already moving. For any
+non-trivial purchase here, pull both prices so the comparison is real. Imported
+Western and luxury brands are often *dearer* in China; domestic and commodity
+goods and China-only products are often much cheaper.
 
 ### 1. Buy local (UK) — immediate
 
@@ -63,7 +93,7 @@ warranty need, and whether a batch is already moving.
 - **Good for:** heavy/bulky, non-urgent, region-neutral goods, especially when
   bundled with other China purchases.
 
-## How to choose between the three
+### How to choose between the three
 
 1. **Urgency first.** Needed soon → UK, full stop. The other two are for
    non-urgent buys.
@@ -74,7 +104,7 @@ warranty need, and whether a batch is already moving.
    consolidation. Otherwise re-check whether the China saving even survives once
    shipping and import charges are added (landed cost, below).
 
-## Landed cost (applies to channels 2 and 3)
+### Landed cost (applies to channels 2 and 3)
 
 Compare *landed* cost, not sticker: item + (shipping or trip-attributable cost) +
 import duty + VAT + forwarder/handling + any re-entry duty above the allowance. A

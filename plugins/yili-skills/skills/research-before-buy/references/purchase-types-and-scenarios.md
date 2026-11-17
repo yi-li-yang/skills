@@ -13,7 +13,7 @@ what the dominant risk is.
 
 ### Object (physical good) — the default
 - Quality = materials + construction. Premium = brand vs white-label. Channel =
-  where/country (see `sourcing-uk-china.md`). Risk = defects, durability,
+  where (see `sourcing-arbitrage.md`). Risk = defects, durability,
   counterfeit. Timing = product cycle. All existing lenses apply directly.
 
 ### Service (contractor, tradesperson, professional, repair, cleaning, salon)

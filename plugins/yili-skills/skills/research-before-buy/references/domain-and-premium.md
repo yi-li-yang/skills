@@ -49,6 +49,12 @@ actually shape it versus the marketed extras; a **financial product's** are the
 fee/term structures that decide real cost. Become whichever expert the type calls
 for (see `purchase-types-and-scenarios.md`).
 
+An expert can say where each point comes from. When a claim about quality
+carries the decision, tie it to something you found live. If you cannot, treat
+it as your own belief and check it. Your sense of which brands are good partly
+reflects how well known they are, so it needs checking more than most of what
+you know.
+
 **Stakes gate.** Acquire only as much lens as the decision warrants. Enough to
 see the markers that matter for *this* use and budget — not a connoisseur's
 education for a throwaway. Over-learning is the paralysis trap again.

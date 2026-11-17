@@ -7,13 +7,15 @@ description: >-
   and the choice is hard because of too many options, wide price ranges, confusing
   specs or terms, diverging opinions, or unclear personal need. Trigger on
   phrasings like "help me decide what X to buy," "which credit card / insurance /
-  subscription / contractor should I choose," "X vs Y, which is better," "I'm
-  overwhelmed by options," "which brand / tier / plan / provider," "is the
+  subscription / contractor should I choose," "X vs Y, which is better to buy,"
+  "I'm overwhelmed by options," "which brand / tier / plan / provider," "is the
   expensive one worth it," "should I repair or replace / rent or buy," "should I
   buy this from China or locally," and similar. Trigger even when the user does
-  not say "buy" but is clearly comparing options or agonizing over a purchase. Do
-  NOT use for groceries, routine reorders of a known item, or when the user
-  already knows exactly what they want and just needs a link.
+  not say "buy" but is clearly comparing options or agonizing over a purchase. The
+  choice must involve spending money or committing to a provider; picking a free
+  library, tool or technical approach is not a purchase. Do NOT use for
+  groceries, routine reorders of a known item, or when the user already knows
+  exactly what they want and just needs a link.
 ---
 
 # Research Before Buy
@@ -193,7 +195,10 @@ interpreting it. Two disciplines bound it: comprehensiveness lives in the
 **input, never the output** (scan wide, hand back little), and the agent's *depth*
 **scales to the stakes** — a trivial buy gets a fast check, a major one a deep
 dive, but the agent always does the check itself and never hands research to the
-person.
+person. Stop when you could stand as an expert in this domain for this decision:
+you know the market, the caveats and everything that bears on the call, and the
+next source would only confirm what you already know. The stakes set how high
+that bar sits.
 
 The lenses below are a **menu the type, axis, and stakes select from — not a
 checklist to run every time.** Some are object-only (white-label, sourcing,
@@ -249,8 +254,10 @@ what the decision needs:
 The information environment is adversarial. See `references/source-weighting.md`.
 Discount affiliate "best of" lists and inflated star averages; privilege
 failure-mode reports, longevity and teardown evidence, and genuine community
-consensus. Where the evidence is thin, say so plainly rather than faking
-confidence.
+consensus. Also discount pages written to be found by search tools and LLMs:
+vendor-written comparisons, astroturfed forum threads and AI-generated review
+farms (the GEO section of that file). Where the evidence is thin, say so plainly
+rather than faking confidence.
 
 ### Phase 4 — Pick WHAT
 
@@ -266,20 +273,22 @@ present the informed shortlist and hand the final choice back.
 *How* you get it is a separate decision from *what* it is — never fold them
 together. What "how" means depends on the type:
 
-- **Object** → where/country. Always price **both the local and the
-  China-domestic source** (the cheaper direction isn't fixed), then weigh the
-  channels — see `references/sourcing-uk-china.md` (a physical-goods module, worked
-  through a UK/China buyer; elicit the person's actual geography). Urgency,
-  region-lock, warranty, and voltage can each force the local channel regardless
-  of price. Compute landed cost; weigh warranty, returns, counterfeit risk.
-  **Verify any duty/VAT/platform figures live — that file's facts decay.**
+- **Object** → where. Ask whether another place is much cheaper or much better,
+  and whether the gap survives the cost of getting it (geographic arbitrage,
+  地理套利; see `references/sourcing-arbitrage.md`). Do not survey every country:
+  guess from the item where the gap likely lives, look once, and go deeper only if
+  the gap is big. Urgency, region lock, warranty and voltage can each force the
+  local channel whatever the price. Compare landed cost, and weigh warranty,
+  returns and counterfeit risk. **Verify any duty, VAT or platform figure live;
+  those facts decay.**
 - **Service** → which provider, and on what contract terms (scope, deposit,
   recourse). A vetted referral usually beats a marketplace beats an ad.
 - **Subscription** → which plan and billing term, and the cancellation/exit terms
   — check the exit before the entrance.
 - **Experience** → which booking route and *when* (dynamic pricing, booking
   windows).
-- **Financial / digital** → which issuer/store and which terms or licence; mind
+- **Financial / digital** → which issuer/store, in which region (a store or
+  billing region can change the price), and which terms or licence; mind
   legitimacy and the Boundaries above.
 
 ### Phase 6 — Commit
