@@ -5,10 +5,11 @@ offload — a comprehensive sweep of the live market and the current state of th
 technology, done internally so the person doesn't have to open twelve tabs.
 
 > The comprehensiveness lives in the **input**, never the output. Scan widely,
-> hand back little. And scale the whole effort to the stakes: if Phase 0 judged
-> the decision low-stakes or over-deliberated, skip this and go straight to the
-> safe default. A full market scan on a throwaway is the paralysis this skill
-> exists to prevent.
+> hand back little. And point the whole effort at the flip test: if no unknown
+> could change the call (the options all work, the gap is below what the person
+> cares about), skip the scan and give the safe default. Otherwise scan only as
+> much as the unknowns that could flip the call need. A full market scan on a
+> throwaway is the paralysis this skill exists to prevent.
 
 ## Run the scan live, never from memory
 
@@ -24,7 +25,8 @@ time. Cover the breadth, then converge:
    replaced, and how long the current one has been out. A model late in its cycle
    is a different buy from a fresh release at the same price.
 3. **Locate the live tiers and the knee** (hand off to value-curve.md for the
-   interpretation).
+   interpretation). Approximate prices are enough here; verified decision prices
+   come later (see price-check.md).
 4. **Read the information critically** (hand off to source-weighting.md) — the
    scan is only as good as its resistance to gamed sources.
 

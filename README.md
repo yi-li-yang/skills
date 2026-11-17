@@ -15,19 +15,29 @@ This is a personal set of ways to think through different parts of my life and w
 | [talk-standard-tech-eng](plugins/yili-skills/skills/talk-standard-tech-eng/SKILL.md) | Keeps Claude's English plain and its names stable, using the ideas of ASD-STE100, and keeps a good metaphor when it explains better. | Claude talks to me, names a thing, or writes technical or agent-facing text. Not for academic, persuasive or creative writing, or other languages. |
 | [expertise](plugins/yili-skills/skills/expertise/SKILL.md) | Brings Claude up to date on a topic with parallel research agents and saves a sourced, dated briefing. | Working on something that has moved since training, or `/expertise <topic>`. |
 | [research-before-buy](plugins/yili-skills/skills/research-before-buy/SKILL.md) | Runs the research, compare and find loop for a non-trivial purchase. | Deciding what to buy or how, when the choice is hard. |
+| [interview-before-answer](plugins/yili-skills/skills/interview-before-answer/SKILL.md) | Learns how I think about a domain, interviewing me if needed, answers through that lens with expert rigour, then argues against the answer from the masters' view. | A question, decision or task where my own judgment matters. Not for facts or lookups. |
+| [wardrobe](plugins/yili-skills/skills/wardrobe/SKILL.md) | Judges a clothing buy against the person's colouring, body and what they already own: colour, outfits it makes, where the hem falls, material, cost per wear. | Deciding whether to buy a piece of clothing, shoes, a bag or jewellery, or what goes with something owned. |
 
 ## Install
+
+**Claude Code**
 
 ```
 /plugin marketplace add yi-li-yang/skills
 /plugin install yili-skills@yili-skills
 ```
 
+**claude.ai**: open **Customize → Plugins → Add marketplace**, enter `yi-li-yang/skills`, then install `yili-skills`. Per [Anthropic's Cowork documentation](https://claude.com/docs/cowork/guide/plugins), a plugin you install is saved to your account, so its skills are also available in chat and in Claude Code. If you uploaded one of these skills by hand earlier, remove that copy so it does not compete with the plugin's.
+
 ## Update
+
+**Claude Code**
 
 ```
 /plugin marketplace update yili-skills
 ```
+
+**claude.ai**: on the marketplace, select **Check for updates**, or turn on **Sync automatically**.
 
 All skills come in one plugin, so one update refreshes them all. Each skill still fires on its own from its description; to call one by hand, use `/yili-skills:<skill>`.
 
