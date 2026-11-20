@@ -32,7 +32,7 @@ decision, it **becomes the relevant expert** and reasons from inside the field:
 
 "Buying" here is broad: physical objects, services, experiences, subscriptions,
 financial products, digital goods. The type changes what expertise is needed and
-which lenses apply — recognise it early (see
+which research areas apply — recognise it early (see
 `references/purchase-types-and-scenarios.md`). What's constant is that the person
 gets a decision made with knowledge they don't have and shouldn't have to acquire.
 
@@ -50,13 +50,13 @@ and constant; human burden is held near zero.
 
 This skill is **not** a recommender and **not** a search wrapper. The hard part
 isn't finding products — it's bringing real domain knowledge to bear, and knowing
-*what kind of decision the person is even in* before researching. So the prime
-directive is:
+*what kind of decision the person is even in* before researching. So the main
+principle is:
 
 > **Become the right expert. Read the axis first. Research live.**
 
-Almost nothing here is a stored fact, because lineups, prices and terms rot within
-months. The skill carries *method*: how to become the right expert and diagnose
+Almost nothing here is a stored fact, because lineups, prices and terms go out of date
+within months. The skill carries *method*: how to become the right expert and diagnose
 the decision, then do the live research.
 
 ## The one rule that overrides the rest
@@ -66,7 +66,7 @@ research. If using this skill ever costs the person more time or thought than
 doing nothing would have, it has failed — but the fix is for the *agent* to
 absorb more of the work, never to hand research back to the person, and never to
 make them wait out of proportion to the size of the decision. Bias toward fewer
-questions, research handed over already filtered, and a clean push to decide.
+questions, research handed over already filtered, and a clear prompt to decide.
 
 ## The stopping rule: the flip test
 
@@ -123,9 +123,9 @@ much they're asked to do.
 
 - **Information problem** — they lack knowledge of the category. → Run the full
   flow; the agent does the digging and hands back the picture.
-- **Commitment problem** — they already know enough and can't pull the trigger.
+- **Commitment problem** — they already know enough and can't bring themselves to decide.
   → More research dumped on *them* deepens the paralysis, so don't do that; the
-  agent's job here is to confirm and give a clean push. Jump to Phase 6.
+  agent's job here is to confirm and help them decide. Jump to Phase 6.
 - **Over-deliberation / low stakes** — the options all work, the price spread is
   below what they care about, the risk is low. → Nothing can flip the call, so the
   agent does the quick check itself, then hands back a confident safe default and
@@ -142,14 +142,15 @@ recognise the *type*, read the *axis*, reframe to the *goal*.
 
 **Recognise the purchase type** (see `references/purchase-types-and-scenarios.md`).
 Object, service, experience, subscription, financial product, or digital good —
-the type decides which lenses apply and how they reinterpret. For a service,
+the type decides which research areas apply and how they reinterpret. For a service,
 "quality" is a provider's track record, not materials; for a subscription, the
 cost is the lifetime total, not the sticker; a financial product hits the
 Boundaries above. Also catch the cross-cutting scenarios that change the play
 (gift, repair-vs-replace, used, urgent, negotiable, values-driven).
 
-**Read the decision axis (the router).** A purchase is a bet under uncertainty,
-and the move is naming *which dimension the bet actually turns on*. Pick the
+**Read the decision axis.** It decides which path the rest of the work takes.
+A purchase is a bet under uncertainty, and the first task is to name *which
+dimension the bet actually depends on*. Pick the
 wrong axis and every fact gathered afterward is wasted. Read
 `references/axis-selector.md`; the main axes:
 
@@ -161,14 +162,14 @@ wrong axis and every fact gathered afterward is wasted. Read
 - **Budget as an output, not an input.** Do not ask "what's your budget." Ask
   what *relationship* the person wants with the object (engagement vs means;
   proven vs still-testing). The spend falls out of the answer. Only record a
-  hard cap if a real wall exists.
-- **Stakes below the noise floor.** When the person is price-insensitive at this
+  hard cap if a real limit exists.
+- **Stakes too small to matter.** When the person is price-insensitive at this
   scale and risk is low, switch the axis from price-to-value to
   risk-and-friction, and lean toward the reliable option.
 - **Divergence as signal.** When opinions split violently, that usually means
   the category serves several non-overlapping needs — don't resolve the debate,
   find which side is *this person's* use.
-- **Objective vs subjective (the taste ceiling).** When the call is dominated by
+- **Objective vs subjective (where expertise stops).** When the call is dominated by
   personal taste or values, knowledge informs but cannot settle it. Rule out the
   badly made, frame the options — then hand the final choice back. Don't
   manufacture a "right answer" where there's only preference.
@@ -187,20 +188,21 @@ expensive, recurring, or novice-domain buys, never a cheap one-off.
 ### Phase 2 — Become the expert and research
 
 Research live whenever a question needs it. This is the legwork the person came
-to offload: do the equivalent of their twelve tabs so they don't have to. See
+to offload: do the searching and reading they would otherwise do in a dozen browser tabs, so
+they don't have to. See
 `references/market-scan.md` for the sweep and `references/value-curve.md` for
-interpreting it. Comprehensiveness lives in the **input, never the output** (scan
+interpreting it. Comprehensiveness belongs in the **input, never the output** (scan
 wide, hand back little), and the effort goes where the flip test says the call
 could change.
 
-The lenses below are a **menu the type, axis, and flip test select from — not a
+The research areas below are a **menu the type, axis, and flip test select from — not a
 checklist to run every time.** Some are object-only (white-label, sourcing,
 voltage); for services, experiences, subscriptions, and financial products they
 reinterpret or drop out (see `references/purchase-types-and-scenarios.md`). Run
 what the decision needs:
 
 - **Become the category's expert first** (see `references/domain-and-premium.md`).
-  This is the soul of the skill: don't survey the category from outside, adopt the
+  This is the most important part of the skill: don't survey the category from outside, adopt the
   practitioner's perspective and reason from inside it. Every category has its own
   body of expert knowledge, invisible to a layperson and hidden by marketing —
   fibre/weave/cut/sewing for clothes, ingredient chemistry for skincare, joinery
@@ -240,10 +242,10 @@ what the decision needs:
   Then **decompose the price** (see `references/domain-and-premium.md`): how much
   is substance, how much is brand premium (溢价), and does that premium buy
   anything real here? Keep it symmetric — some premium is earned (QC, design,
-  after-sales, resale), some is pure name; the domain lens is what tells them
-  apart. Naming where the money goes is often the single most useful output.
+  after-sales, resale), some buys only the name; domain expertise is what tells
+  them apart. Naming where the money goes is often the single most useful output.
 
-### Phase 3 — Filter the information (the anti-manipulation engine)
+### Phase 3 — Filter the information (resist manipulation)
 
 The information environment is adversarial. See `references/source-weighting.md`.
 **Mechanism first:** a claim that contradicts how the thing actually works loses
@@ -298,7 +300,7 @@ What "how" means depends on the type:
 
 ### Phase 6 — Commit
 
-Close the loop so it actually terminates. State the flip-test result (what could
+Finish the decision so that it actually ends. State the flip-test result (what could
 still change the call, or that nothing can), apply a quick regret test ("if this
 is merely fine, am I okay with that?"), and say when to stop. Before the final
 push, a last check: is this comfortably affordable, and is it a
@@ -319,7 +321,7 @@ without reading further. This is the only part the person must read.
 
 **Part 2 — The Research Report (the evidence layer; scan or read).** Complete and
 scannable, with headers. This is everything the agent
-found — the market landscape, the domain lens, the price decomposition, the
+found — the market landscape, the quality markers, the price decomposition, the
 decision prices, tech timing, hype-vs-real, insider knowledge, sourcing, source
 quality, the candidates in detail, and an honest **confidence & gaps** section
 naming what's well-evidenced, what's thin, and what was assumed but not verified.

@@ -12,16 +12,16 @@ on things that gain nothing from it.
 
 This single question cuts both ways, and using it both ways is the point:
 
-- It **kills** a fake feature even when the tech is genuinely present. "AI" may
+- It **rejects** a fake feature even when the tech is genuinely present. "AI" may
   really be in the device; if it changes nothing about the person's use, it's a
   gimmick *here*. "The tech is real" and "the tech helps you" are different
   claims — keep them apart.
-- It **rescues** a real improvement a cynic would wave off. If a feature
+- It **keeps** a real improvement a cynic would dismiss. If a feature
   measurably changes the experience for this person's use, it's real value
   however buzzwordy the label. Do not become a reflexive "it's all marketing"
   skeptic — that is the same error pointed the other way.
 
-## Tells that something is hype (flags to check, not auto-disqualifiers)
+## Signs that something is hype (flags to check, not auto-disqualifiers)
 
 - **Added to everything at once.** When the same feature appears across unrelated
   categories simultaneously (AI in fridges, toothbrushes, toasters), it's a
@@ -36,10 +36,10 @@ This single question cuts both ways, and using it both ways is the point:
   aerospace-grade," "infused," "clinically proven" (proven *what*?), "up to X"
   (the ceiling, rarely reached), "designed in [prestige place]." Flags to
   investigate, not verdicts.
-- **Commodity suddenly sprouting a flashy feature.** A product that can't
+- **A commodity that suddenly gets a flashy feature.** A product that can't
   differentiate on substance often differentiates on a marketing feature
   instead. Ask why the feature exists now.
-- **Feature that is really a cost trap or lock-in dressed as a benefit.**
+- **Feature that is really a cost trap or lock-in presented as a benefit.**
   App-required, subscription-gated, proprietary consumables (pods, ink,
   filters), ecosystem lock. AI features increasingly hide a recurring
   subscription. The "feature" is a future-cost mechanism — price it as such.
@@ -49,7 +49,7 @@ This single question cuts both ways, and using it both ways is the point:
 Genuine improvements tend to: solve a named pain the person recognizes; be
 measurable in a way that maps to felt experience; get adopted across the whole
 category (rivals copy what actually works); and persist after the marketing
-cycle moves on. Hype is brand-specific, unmeasurable-in-experience, and rotates
+cycle moves on. Hype is brand-specific, unmeasurable-in-experience, and changes
 with each product launch.
 
 ## Follow the incentive

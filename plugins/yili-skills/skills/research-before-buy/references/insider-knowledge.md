@@ -1,8 +1,8 @@
-# Insider Knowledge — the asymmetric-information lens
+# Insider Knowledge — asymmetric information
 
 Used in Phase 2. Every market has asymmetric information: the people *inside* the
 trade know things buyers don't, and that knowledge often flips the decision.
-This lens actively hunts the insider/practitioner view — "what would a pro do,
+This research area actively looks for the insider/practitioner view — "what would a pro do,
 and what do they know that I don't?" — rather than the consumer-facing surface.
 
 ## Search the trade, not the storefront
@@ -22,7 +22,7 @@ selling to you. Searching the *trade* frame returns tradecraft:
   profit (extended warranties, "protection packages," "certified" premiums,
   financing). Insiders know which line items to refuse.
 - **What the pros buy for themselves.** Often the boring, reliable, unbranded
-  option — and that gap between what they sell and what they own is a loud signal
+  option — and that gap between what they sell and what they own is a strong signal
   about where the consumer premium goes.
 - **The specific defects insiders check.** Model- or batch-level failure points a
   layperson never knows to look for (a notorious transmission, a known board
@@ -39,7 +39,7 @@ selling to you. Searching the *trade* frame returns tradecraft:
 
 ## Source discipline (pair with source-weighting.md)
 
-"Insider secrets" content is itself riddled with SEO clickbait and invented
+"Insider secrets" content is itself full of SEO clickbait and invented
 "secrets they don't want you to know." Privilege genuine practitioner voices
 (ex-industry, trade forums, named professionals) over listicles. Don't present a
 single anecdote as established fact — flag what's verified tradecraft vs folklore.
@@ -47,7 +47,7 @@ single anecdote as established fact — flag what's verified tradecraft vs folkl
 ## Stay symmetric
 
 Insider knowledge sometimes *confirms* the obvious choice rather than overturning
-it — not every market hides a conspiracy. The lens is for surfacing what you
+it — not every market hides a conspiracy. This research area is for surfacing what you
 couldn't have known, not for manufacturing hidden angles where there are none.
 
 ## Output

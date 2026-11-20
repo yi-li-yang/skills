@@ -34,7 +34,7 @@ low? Which one or two places most likely hold a big gap? Look once. If the gap i
 small, stop and buy locally, because the gap must beat the friction. Go deeper
 only when the first look shows a big gap, and then compare landed cost.
 
-## What eats the gap
+## What reduces the gap
 
 Shipping, or the cost of carrying it; duty and VAT; forwarder and handling fees;
 a warranty that does not cross borders; returns; region lock on firmware, content
@@ -65,8 +65,8 @@ goods and China-only products are often much cheaper.
 
 - No shipping cost; you inspect before buying; good exchange on
   cheaper-in-China, light, region-neutral, or China-only goods.
-- **Constraints:** trip date is a hard gate (needed before it → dead option);
-  luggage weight/space; **region/firmware lock** (the big killer for connected
+- **Constraints:** trip date is a hard gate (needed before it → not an option);
+  luggage weight/space; **region/firmware lock** (the main problem for connected
   devices — Chinese firmware, no Google services, app needs a Chinese number);
   voltage/plug (220V type A/I vs UK 230V type G — switching PSUs fine with an
   adapter, motor/heating appliances may not be); **China-only warranty**

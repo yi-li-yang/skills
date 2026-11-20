@@ -2,9 +2,9 @@
 
 Used in Phase 2. This is *how* the skill does the legwork the person came to
 offload — a comprehensive sweep of the live market and the current state of the
-technology, done internally so the person doesn't have to open twelve tabs.
+technology, done internally so the person doesn't have to search and read it all.
 
-> The comprehensiveness lives in the **input**, never the output. Scan widely,
+> The comprehensiveness belongs in the **input**, never the output. Scan widely,
 > hand back little. And point the whole effort at the flip test: if no unknown
 > could change the call (the options all work, the gap is below what the person
 > cares about), skip the scan and give the safe default. Otherwise scan only as
@@ -13,9 +13,9 @@ technology, done internally so the person doesn't have to open twelve tabs.
 
 ## Run the scan live, never from memory
 
-Product lineups, prices, model generations, and standards churn within months,
-so every fact here is fetched live and the search itself decays — re-run it each
-time. Cover the breadth, then converge:
+Product lineups, prices, model generations, and standards change within months,
+so every fact here is fetched live, and a past search goes out of date — run it
+again each time. Cover the breadth, then converge:
 
 1. **Map the whole field, not the first page.** Established brands, the
    value/challenger brands, and the white-label/factory-direct layer beneath them
@@ -38,8 +38,8 @@ sits in the technology cycle. Check, for the category:
 - **Imminent successor / refresh.** Is a new generation rumoured or announced
   soon? Buying weeks before a refresh means overpaying for last-gen or missing a
   price drop. (Search "[product] next generation / [year] refresh / rumour".)
-- **Standards in transition.** Connectivity and interface standards turn over and
-  strand devices: Wi-Fi, Bluetooth, USB-C/Thunderbolt, HDMI/DisplayPort, charging
+- **Standards in transition.** Connectivity and interface standards change, and
+  leave devices unsupported: Wi-Fi, Bluetooth, USB-C/Thunderbolt, HDMI/DisplayPort, charging
   standards, codecs. Flag when a category is mid-transition and which side of it
   the candidate is on — buying the outgoing standard can shorten useful life.
 - **End-of-life / support horizon.** Software/firmware support windows, security
@@ -47,9 +47,9 @@ sits in the technology cycle. Check, for the category:
   updates next year is not cheap.
 - **Maturity vs early-adopter risk.** A brand-new tech generation may carry
   first-revision bugs and a price premium; the prior generation may be the
-  sweet spot. New is not the same as better-for-this-person.
+  best choice. New is not the same as better-for-this-person.
 - **Ecosystem & lock-in trajectory.** Where the platform/accessory ecosystem is
-  heading, so today's buy isn't orphaned.
+  heading, so today's buy is not left unsupported.
 
 ## Output discipline
 

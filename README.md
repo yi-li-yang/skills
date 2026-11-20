@@ -6,6 +6,8 @@ My Claude Code skills in one repository. Install once, and every skill is availa
 
 This is a personal set of ways to think through different parts of my life and work. Each skill describes a way of thinking and does not set rules. A rule is hard: it misses the case nobody expected, and it goes out of date. A way of thinking still applies to a case it has not seen, so each skill gives its reasoning and leaves the judgment to Claude.
 
+The skills are written in plain English, based on the ideas of ASD-STE100 Simplified Technical English (see [talk-standard-tech-eng](plugins/yili-skills/skills/talk-standard-tech-eng/SKILL.md)). Claude reads a skill literally and then uses its words when it talks to me. So each thing has one name, each word has one meaning, and a metaphor stays only when it explains better than plain words.
+
 ## Skills
 
 | Skill | What it does | Fires when |

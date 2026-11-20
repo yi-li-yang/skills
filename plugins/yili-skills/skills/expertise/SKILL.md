@@ -44,7 +44,7 @@ You already know most topics well. This skill closes the gap where you don't: wh
    - Cite each claim to the source that actually states it, not to the nearest source in its paragraph.
    - For facts that perish within days (stock, prices, live statistics), record where to check them, with the value as of its date.
    - Keep it one consistent picture of now: when a claim is superseded, replace it and note the change in the Log.
-   - Keep it short enough to absorb in a few minutes. Prune as you add.
+   - Keep it short enough to read and take in within a few minutes. As you add lines, remove the ones that no longer matter.
    - Check it before saving. Give the claims, grouped by cited source, to 2–3 fresh agents. Each opens the source and reports, per claim: stated there with the same scope and qualifiers, wrong, superseded, or not in the source, quoting the line. Fix, re-cite or drop whatever fails, and note it in the Log. Without agents, check the *What's changed* claims yourself.
 
 Then tell the user in a few lines:
@@ -54,8 +54,8 @@ Then tell the user in a few lines:
 - where the briefing is saved
 
 Continue the conversation using the briefing as a prior, not a boundary:
-- Before an answer hinges on a specific fact (a number, date, name, status or rule), read the line that states it in a current source: the briefing's cited source or a page you open now, not a listing, summary or memory. Keep that line's scope and qualifiers. If nothing states it, say it's unconfirmed or leave it out.
-- Never read the briefing's silence as evidence that something doesn't exist.
+- Before an answer depends on a specific fact (a number, date, name, status or rule), read the line that states it in a current source: the briefing's cited source or a page you open now, not a listing, summary or memory. Keep that line's scope and qualifiers. If nothing states it, say it's unconfirmed or leave it out.
+- If the briefing does not mention something, do not take that as evidence that it does not exist.
 - Where the briefing and a primary source disagree, trust the primary source, and patch the briefing.
 
 **Refreshing.** When the user invokes this skill on a topic that already has a briefing, run the same loop. The briefing is your prior, and the probe asks what changed since its `verified` date, re-checking the claims most likely to have moved. Treat any claim dated after `verified` as unverified. Only a probe updates `verified`.
@@ -106,4 +106,4 @@ Current state, vocabulary, mental models, pitfalls. On contested points, give a 
 
 ## Video
 
-If the knowledge lives in video, run `python3 ${CLAUDE_SKILL_DIR}/scripts/transcript.py <url>` (the `scripts` folder next to this file) to print the transcript. It needs yt-dlp; don't install packages without asking. If it fails, say so and record the video as a pointer instead: who, what, link, and the timestamp if known.
+If the knowledge is in a video, run `python3 ${CLAUDE_SKILL_DIR}/scripts/transcript.py <url>` (the `scripts` folder next to this file) to print the transcript. It needs yt-dlp; don't install packages without asking. If it fails, say so and record the video as a pointer instead: who, what, link, and the timestamp if known.
