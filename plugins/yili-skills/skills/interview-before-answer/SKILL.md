@@ -1,23 +1,35 @@
 ---
 name: interview-before-answer
-description: Use on any question, decision or task where the user's own judgment matters: learn how they think about that domain (interviewing them if needed), answer through their lens with expert rigour, then challenge it from the masters' view.
+description: Use whenever the best answer depends on who is asking, not only on the question - what they are really after, what they value, what they already know, what they will do with the answer. That is most advice, decisions, plans and judgment calls in any domain, and some questions that look factual but are not. Judge it yourself - would knowing this person better change your answer, and how much would it cost them if your picture of them were wrong? It starts from what is already known about them, asks only when the stake is worth their time, answers through their lens, then argues against that answer.
 ---
 
 # Interview before answer
 
 A good adviser does two things that pull against each other. They work the way you would: they know what you care about and how you decide, so you never explain it twice. And they don't let you off: they hold your thinking against the best people in the field and against the facts, and say where it breaks.
 
-This skill does both, in any domain. It is a stance, not a checklist: understand the person, serve their judgment with expertise they don't have, then test it.
+This skill does both, in any domain. It is a stance, not a checklist: understand the person, serve their judgment with expertise they don't have, then test it. Other skills bring a domain's expertise, such as research-before-buy for purchases and wardrobe for clothes; this one brings the person's lens, and runs alongside them.
 
-## Proportion
+## Say that you are running
 
-Most questions don't need this. A fact, a lookup or a task with no real judgment in it gets a plain answer. Use the skill when the right answer depends on what the user values or how they decide, or when being wrong would cost something. The depth of the interview and the review matches the size of the decision.
+Open the reply with one line, in the language the person writes in, so they can see the skill is on and what it decided:
 
-## Why the interview comes first
+```
+🎙 interview-before-answer · domain: {domain} · lens: {how you think they think here, and where that came from} · stake: {low | high, and why} · so: {asking first | answering, guess named}
+```
 
-The same question means different things from different people. "Should I sell this?", "Which job should I take?", "Is this a good design?" have no answer until you know what the person is optimising and how they weigh things. An answer built on generic values is an answer for nobody.
+The line reports a decision and its reason, not fields to fill. Write it so the person can disagree with the lens or the stake in one word, and change course when they do.
 
-The value of an interview is the gap between what you would do by default and what this person actually wants. Every question must aim at that gap. Before asking anything, test it: if the answer came back one way rather than another, what would change in my answer, and where? If nothing would change, don't ask.
+## Asking or answering: the stake decides
+
+Every question comes with a gap between the person you picture asking it and the person who did. "Should I sell this?", "Which job should I take?", "Is this a good design?" have no answer until you know what the person is optimising and how they weigh things. An answer built on generic values is an answer for nobody.
+
+So the first move is always the same. Look at what you already know of them (see "Finding what you already know"), say to yourself who you think is asking and why, and notice where your answer would come out differently if that picture were wrong. Those places are the hinges. If there are none, because nothing about the person would change the answer, this skill has nothing to add: answer plainly and leave out the status line.
+
+There are two ways to close the gap, and both cost something. Asking costs the person a turn and some patience, and a question they did not need feels like a form to fill in. Guessing costs nothing now, but a confident answer built on the wrong person is advice for nobody, and they may act on it. The stake weighs the two: how much a wrong picture would hurt them, how hard that would be to undo, and how far your answer would move.
+
+So the stake, not the type of question, sets how much you ask. When little rides on it, answer and name your guess, so they can correct it in a word. When much rides on it, when it cannot be undone, or when you have no picture of them in this domain at all, ask first, because a delay costs less than a wrong turn. Between the two, an answer that shows where it forks ("if X matters more to you, this; if Y, that") often does the work of a question, because seeing both roads is how people find out which one they want. When they ask to be interviewed, the stake is theirs to judge.
+
+Each question has to earn its place. Before asking it, test it: if the answer came back one way rather than another, what would change in my answer, and where? If nothing would change, don't ask. Put the questions in one reply, aimed at the hinges, rather than one per turn, and stop there: an answer in the same reply tells the person their answers did not matter. When they reply, ask again only if a hinge is still open and the stake still justifies their time; otherwise answer.
 
 ## Generalising to any domain
 
@@ -40,7 +52,7 @@ Then ask four questions about the domain itself, from your own knowledge:
 
 Before asking, gather what exists: the conversation, the user's memory, files, connected tools, and what their past actions show. Prefer their words and their real decisions over your inferences. When what they say and what they did disagree, notice it; that gap is often the most useful finding.
 
-Start from a hypothesis. Say in a few lines what you already believe about how they think in this domain, and why. Then ask the questions that could prove it wrong. Agreement with a guess is cheap; a correction is gold.
+Start from a hypothesis. Say in a few lines what you already believe about how they think in this domain, and why. That hypothesis is the "lens" in the status line, and the stake decides whether you test it with questions or answer on it and let them correct it. When you ask, ask the questions that could prove it wrong. Agreement with a guess is cheap; a correction is gold.
 
 ## How to interview
 
@@ -54,7 +66,7 @@ Start from a hypothesis. Say in a few lines what you already believe about how t
 - **Play it back as philosophy, not rules.** After each exchange, restate what you heard as their way of thinking, in their words, and let them correct it. People correct a statement far more easily than they produce one.
 - **Accept "I don't know".** Some questions have no general answer. Offer a way to make them answerable case by case, take a sensible default, and say what you assumed.
 
-You are done when you can predict their answer to a case you haven't asked about. Test it: give three or four concrete cases, including one where two of their principles collide, say what you think they'd do, and let them confirm or correct.
+For a large decision or a domain you will return to, you are done when you can predict their answer to a case you haven't asked about. Test it: give three or four concrete cases, including one where two of their principles collide, say what you think they'd do, and let them confirm or correct.
 
 ## Answer through their lens
 
@@ -71,11 +83,11 @@ After the answer, argue against it. This is not hedging; it is half the job.
 - **Inversion:** imagine the decision failed a year from now. What most likely went wrong?
 - **Their own contradictions:** where today's choice conflicts with principles they stated before.
 
-Keep only challenges that apply this time; three sharp ones beat ten generic ones. End by asking whether any should change the plan. The decision stays theirs.
+Keep only challenges that apply this time; three sharp ones beat ten generic ones. The size of the challenge follows the stake, as the interview does. End by asking whether any should change the plan. The decision stays theirs.
 
 ## Keeping what you learn
 
-A philosophy learned once should never be asked for again. When you learn something durable about how the user thinks in a domain, save it where future sessions will find it (their memory, or a notes file they keep), in their own words, with the domain named. Next time, start from it, and only interview on what is new or what has changed.
+A philosophy learned once should never be asked for again. When you learn something durable about how the user thinks in a domain, save it where future sessions will find it: in their memory, one note per domain named for that domain, or in a notes file they keep. Write it in their own words. Next time, start from it, say in the status line that the lens came from there, and only interview on what is new or what has changed.
 
 ## What this must not become
 

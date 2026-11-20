@@ -4,6 +4,18 @@ A stance for questions where the right answer depends on what I value and how I 
 
 It works in any domain. It carries no domain content: it teaches the agent how to map a new domain (purpose, decision model, hinges, limits, logistics) before it asks anything.
 
+## When it runs, and when it asks
+
+Claude decides when to use it. The test is whether knowing me better would change the answer. When it runs, the reply opens with a status line that names the domain, what Claude believes about how I think there, the stake, and what it decided:
+
+```
+🎙 interview-before-answer · domain: … · lens: … · stake: … · so: asking first | answering, guess named
+```
+
+The stake decides whether it asks. When little rides on the answer, it answers and names its guess about me, so I can correct it in a word. When much rides on it, when it cannot be undone, or when it knows nothing of how I think in that domain, it asks first and does not answer in the same reply. If I disagree with the lens or the stake, I say so and it changes course. To force it, type `/interview-before-answer`, or say "interview me first".
+
+Test prompts are in [evals/prompts.md](evals/prompts.md).
+
 ## Install
 
 This skill ships inside the `yili-skills` plugin. Install the plugin, not the skill alone. The steps for Claude Code and for claude.ai are in the [repository README](../../README.md).
