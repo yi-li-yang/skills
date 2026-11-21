@@ -5,6 +5,9 @@ description: Use whenever you write or edit text that a person will read, in any
 
 # Writing for a reader
 
+**Takes:** text to write or edit that a person will read, and who that reader is.
+**Returns:** the text, written the way the user writes.
+
 ## What writing is
 
 Writing moves an idea from one mind to another through words alone. The writer is absent when the reader reads. The reader cannot ask what a word means, why one step follows another or what the point is. So everything the reader needs must already be on the page.

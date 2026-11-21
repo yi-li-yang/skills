@@ -1,0 +1,257 @@
+{
+  "model": "default",
+  "rows": [
+    {
+      "id": "buy-vacuum",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [
+        "yili-skills:research-before-buy"
+      ],
+      "stopped": "end",
+      "cost": 0.3276674,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    },
+    {
+      "id": "wardrobe-coat",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [
+        "yili-skills:wardrobe"
+      ],
+      "stopped": "reached for Glob",
+      "cost": null,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    },
+    {
+      "id": "peers-coat-and-shop",
+      "ok": false,
+      "missing": [
+        "research-before-buy"
+      ],
+      "wrong": [],
+      "loaded": [
+        "yili-skills:wardrobe"
+      ],
+      "stopped": "reached for Glob",
+      "cost": null,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    },
+    {
+      "id": "expert-batteries",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [
+        "yili-skills:updated-domain-expert"
+      ],
+      "stopped": "reached for Glob",
+      "cost": null,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    },
+    {
+      "id": "need-expert-category",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [
+        "yili-skills:updated-domain-expert"
+      ],
+      "stopped": "reached for Glob",
+      "cost": null,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    },
+    {
+      "id": "interview-job",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [
+        "yili-skills:interview-me-before-answer"
+      ],
+      "stopped": "reached for Glob",
+      "cost": null,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    },
+    {
+      "id": "think-conflicting-tests",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [
+        "yili-skills:i-think-like-this"
+      ],
+      "stopped": "end",
+      "cost": 0.2355988,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    },
+    {
+      "id": "digest-video",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [
+        "yili-skills:digest-distill-information"
+      ],
+      "stopped": "reached for mcp__plugin_desktop-commander_desktop-commander__start_process",
+      "cost": null,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    },
+    {
+      "id": "need-material",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [
+        "yili-skills:digest-distill-information"
+      ],
+      "stopped": "reached for mcp__plugin_desktop-commander_desktop-commander__start_process",
+      "cost": null,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    },
+    {
+      "id": "write-email",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [
+        "yili-skills:write-like-myself"
+      ],
+      "stopped": "end",
+      "cost": 0.20996410000000001,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    },
+    {
+      "id": "explain-concept",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [
+        "yili-skills:talk-standard-tech-eng"
+      ],
+      "stopped": "end",
+      "cost": 0.23203590000000002,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    },
+    {
+      "id": "nothing-needed",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [],
+      "stopped": "end",
+      "cost": 0.1763605,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    }
+  ]
+}

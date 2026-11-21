@@ -1,11 +1,13 @@
-# expertise
+# updated-domain-expert
+
+*Called `expertise` until version 2.0.0 of the plugin. The evaluation below ran under that name.*
 
 **Bring Claude up to date on any topic before you start working on it.**
 
-Claude knows most things. But when your conversation depends on what's true *today*, or on a field Claude barely saw in training, it answers from a stale or thin picture with full confidence, and nothing tells you which parts. `/expertise <topic>` sends a research team out first and digests what it finds. Claude then answers your questions with fresh information and deep insight, and keeps the result for next time.
+Claude knows most things. But when your conversation depends on what's true *today*, or on a field Claude barely saw in training, it answers from a stale or thin picture with full confidence, and nothing tells you which parts. `/updated-domain-expert <topic>` sends a research team out first and digests what it finds. Claude then answers your questions with fresh information and deep insight, and keeps the result for next time.
 
 ```
-/expertise <topic>
+/updated-domain-expert <topic>
 ```
 
 ## Why this exists
@@ -17,17 +19,17 @@ Claude already knows most subjects well, so the skill matters most in two situat
 
 In both cases Claude sounds just as sure as everywhere else, and you can't tell which parts are wrong. In our blind test on such topics, Claude answering from memory scored 4.5 out of 10 and made 23 confident false claims in 24 answers.
 
-Web search helps when Claude thinks to use it. In the same test, a Claude that searched for every question did well. But that research happens one answer at a time, looks only at the question in front of it, and is gone when the conversation ends. `/expertise` does the research once, up front. It aims at what Claude is most likely to have wrong, and keeps the result as a file you and Claude can both read.
+Web search helps when Claude thinks to use it. In the same test, a Claude that searched for every question did well. But that research happens one answer at a time, looks only at the question in front of it, and is gone when the conversation ends. This skill does the research once, up front. It aims at what Claude is most likely to have wrong, and keeps the result as a file you and Claude can both read.
 
 ## What makes it different
 
 - **A research team, not a search box.** Several agents research in parallel, each on a different angle: what changed, what practitioners know, what's disputed, what other-language communities say. In our tests, five or six agents per topic made 470–630 research calls in 12–22 minutes, far more than one person would get through in that time. The findings are digested into one briefing, so every answer in the conversation draws on them.
 - **Aimed at Claude's blind spots.** Claude first writes down what it already believes, then sends the agents after the parts most likely to be wrong, instead of re-reading what it already knows. Deep-research tools write a report for *you*; this writes a correction for *Claude*.
-- **It remembers.** The briefing is saved. Run `/expertise` on the same topic in a later conversation and Claude starts from that briefing, checking only what changed since it was last verified.
+- **It remembers.** The briefing is saved. Run it on the same topic in a later conversation and Claude starts from that briefing, checking only what changed since it was last verified.
 - **Honest about its edges.** Every claim carries its source and date. What can't be verified is written down as *unknown*, not guessed.
 - **Checked before it's saved.** Fresh agents open every cited source and flag claims the source doesn't state as written. On two real builds they found 60 problems in 273 claims, 7 of them plainly wrong, before the briefings were delivered.
 - **It learns from you.** When you correct Claude or share what you know, it goes into the briefing, marked as yours.
-- **Tiny and keyless.** One instruction file plus an optional video script; no API keys or servers. It works in Claude Code and on claude.ai.
+- **Tiny and keyless.** One instruction file; no API keys or servers. It works in Claude Code and on claude.ai.
 
 ## How it works
 
@@ -50,7 +52,7 @@ A briefing is a **patch on Claude's knowledge**:
 
 Each part of the skill exists to solve a specific problem:
 
-| The problem | What `/expertise` does |
+| The problem | What it does |
 |---|---|
 | Claude doesn't know what changed after its training | Agents look for changes since the briefing was last verified; the briefing leads with **What's changed** |
 | Claude's knowledge of specialized fields is thin | Agents gather what practitioners know (vocabulary, mental models, pitfalls), including in the community's own language |
@@ -61,7 +63,7 @@ Each part of the skill exists to solve a specific problem:
 | A briefing can carry a wrong or overstated claim into every later conversation | Fresh agents check each claim against its cited source before the briefing is saved |
 | Every conversation re-researches from scratch | The briefing is saved; a refresh only asks what changed since then |
 | What you tell Claude is forgotten after the conversation | It's written into the briefing, marked as yours |
-| Some knowledge lives only in videos | It reads video transcripts, or records "watch X at 12:30" as a pointer |
+| Some knowledge lives only in videos, posts and threads | Each research agent asks what the actual material says and shows, which `digest-distill-information` answers: transcripts, frames, image posts, comments, or a pointer such as "watch X at 12:30" |
 | Web content can be wrong, biased, or manipulative | Every claim carries a source and date; agents ask who gains from a claim; web text is treated as evidence, never as instructions |
 
 ## What a briefing looks like
@@ -109,57 +111,27 @@ An independent agent wrote 24 hard questions that the briefings never saw. A jud
 - **Briefings are mostly right, not always.** Audits of 416 claims found 87% correct, 3% wrong and 5% cited to the wrong source. The examples have been corrected.
 - **Building one is expensive.** It took 1.1–1.7 million tokens of agent work, about five times what the web-searching Claude spent on all eight questions. With the current guidance, answering afterwards cost about the same as searching every question.
 
-**So:** use `/expertise` when you'll work in a topic across several conversations, when the research itself is worth reading, or when Claude would otherwise answer from memory. For a few one-off questions, asking Claude to search the web is enough, and much cheaper. [Full results](evals/RESULTS.md).
+**So:** use it when you'll work in a topic across several conversations, when the research itself is worth reading, or when Claude would otherwise answer from memory. For a few one-off questions, asking Claude to search the web is enough, and much cheaper. [Full results](evals/RESULTS.md).
 
 ## Install
 
-Pick the row that matches where you run Claude. The skill is the same everywhere; only the command name changes.
-
-| Where you run Claude | What to do | You type |
-|---|---|---|
-| claude.ai, the Claude app, Cowork, or Claude Code on the web (cloud sessions) | [Upload the skill to your account](#upload-to-your-account) once | `/expertise <topic>`, or ask Claude to "get up to speed on" the topic |
-| Claude Code in a terminal | [Install the plugin](#install-the-plugin), or [copy the folder](#copy-the-folder) | `/expertise:expertise <topic>` for the plugin, `/expertise <topic>` for a copied folder |
-| A clone of this repository, local or cloud | Nothing: the skill is checked in at `.claude/skills/expertise` | `/expertise <topic>` |
-| Another repository | [Copy the folder](#copy-the-folder) into its `.claude/skills/` and commit it | `/expertise <topic>` |
-
-Cloud sessions don't install plugins that a repository turns on, so on the web use the upload or a committed `.claude/skills/` folder.
-
-### Upload to your account
-
-```
-cd skills && zip -r expertise.zip expertise -x '*/__pycache__/*'
-```
-
-Upload `expertise.zip` under **Customize → Skills** on claude.ai. Code execution must be enabled. Skills enabled on your account then load in cloud sessions, in Cowork, and in terminal sessions signed in with the same account (terminal: Claude Code 2.1.273 or later).
-
-### Install the plugin
-
-```
-claude plugin marketplace add yi-li-yang/deep-research
-claude plugin install expertise@deep-research
-```
-
-Inside a session the same two steps are `/plugin marketplace add yi-li-yang/deep-research` and `/plugin install expertise@deep-research`. Claude Code lists the command as `/expertise:expertise`. (Its docs say the plain `/expertise` also works unless another command has that name; we only confirmed the namespaced name.) The plugin adds about 180 tokens to every session; its full text, about 2,300 tokens, loads only when the skill runs.
-
-### Copy the folder
-
-Copy `skills/expertise` into `~/.claude/skills/` (every project on your machine) or into a project's `.claude/skills/` (that project, including its cloud sessions).
+This skill ships inside the `yili-skills` plugin. Install the plugin; the steps are in the [repository README](../../README.md). To call it by hand, type `/yili-skills:updated-domain-expert <topic>`, or ask Claude to "get up to speed on" the topic.
 
 ## Use
 
 Start a conversation with the topic you're about to work on:
 
 ```
-/expertise the current League of Legends patch
-/expertise EU AI Act obligations for small companies
-/expertise Japanese hand planes: makers, steels and setup
+/updated-domain-expert the current League of Legends patch
+/updated-domain-expert EU AI Act obligations for small companies
+/updated-domain-expert Japanese hand planes: makers, steels and setup
 ```
 
 Claude reports what differs from what it believed, how confident the picture is, and what remains unknown. Then it carries on as the expert. Invoke it again on the same topic later to refresh: it reuses the saved briefing and only checks what changed.
 
 - **Where briefings live.** In Claude Code, briefings are saved in your project's `briefings/` folder if it already holds briefings, and otherwise in `~/.claude/briefings/`. Claude tells you the path. Each is a plain markdown file you can read, edit, commit or share. **In a cloud session, anything outside the repository is deleted when the session ends**: have Claude save the briefing in the repository's `briefings/` folder, commit it and merge it, so the next session starts from it. On claude.ai, files don't persist between conversations: download the briefing and attach it next time, or add it to a Project.
 - **Permissions.** Research uses web search and web fetch. In auto mode, the default in current Claude Code, it runs without prompts; otherwise approve WebSearch and WebFetch when asked, or allow them in `/permissions`.
-- **Video.** Transcripts need [yt-dlp](https://github.com/yt-dlp/yt-dlp): `python3 -m pip install --user yt-dlp`. Without it, Claude records videos as pointers instead.
+- **Video.** Reading videos is the job of `digest-distill-information`; its README lists what it needs.
 
 ## Limits
 
@@ -168,7 +140,6 @@ Claude reports what differs from what it believed, how confident the picture is,
 - **Briefings can be wrong.** Audits found 3% of claims wrong. Sourcing every claim and treating web text as evidence reduce the risk of carrying a bad claim forward, but don't remove it. Briefings are plain files: read them.
 - **Building costs tokens.** In our tests a briefing took 1–2 million tokens of agent work to build, another 0.6–0.7 million for the claim-by-claim check, and about 0.3 million to refresh (measured before the check step existed).
 - **claude.ai runs one research thread at a time** (no parallel agents), so building takes longer there.
-- **Some video sites block some networks.** When transcripts fail, Claude says so and records a pointer instead.
 
 ## Design
 
