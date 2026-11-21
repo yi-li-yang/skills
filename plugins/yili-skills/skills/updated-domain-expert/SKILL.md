@@ -9,6 +9,8 @@ license: MIT
 **Takes:** a topic or a field, and what the work needs from it: the questions an expert here is routinely asked.
 **Returns:** a sourced, dated briefing (what changed, what an expert knows, what is unknown), saved for later conversations, and a few lines on how it differs from what you believed before.
 
+Some steps below ask a question that this skill does not answer itself, written in italics, such as *which evidence do I believe?* When you reach one and its condition holds, check whether one of your skills answers that question. If one does, load it and use its answer, even if you could answer the question yourself: that skill holds the user's own way of answering it, and general reasoning does not. If none does, answer the question yourself.
+
 You already know most topics well. This skill closes the gap where you don't: where the world moved after your training, or where a field is too specialized for it. A short briefing is a fine outcome: it means your prior was already good.
 
 ## The loop: prior → probe → patch
@@ -38,6 +40,7 @@ You already know most topics well. This skill closes the gap where you don't: wh
 
 3. **Patch: write the briefing.** Only you write it.
    - Include only what would change what a fresh Claude believes or knows.
+   - Where the agents' findings disagree on a point that matters, ask *which evidence do I believe?* before you write a verdict.
    - Compress the wording, not the meaning. Keep each claim's scope and qualifiers ("on most events", "per the docs"); don't sharpen them into "always" or "never".
    - Cite each claim to the source that actually states it, not to the nearest source in its paragraph.
    - For facts that perish within days (stock, prices, live statistics), record where to check them, with the value as of its date.

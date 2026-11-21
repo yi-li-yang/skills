@@ -17,7 +17,7 @@ Runs on 2026-11-21, Claude Code 2.1.329, default model (Opus 5.5), with this rep
 | --- | --- | --- | --- |
 | Coat: does it suit me, and where to buy it | Two skills that need each other | the clothing skill, then 25 s later the purchase skill; each once | Pass. Each answered its own question once, and neither loaded again. |
 | Kettle, low stakes | A purchase with nothing to resolve | the purchase skill only | Pass. Four searches, a safe default, no other skill. |
-| Frying pan, two sources disagree | The question *which evidence do I believe?* should find its skill | the purchase skill only, in five runs | **Not met.** In every run Claude settled the conflict itself, from how the coatings work, and did not load the reasoning skill. All four briefs reached the same call. |
+| Frying pan, two sources disagree | The question *which evidence do I believe?* should find its skill | the purchase skill only, in five runs | **Not met** at first. In every run Claude settled the conflict itself, from how the coatings work, and did not load the reasoning skill. Fixed later: see "Making the reasoning skill fire when sources conflict". |
 | Same, with the reasoning skill removed | A missing skill | the purchase skill | Pass. Same call, same reasoning. |
 | Same, with no subagents | No agents, as on claude.ai | the purchase skill | Pass. Same call. |
 | Same, with the old `source-weighting.md` | Weighting A/B | the purchase skill | Same call. The old file's run searched once more and named the test method behind the conflict; the new file's runs searched less. One pair of runs cannot separate the file from run-to-run variation. |
@@ -42,8 +42,25 @@ YouTube refused caption downloads from this network with HTTP 429 for some minut
 
 - **Routing by question works.** Every skill loads for its own question, a renamed skill is still found, and two skills that need each other each answer once.
 - **Subagents find skills from their brief.** Whenever a brief stated the questions, all 10 research subagents across three sessions loaded the reading skill, and 9 of them also loaded the reasoning skill.
-- **Inside a running skill, Claude often answers a need itself.** In five purchase runs with conflicting sources, Claude settled the conflict without loading the reasoning skill. In two of four robot-vacuum runs it did not send research subagents at all. The connections are soft, so every one of these runs still gave a sound answer, but a need is not guaranteed to fire.
+- **Inside a running skill, Claude often answered a need itself** until the cue gave the reason to load the answering skill (see the next section). In two of four robot-vacuum runs it did not send research subagents at all. The connections are soft, so every one of these runs still gave a sound answer.
 - **Removing a skill, renaming one, or taking subagents away did not break a run.**
 - **Video reading works when the question is about a video** (the Bilibili and YouTube cases). In purchase research the subagents ranked text test pages above videos, so no video was opened there.
 
 Total cost of the runs above: about 21 USD (18.91 for whole sessions, 1.79 for the routing eval), plus three sessions that were stopped early.
+
+## Making the reasoning skill fire when sources conflict
+
+Asked for on 2026-11-21. Three changes, still without any skill naming another:
+
+- **The cue gives the reason to load.** Each skill that asks other questions said to load a skill that answers one. It now adds: load it even if you could answer the question yourself, because that skill holds the user's own way of answering it, and general reasoning does not. Claude had been answering the question itself because it could.
+- **A disagreement is a standing condition.** The purchase skill asks *which evidence do I believe?* whenever two sources disagree on a point the call depends on, at any phase, including a disagreement the person brings in their question. The reading skill asks it where items disagree, and the expert skill where its agents' findings disagree.
+- **The answering description leads with disagreement,** including inside another task such as purchase research or a briefing.
+
+| Run | Before | After |
+| --- | --- | --- |
+| Frying pan, two sources disagree in the question | 0 of 5 runs loaded the reasoning skill | 6 of 6 loaded it, at the start, beside the purchase skill |
+| A robot vacuum where testers disagree only during research | not run | loaded it 1 s after sending an agent to read the review that disagreed |
+| Kettle, no disagreement | the purchase skill only | the purchase skill only |
+| Routing cases the description could affect (conflicting tests, a plain sum, a concept, a purchase, a material request) | 5 of 5 | 5 of 5 |
+
+One of the first three runs also put the reasoning skill's `[Thought]` marker under the purchase skill's status line. The marker now gives way when another skill sets how the reply opens; the next three runs had no marker. These runs cost about 3.8 USD.

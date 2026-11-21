@@ -1,0 +1,108 @@
+{
+  "model": "default",
+  "rows": [
+    {
+      "id": "buy-vacuum",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [
+        "yili-skills:research-before-buy"
+      ],
+      "stopped": "all expected skills loaded",
+      "cost": null,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    },
+    {
+      "id": "think-conflicting-tests",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [
+        "yili-skills:i-think-like-this"
+      ],
+      "stopped": "all expected skills loaded",
+      "cost": null,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    },
+    {
+      "id": "need-material",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [
+        "yili-skills:digest-distill-information"
+      ],
+      "stopped": "all expected skills loaded",
+      "cost": null,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    },
+    {
+      "id": "explain-concept",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [
+        "yili-skills:talk-standard-tech-eng"
+      ],
+      "stopped": "all expected skills loaded",
+      "cost": null,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    },
+    {
+      "id": "nothing-needed",
+      "ok": true,
+      "missing": [],
+      "wrong": [],
+      "loaded": [],
+      "stopped": "end",
+      "cost": 0.17627649999999997,
+      "listed": [
+        "yili-skills:digest-distill-information",
+        "yili-skills:i-think-like-this",
+        "yili-skills:interview-me-before-answer",
+        "yili-skills:research-before-buy",
+        "yili-skills:talk-standard-tech-eng",
+        "yili-skills:updated-domain-expert",
+        "yili-skills:wardrobe",
+        "yili-skills:write-like-myself"
+      ]
+    }
+  ]
+}

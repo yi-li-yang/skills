@@ -9,7 +9,7 @@ description: >-
 **Takes:** what the person wants to buy, or which provider or plan to pick, and whatever is known about their use, their limits and how they decide.
 **Returns:** a short brief with a call (what to buy, and where or on which terms), the reasoning and the tradeoff behind it, then a research report as the evidence.
 
-Some steps below ask a question that this skill does not answer itself, written in italics, such as *how does this person decide here?* When you reach one and its condition holds, check whether one of your skills answers that question. If one does, load it and use its answer. If none does, answer the question yourself.
+Some steps below ask a question that this skill does not answer itself, written in italics, such as *how does this person decide here?* or *which evidence do I believe?* When you reach one and its condition holds, check whether one of your skills answers that question. If one does, load it and use its answer, even if you could answer the question yourself: that skill holds the user's own way of answering it, and general reasoning does not. If none does, answer the question yourself.
 
 ## Say that you are running
 
@@ -270,9 +270,11 @@ what the decision needs:
 ### Phase 3 — Filter the information (resist manipulation)
 
 The information environment is adversarial. See `references/source-weighting.md`
-for the sources that purchases attract. When evidence conflicts on a point the
-call depends on, or the only evidence comes from someone who gains, ask *which
-evidence do I believe?* Discount affiliate "best of" lists and inflated star
+for the sources that purchases attract. Sources often disagree, and the person
+may bring the disagreement with them in their question. Whenever two sources
+disagree on a point the call depends on, at any phase, ask *which evidence do I
+believe?* before you settle it. Ask it too when the only evidence comes from
+someone who gains. Discount affiliate "best of" lists and inflated star
 averages; privilege failure-mode reports, longevity and teardown evidence, and
 genuine community consensus. Purchases also draw pages written to be found by
 search tools and LLMs: vendor-written comparisons, astroturfed forum threads and

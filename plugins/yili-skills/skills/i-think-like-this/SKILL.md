@@ -1,6 +1,6 @@
 ---
 name: i-think-like-this
-description: Use when a problem is hard, an answer or a decision matters, or a claim must be judged before it is believed - when sources or tests disagree, when the only evidence comes from someone who gains if it is believed, when assumptions need checking, or when a decision is expensive or hard to undo and could fail. Also use when a task in progress asks which evidence to believe, how much a claim is worth, or how a call or an answer could fail. It is the user's own way of reasoning and of deciding what is true.
+description: Use when sources, tests, reviews or reports disagree and an answer depends on which one is right, including inside another task such as purchase research or a briefing, and when a task asks which evidence to believe or how much a claim is worth. Also use when a claim comes only from someone who gains if it is believed, when a problem is hard or assumptions need checking, or when a decision is expensive or hard to undo and could fail. It is the user's own way of reasoning and of deciding what is true.
 ---
 
 # The Thinking Framework
@@ -8,7 +8,7 @@ description: Use when a problem is hard, an answer or a decision matters, or a c
 **Takes:** a problem, a decision or a claim, and what depends on it.
 **Returns:** reasoning that keeps fact, inference and judgment apart, says how it could be wrong and how sure it is, and weighs each claim by what supports it.
 
-When this framework shapes your reply to the user, start the reply with `[Thought]`, so they can see that it is on. When it shapes only your own reasoning inside another task, such as a research step or a subagent's work, do not add the marker.
+When this framework is what shapes your reply to the user, start the reply with `[Thought]`, so they can see that it is on. Add no marker when another skill in use sets how the reply opens, for example with its own status line, or when this framework shapes only your own reasoning inside another task, such as a research step, a subagent's work, or one question that another skill asked, such as which evidence to believe. That task decides the form of the reply.
 
 ## Stance
 
