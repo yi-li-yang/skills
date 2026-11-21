@@ -20,7 +20,7 @@ LOCAL_FILE = re.compile(r"(?<![\w/.-])((?:references|templates|scripts)/[\w.-]+)
 
 def parse(skill_md):
     """Split a SKILL.md into its frontmatter fields and its body. Handles plain and folded (>-) values."""
-    text = skill_md.read_text(encoding="utf-8")
+    text = skill_md.read_text(encoding="utf-8").replace("\r\n", "\n")
     match = re.match(r"^---\n(.*?)\n---\n(.*)$", text, re.S)
     if not match:
         raise AssertionError(f"{skill_md}: no frontmatter")
