@@ -19,7 +19,7 @@ Each skill answers one question about how I think, and no two skills answer the 
 | [updated-domain-expert](plugins/yili-skills/skills/updated-domain-expert/SKILL.md) | What does an expert in this field know now? Saves a sourced, dated briefing. | Working on something that has moved since training, or `/yili-skills:updated-domain-expert <topic>`. |
 | [digest-distill-information](plugins/yili-skills/skills/digest-distill-information/SKILL.md) | What does the actual material say and show: review videos, owner posts and photos, comment threads, reports, pages that need a browser, in any language? | An answer depends on real material that a search snippet cannot hold. |
 | [research-before-buy](plugins/yili-skills/skills/research-before-buy/SKILL.md) | How do I decide a purchase? | Deciding what to buy or how, when the choice is hard. |
-| [wardrobe](plugins/yili-skills/skills/wardrobe/SKILL.md) | Does this piece work for my body, my colouring and what I own? | Deciding whether to buy a piece of clothing, shoes, a bag or jewellery, or what goes with something owned. |
+| [wardrobe](plugins/yili-skills/skills/wardrobe/SKILL.md) | What is this piece made of, how well is it made, how does it fit me, and what do I already own like it? It keeps my wardrobe record; taste stays mine. | Recording clothes I own, looking at a piece of clothing, shoes, a bag or jewellery, or asking about a fabric, a make or a brand. |
 | [write-like-myself](plugins/yili-skills/skills/write-like-myself/SKILL.md) | How do my words read when I write? | Writing or editing any text a person will read. |
 | [talk-standard-tech-eng](plugins/yili-skills/skills/talk-standard-tech-eng/SKILL.md) | How do Claude's technical words stay plain? | Claude talks to me, names a thing, or writes technical or agent-facing text. Not for academic, persuasive or creative writing, or other languages. |
 
@@ -27,7 +27,7 @@ Version 2.0.0 renamed three skills: `prompt-to-think` is now `i-think-like-this`
 
 ## How the skills find each other
 
-No skill names another skill, and none ranks above another. When a skill reaches a point where it needs a different question answered, it asks that question in plain words, at that moment and only when its condition holds. For example, `research-before-buy` asks *how does this person decide here?* only when the call depends on what I value and nothing on record says it. Such questions are written in italics, and a skill that asks them says once, near its top, to check whether another skill answers them. Claude sees every skill's description all the time, so it finds the skill that answers the question. This is how I work too: when I am deciding a purchase and start to wonder whether it suits me, I just ask that other question.
+No skill names another skill, and none ranks above another. When a skill reaches a point where it needs a different question answered, it asks that question in plain words, at that moment and only when its condition holds. For example, `research-before-buy` asks *how does this person decide here?* only when the call depends on what I value and nothing on record says it. Such questions are written in italics, and a skill that asks them says once, near its top, to check whether another skill answers them. Claude sees every skill's description all the time, so it finds the skill that answers the question. This is how I work too: when I am deciding a purchase and start to wonder what a fabric is really worth, I just ask that other question.
 
 Four properties keep this robust:
 

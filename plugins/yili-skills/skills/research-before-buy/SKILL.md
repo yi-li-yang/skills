@@ -152,9 +152,10 @@ the type decides which research areas apply and how they reinterpret. For a serv
 cost is the lifetime total, not the sticker; a financial product hits the
 Boundaries above. Also catch the cross-cutting scenarios that change the play
 (gift, repair-vs-replace, used, urgent, negotiable, values-driven). When the
-purchase is clothing, shoes, a bag or jewellery, whether the piece works for this
-person's body, colouring and wardrobe is its own question: ask *does this piece
-work for them and for what they already own?*
+purchase is clothing, shoes, a bag or jewellery, the technical facts about the
+piece are their own question: ask *what is this piece made of, how well is it
+made, and what do they already own like it?* Whether it looks good on them stays
+the person's call.
 
 **Read the decision axis.** It decides which path the rest of the work takes.
 A purchase is a bet under uncertainty, and the first task is to name *which
