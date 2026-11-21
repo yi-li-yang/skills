@@ -27,7 +27,7 @@ Version 2.0.0 renamed three skills: `prompt-to-think` is now `i-think-like-this`
 
 ## How the skills find each other
 
-No skill names another skill, and none ranks above another. When a skill reaches a point where it needs a different question answered, it asks that question in plain words, at that moment and only when its condition holds. For example, `research-before-buy` asks *how does this person decide here?* only when the call depends on what I value and nothing on record says it. Claude sees every skill's description all the time, so it finds the skill that answers the question. This is how I work too: when I am deciding a purchase and start to wonder whether it suits me, I just ask that other question.
+No skill names another skill, and none ranks above another. When a skill reaches a point where it needs a different question answered, it asks that question in plain words, at that moment and only when its condition holds. For example, `research-before-buy` asks *how does this person decide here?* only when the call depends on what I value and nothing on record says it. Such questions are written in italics, and a skill that asks them says once, near its top, to check whether another skill answers them. Claude sees every skill's description all the time, so it finds the skill that answers the question. This is how I work too: when I am deciding a purchase and start to wonder whether it suits me, I just ask that other question.
 
 Four properties keep this robust:
 

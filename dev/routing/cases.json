@@ -13,7 +13,8 @@
   {
     "id": "peers-coat-and-shop",
     "prompt": "Help me choose a winter coat that works with what I already own, and tell me which shop or brand to buy it from.",
-    "expect": ["wardrobe", "research-before-buy"]
+    "expect": ["wardrobe", "research-before-buy"],
+    "patience": 12
   },
   {
     "id": "expert-batteries",

@@ -1,6 +1,6 @@
 ---
 name: i-think-like-this
-description: Use when a problem is hard, an answer or a decision matters, or a claim must be judged before it is believed - when sources or tests disagree, when the only evidence comes from someone who gains if it is believed, when assumptions need checking, or when a decision is expensive or hard to undo and could fail. It is the user's own way of reasoning and of deciding what is true.
+description: Use when a problem is hard, an answer or a decision matters, or a claim must be judged before it is believed - when sources or tests disagree, when the only evidence comes from someone who gains if it is believed, when assumptions need checking, or when a decision is expensive or hard to undo and could fail. Also use when a task in progress asks which evidence to believe, how much a claim is worth, or how a call or an answer could fail. It is the user's own way of reasoning and of deciding what is true.
 ---
 
 # The Thinking Framework

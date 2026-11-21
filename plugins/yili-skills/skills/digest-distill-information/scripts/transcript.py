@@ -240,6 +240,9 @@ def guarded(action):
                  "Run it from a home connection, or record the video as a pointer instead.", 4)
         fail("failed: " + str(error).splitlines()[0], 1)
     except Exception as error:  # extractor bugs and site changes surface as arbitrary exceptions
+        if any(hint in str(error).lower() for hint in BLOCKED_HINTS):
+            fail("blocked: the site is refusing requests from this network for now (too many requests). "
+                 "Try again later, or record the video as a pointer instead.", 4)
         fail(f"failed: yt-dlp could not read this site ({type(error).__name__}: {error}). "
              "Record the video as a pointer instead.", 1)
 
@@ -280,7 +283,13 @@ def fetch_captions(url, info, lang):
 
     def download(yt_dlp):
         with yt_dlp.YoutubeDL(options()) as ydl:
-            return ydl.urlopen(fmt["url"]).read().decode("utf-8", "replace")
+            for wait in (2, 6, None):  # sites often refuse a burst of caption requests, then accept a retry
+                try:
+                    return ydl.urlopen(fmt["url"]).read().decode("utf-8", "replace")
+                except Exception as error:
+                    if wait is None or "429" not in str(error):
+                        raise
+                    time.sleep(wait)
     body = guarded(download)
     cues = parse_json3(json.loads(body)) if fmt.get("ext") == "json3" else parse_vtt(body)
     save_cached(url, f"captions-{code}", cues)

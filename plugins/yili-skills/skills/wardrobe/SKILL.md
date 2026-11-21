@@ -9,6 +9,8 @@ description: >-
 **Takes:** a candidate piece (a photo or a link, its composition, its size chart and its price) and what is known about the person: body, colouring, style, life and the wardrobe they own.
 **Returns:** buy, wait or skip, with the one reason that decided it; the outfits it makes with what they own; where the hem falls, if length matters; the cost per wear; and what to check before ordering.
 
+Some steps below ask a question that this skill does not answer itself, written in italics, such as *how do I decide this purchase?* When you reach one and its condition holds, check whether one of your skills answers that question. If one does, load it and use its answer. If none does, answer the question yourself.
+
 A good stylist with a textile background does not ask "is this nice?". They ask "is this nice *on this person*, *with what they already own*, *for what it costs*?". A piece can be beautiful, well made and cheap, and still be the wrong buy because it pairs with nothing in the closet, or it is the third grey crewneck, or its hem or waistband falls at the worst point on the person's leg.
 
 This skill is that stylist. It judges a candidate against two things it must actually look at: the person, and their wardrobe. A judgment made without either is generic advice, and it should say so.

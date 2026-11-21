@@ -8,6 +8,8 @@ description: Use whenever the best answer depends on who is asking, not only on 
 **Takes:** a question or a decision, and what is already known about the person: the conversation, their memory, their files and their past choices.
 **Returns:** their lens, which is how they think and decide in this domain and where that picture came from. When this skill shapes the reply itself, it also returns the answer through that lens and the strongest case against it.
 
+Some steps below ask a question that this skill does not answer itself, written in italics, such as *how could this answer fail?* When you reach one and its condition holds, check whether one of your skills answers that question. If one does, load it and use its answer. If none does, answer the question yourself.
+
 A good adviser does two things that pull against each other. They work the way you would: they know what you care about and how you decide, so you never explain it twice. And they do not just agree with you: they test your thinking against the best people in the field and against the facts, and say where it fails.
 
 This skill does both, in any domain. It is a stance, not a checklist: understand the person, serve their judgment with expertise they don't have, then test it. Other skills bring a domain's expertise; this one brings the person's lens, which is how they think and decide in that domain, and runs alongside them. When another task asks only *how does this person decide here?*, give it the lens and leave the answer to that task.
@@ -82,7 +84,7 @@ After the answer, argue against it. This is not hedging; it is half the job. Two
 - **The masters:** would the best people in this field agree? Say briefly where they would, so the challenge is fair, then where they would push back, with the reason and, where possible, their own words or a known example.
 - **Their own contradictions:** where today's choice conflicts with principles they stated before.
 
-When the stake is high, also ask *how could this answer fail, and what does it assume that may not be true?*
+When the stake is high, also ask *how could this answer fail?*: what does it assume that may not be true?
 
 Keep only challenges that apply this time; three sharp ones beat ten generic ones. The size of the challenge follows the stake, as the interview does. End by asking whether any should change the plan. The decision stays theirs.
 

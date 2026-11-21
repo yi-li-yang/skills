@@ -48,6 +48,8 @@ def claude_executable():
 def run_case(case, model):
     """Run one case and return the skills it loaded, the reason it stopped, and its cost."""
     loaded, stopped, cost, listed = [], "end", None, []
+    expected = {PREFIX + name for name in case.get("expect", [])}
+    patience, other_calls = case.get("patience", 0), 0  # tool calls allowed before the routing counts as decided
     with tempfile.TemporaryDirectory() as empty:  # no CLAUDE.md or project files to steer the choice
         settings = Path(empty) / "settings.json"
         settings.write_text(SETTINGS, encoding="utf-8")
@@ -81,7 +83,11 @@ def run_case(case, model):
                         if block.get("name") == "Skill":
                             loaded.append(str(block.get("input", {}).get("skill", "")))
                         elif block.get("name") not in PASSIVE:
-                            stopped = f"reached for {block.get('name')}"
+                            other_calls += 1
+                            if other_calls > patience:
+                                stopped = f"reached for {block.get('name')}"
+                    if expected and expected <= set(loaded):
+                        stopped = "all expected skills loaded"
                     if stopped != "end":
                         break
                 elif event.get("type") == "result":

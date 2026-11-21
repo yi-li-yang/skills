@@ -9,7 +9,7 @@ description: >-
 **Takes:** what the person wants to buy, or which provider or plan to pick, and whatever is known about their use, their limits and how they decide.
 **Returns:** a short brief with a call (what to buy, and where or on which terms), the reasoning and the tradeoff behind it, then a research report as the evidence.
 
-Some steps below raise a question that is not about purchases, such as *how does this person decide here?* Ask such a question as it is written. Claude may have a better way to answer it; if not, answer it yourself as well as you can.
+Some steps below ask a question that this skill does not answer itself, written in italics, such as *how does this person decide here?* When you reach one and its condition holds, check whether one of your skills answers that question. If one does, load it and use its answer. If none does, answer the question yourself.
 
 ## Say that you are running
 

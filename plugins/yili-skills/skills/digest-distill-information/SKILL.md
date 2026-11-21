@@ -1,12 +1,14 @@
 ---
 name: digest-distill-information
-description: Use when an answer depends on what real material says or shows, such as review videos and vlogs, owner posts and photos, comment threads, forum threads, test reports, podcasts and pages that need a browser, in any language and on any platform, and a search snippet cannot hold it. Also use when asked to watch, read or go through such material, or to find out what owners, testers or practitioners actually report.
+description: Use when an answer depends on what real material says or shows, such as review videos and vlogs, owner posts and photos, comment threads, forum threads, test reports, podcasts and pages that need a browser, in any language and on any platform, and a search snippet cannot hold it. Also use when asked to watch, read or go through such material, to find out what owners, testers or practitioners actually report, or when a task in progress asks what the reviews, owners, tests or other actual material say and show.
 ---
 
 # Digest and distill information
 
 **Takes:** a question, open ("which robot vacuums do long-term owners rate, and why?") or narrow ("does this model lose suction after a year?"); the kinds of evidence that would settle it, if the asker knows them; and what the answer is worth.
 **Returns:** what the material says and shows about the question, at the level of detail the question needs, with where each finding is; who is speaking; leads for a next, narrower question; what no item covered; and one line on how the material was read.
+
+Some steps below ask a question that this skill does not answer itself, written in italics, such as *how much is this claim worth?* When you reach one and its condition holds, check whether one of your skills answers that question. If one does, load it and use its answer. If none does, answer the question yourself.
 
 The asker is whoever needs the question answered: the user, or a task that Claude is doing for them. If the asker does not say which kinds of evidence would settle the question or what the answer is worth, work both out from the question, and say what you assumed.
 
@@ -39,7 +41,7 @@ The scripts are in the `scripts` folder next to this file. Run them with `python
 - `transcript.py <url> --info` prints the details, the chapters, the description and which captions exist, and no words. It gives the cheap signals for ranking, and the description is where sponsors, gifted items and affiliate links are usually stated.
 - `transcript.py <url> --grep <terms>` prints only the stretches that mention a term, with timestamps. Use the words of the video's own language. `--from 12:00 --to 15:30` prints one stretch. With neither, it prints every word.
 - `transcript.py <url> --speech` transcribes the audio on this computer when the video has no captions.
-- `frames.py <url> 12:40 13:05` saves a frame at each moment. Read the saved files as images.
+- `frames.py <url> 12:40 13:05 --out <folder>` saves a frame at each moment. Choose a folder that this session can read without asking, such as its scratchpad or working folder, then read the saved files as images.
 
 The scripts need yt-dlp, and frames also need ffmpeg. Speech-to-text needs faster-whisper. Do not install any of them without asking the user. When a tool is missing or a site blocks it, the script says so. Then record the item as a pointer: who, what, the link and the moment, so the user can watch it themselves.
 
@@ -58,7 +60,7 @@ Reading is always fine. A click that changes something, such as adding to a cart
 The question sets the level of detail. A narrow question gets the numbers, the conditions and the moment. An open question gets the shape of the field and the leads.
 
 - **Findings.** Each finding gives the claim, the evidence behind it (what was measured or shown, and under which conditions) and where it is (a timestamp, a page or a comment). Quote exact words only where the words matter: numbers, model codes, disclosures and verdicts. For example: "Suction fell from 22 to 15 kPa after 3 months of daily use. The meter shows it at 12:40."
-- **Who is speaking.** Give the signals, not a verdict: sponsored, gifted, affiliate links, how long they have owned the item, and what they sell. How much a claim is worth is a separate question: who gains if it is believed, and could it be checked? Ask that question when the answer depends on it.
+- **Who is speaking.** Give the signals, not a verdict: sponsored, gifted, affiliate links, how long they have owned the item, and what they sell. Whether to believe it is a separate question, *how much is this claim worth?*: who gains if it is believed, and could it be checked? Ask it when the answer depends on it.
 - **What you did not see.** If you read the words but took no frame, a claim about what the video shows is the speaker's word, not something you saw. Say so.
 - **Leads, gaps and how you read.** List the leads for the next question and what no item covered. Add one line on how you read the material, for example "captions plus 3 frames; comments not read".
 
