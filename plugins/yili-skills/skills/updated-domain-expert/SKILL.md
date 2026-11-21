@@ -104,6 +104,6 @@ Current state, vocabulary, mental models, pitfalls. On contested points, give a 
 - Every claim names its source and date.
 - Unknown is a valid finding; never fill a gap with a guess.
 
-## Video
+## Material in other forms
 
-If the knowledge is in a video, run `python3 ${CLAUDE_SKILL_DIR}/scripts/transcript.py <url>` (the `scripts` folder next to this file) to print the transcript. It needs yt-dlp; don't install packages without asking. If it fails, say so and record the video as a pointer instead: who, what, link, and the timestamp if known.
+When the knowledge is in a video, a podcast, an image post or a comment thread, the question is what that material actually says and shows. Ask it, and keep each finding with its timestamp or its place in the item.
