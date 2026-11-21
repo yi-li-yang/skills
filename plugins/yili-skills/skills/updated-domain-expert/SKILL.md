@@ -1,6 +1,6 @@
 ---
-name: expertise
-description: Brings Claude up to date on a topic before or during a conversation, especially where the world has moved since training (a game patch, a product launch, a fast-moving tool) or where a field is too specialized for general knowledge. Parallel research agents check Claude's weakest and most time-sensitive beliefs, and the findings are saved as a sourced, dated briefing that later conversations reuse and refresh. Use when the user invokes /expertise, or asks Claude to get up to speed, get current, or become an expert on a topic before working on it.
+name: updated-domain-expert
+description: Brings Claude up to date on a topic before or during a conversation, especially where the world has moved since training (a game patch, a product launch, a fast-moving tool) or where a field is too specialized for general knowledge. Parallel research agents check Claude's weakest and most time-sensitive beliefs, and the findings are saved as a sourced, dated briefing that later conversations reuse and refresh. Use when the user invokes /updated-domain-expert, or asks Claude to get up to speed, get current, or become an expert on a topic before working on it.
 license: MIT
 ---
 

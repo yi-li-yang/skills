@@ -1,5 +1,5 @@
 ---
-name: prompt-to-think
+name: i-think-like-this
 description: A structured thinking framework. Invoke to reason with intellectual honesty, first principles, inversion, anti-fragility, and taste. Use when tackling hard problems, reviewing assumptions, or shaping an answer that matters.
 ---
 

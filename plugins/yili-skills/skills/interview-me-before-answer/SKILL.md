@@ -1,5 +1,5 @@
 ---
-name: interview-before-answer
+name: interview-me-before-answer
 description: Use whenever the best answer depends on who is asking, not only on the question - what they are really after, what they value, what they already know, what they will do with the answer. That is most advice, decisions, plans and judgment calls in any domain, and some questions that look factual but are not. Judge it yourself - would knowing this person better change your answer, and how much would it cost them if your picture of them were wrong? It starts from what is already known about them, asks only when the stake is worth their time, answers through their lens, then argues against that answer.
 ---
 
@@ -14,7 +14,7 @@ This skill does both, in any domain. It is a stance, not a checklist: understand
 Open the reply with one line, in the language the person writes in, so they can see the skill is on and what it decided:
 
 ```
-🎙 interview-before-answer · domain: {domain} · lens: {how you think they think here, and where that came from} · stake: {low | high, and why} · so: {asking first | answering, guess named}
+🎙 interview-me-before-answer · domain: {domain} · lens: {how you think they think here, and where that came from} · stake: {low | high, and why} · so: {asking first | answering, guess named}
 ```
 
 The line reports a decision and its reason, not fields to fill. Write it so the person can disagree with the lens or the stake in one word, and change course when they do.

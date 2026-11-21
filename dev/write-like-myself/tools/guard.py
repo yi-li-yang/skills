@@ -40,10 +40,13 @@ BLOCKED_DIRS = tuple(SKILL_DEV + d for d in ("corpus/", "private/", "rounds/", "
                                               "evals/private/", "evals/results/"))
 # Skills that were public, and held no private material, before they joined this repository. Their imported
 # history and files are not checked, since the private index and denylist would flag them without cause.
-# A skill added later is checked until it is listed here.
+# A skill added later is checked until it is listed here. expertise and prompt-to-think were later renamed to
+# updated-domain-expert and i-think-like-this; both names stay listed, so their history and their files match.
 UNGUARDED = ("dev/expertise/", "dev/prompt-to-think/", "dev/research-before-buy/",
+             "dev/updated-domain-expert/", "dev/i-think-like-this/",
              "plugins/yili-skills/skills/expertise/", "plugins/yili-skills/skills/prompt-to-think/",
-             "plugins/yili-skills/skills/research-before-buy/")
+             "plugins/yili-skills/skills/research-before-buy/",
+             "plugins/yili-skills/skills/updated-domain-expert/", "plugins/yili-skills/skills/i-think-like-this/")
 BLOCKED_EXT = {".jsonl", ".pdf", ".tex", ".bib", ".doc", ".docx", ".eml", ".mbox",
                ".msg", ".sqlite", ".db", ".pkl"}
 INDEXED_EXT = {".tex", ".md", ".txt", ".json", ".jsonl"}

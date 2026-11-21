@@ -1,10 +1,8 @@
 # The Thinking Framework
 
-## Install as a Claude Code plugin
+## Install
 
-```text
-/plugin install https://github.com/yi-li-yang/prompt-to-think
-```
+This skill ships inside the `yili-skills` plugin, as `i-think-like-this` (it was called `prompt-to-think`). The steps are in the [repository README](../../README.md).
 
 No need to invoke, the framework knows when and how.
 
