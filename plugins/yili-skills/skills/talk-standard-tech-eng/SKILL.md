@@ -5,6 +5,9 @@ description: Use when you talk to the user in English, name a thing, explain a c
 
 # Plain words for technical communication
 
+**Takes:** English text that a reader must act on or decide from: a reply, a progress note, a plan, a name, a technical document, a commit message, a skill or a prompt for an agent.
+**Returns:** the same meaning in plain words, with one name for each thing and one meaning for each word.
+
 ## The one fact
 
 The reader of a technical text cannot ask what you meant. They have only the words on the page. Every word that they must stop and decode costs them time, and some readers cannot decode it at all. They can be non-native speakers, tired people or other agents.
@@ -57,7 +60,7 @@ After a rewrite, compare the old text and the new text one claim at a time. A re
 
 Apply it to chat replies, progress notes, plan steps, the names you give to things, technical documents, commit messages, code comments, skills and prompts for other agents. In these, the reader must act or decide, and needs precision and speed.
 
-Do not apply it to academic papers, grant text, essays, or persuasive or creative writing. In these, the reader reads for argument, voice or style, and plain STE sentences would flatten them. If `write-like-myself` is in use for such a text, it controls the voice and this skill steps aside.
+Do not apply it to academic papers, grant text, essays, or persuasive or creative writing. In these, the reader reads for argument, voice or style, and plain STE sentences would flatten them. If such a text is to be written in the user's own voice, that voice controls, and this skill steps aside.
 
 Do not restyle words that you quote. Text that the user wrote is theirs, so do not restyle it unless they ask. When the user asks for a plain-English pass on their own text, do it, and follow the section on rewriting.
 

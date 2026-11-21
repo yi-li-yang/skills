@@ -1,10 +1,15 @@
 ---
 name: research-before-buy
 description: >-
-  Use when the user is choosing what to buy or which provider/plan to pick, or an agent is about to choose a purchase for them: 买哪个 / 怎么选 / 值不值得买 / 哪家好 / 要不要买, X vs Y, is the expensive one worth it, repair or replace, rent or buy, China or local. Researches live like a domain expert and returns a short brief with a call. Skip groceries, reorders of a known item, plain link requests, and free tools, libraries or technical approaches (no money or provider is at stake).
+  Use when the user is choosing what to buy or which provider/plan to pick, or an agent is about to choose a purchase for them: 买哪个 / 怎么选 / 值不值得买 / 哪家好 / 要不要买, X vs Y, is the expensive one worth it, repair or replace, rent or buy, China or local. Skip groceries, reorders of a known item, plain link requests, and free tools, libraries or technical approaches (no money or provider is at stake).
 ---
 
 # Research Before Buy
+
+**Takes:** what the person wants to buy, or which provider or plan to pick, and whatever is known about their use, their limits and how they decide.
+**Returns:** a short brief with a call (what to buy, and where or on which terms), the reasoning and the tradeoff behind it, then a research report as the evidence.
+
+Some steps below raise a question that is not about purchases, such as *how does this person decide here?* Ask such a question as it is written. Claude may have a better way to answer it; if not, answer it yourself as well as you can.
 
 ## Say that you are running
 
@@ -131,9 +136,9 @@ much they're asked to do.
   agent does the quick check itself, then hands back a confident safe default and
   ends it (see `references/axis-selector.md` → low-stakes axis switch).
 
-Ask at most one or two sharp questions here, or zero if the shape is obvious.
-Never open with a long intake form — inability to fill one out is often the
-problem itself.
+When the call depends on what the person values and nothing on record says it,
+ask *how does this person decide here?* Never open with a long intake form:
+being unable to fill one in is often the problem itself.
 
 ### Phase 1 — Frame the decision
 
@@ -146,7 +151,10 @@ the type decides which research areas apply and how they reinterpret. For a serv
 "quality" is a provider's track record, not materials; for a subscription, the
 cost is the lifetime total, not the sticker; a financial product hits the
 Boundaries above. Also catch the cross-cutting scenarios that change the play
-(gift, repair-vs-replace, used, urgent, negotiable, values-driven).
+(gift, repair-vs-replace, used, urgent, negotiable, values-driven). When the
+purchase is clothing, shoes, a bag or jewellery, whether the piece works for this
+person's body, colouring and wardrobe is its own question: ask *does this piece
+work for them and for what they already own?*
 
 **Read the decision axis.** It decides which path the rest of the work takes.
 A purchase is a bet under uncertainty, and the first task is to name *which
@@ -188,8 +196,14 @@ expensive, recurring, or novice-domain buys, never a cheap one-off.
 ### Phase 2 — Become the expert and research
 
 Research live whenever a question needs it. This is the legwork the person came
-to offload: do the searching and reading they would otherwise do in a dozen browser tabs, so
-they don't have to. See
+to offload: the searching, watching and reading they would otherwise do in a dozen
+browser tabs. Its question is *what do the reviews, owners and tests actually say
+and show?*, and it is asked in waves. First ask it openly, to map the field ("which
+robot vacuums do long-term owners and independent testers rate, and why?"); the
+answer brings leads, the models and sources that come up again and again. Then
+narrow, with the axis and the flip test, to the 2–3 candidates and the unknowns
+that could flip the call, and ask it again about each unknown. When you can, send
+the long material to subagents, so the raw material stays out of the conversation. See
 `references/market-scan.md` for the sweep and `references/value-curve.md` for
 interpreting it. Comprehensiveness belongs in the **input, never the output** (scan
 wide, hand back little), and the effort goes where the flip test says the call
@@ -202,7 +216,9 @@ reinterpret or drop out (see `references/purchase-types-and-scenarios.md`). Run
 what the decision needs:
 
 - **Become the category's expert first** (see `references/domain-and-premium.md`).
-  This is the most important part of the skill: don't survey the category from outside, adopt the
+  When the category has moved since training, or your knowledge of it is thin,
+  first ask *what does an expert in this category know now?*, and keep the answer
+  for the next purchase in the same category. This is the most important part of the skill: don't survey the category from outside, adopt the
   practitioner's perspective and reason from inside it. Every category has its own
   body of expert knowledge, invisible to a layperson and hidden by marketing —
   fibre/weave/cut/sewing for clothes, ingredient chemistry for skincare, joinery
@@ -247,16 +263,15 @@ what the decision needs:
 
 ### Phase 3 — Filter the information (resist manipulation)
 
-The information environment is adversarial. See `references/source-weighting.md`.
-**Mechanism first:** a claim that contradicts how the thing actually works loses
-weight however many people repeat it, and your own reasoning from the mechanism
-outranks what others say — state its basis, and mark it as inference. Then
-discount affiliate "best of" lists and inflated star averages; privilege
-failure-mode reports, longevity and teardown evidence, and genuine community
-consensus. Also discount pages written to be found by search tools and LLMs:
-vendor-written comparisons, astroturfed forum threads and AI-generated review
-farms (the GEO section of that file). Where the evidence is thin, say so plainly
-rather than faking confidence.
+The information environment is adversarial. See `references/source-weighting.md`
+for the sources that purchases attract. When evidence conflicts on a point the
+call depends on, or the only evidence comes from someone who gains, ask *which
+evidence do I believe?* Discount affiliate "best of" lists and inflated star
+averages; privilege failure-mode reports, longevity and teardown evidence, and
+genuine community consensus. Purchases also draw pages written to be found by
+search tools and LLMs: vendor-written comparisons, astroturfed forum threads and
+AI-generated review farms. Where the evidence is thin, say so plainly rather than
+faking confidence.
 
 ### Phase 4 — Pick WHAT
 
@@ -302,7 +317,8 @@ What "how" means depends on the type:
 
 Finish the decision so that it actually ends. State the flip-test result (what could
 still change the call, or that nothing can), apply a quick regret test ("if this
-is merely fine, am I okay with that?"), and say when to stop. Before the final
+is merely fine, am I okay with that?"), and say when to stop. When the decision is
+expensive or hard to undo, first ask *how could this call fail?* Before the final
 push, a last check: is this comfortably affordable, and is it a
 regulated/high-consequence decision that warrants a professional (see
 Boundaries)? If so, inform and defer rather than push. This is where

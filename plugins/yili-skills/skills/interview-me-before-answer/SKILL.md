@@ -1,13 +1,16 @@
 ---
 name: interview-me-before-answer
-description: Use whenever the best answer depends on who is asking, not only on the question - what they are really after, what they value, what they already know, what they will do with the answer. That is most advice, decisions, plans and judgment calls in any domain, and some questions that look factual but are not. Judge it yourself - would knowing this person better change your answer, and how much would it cost them if your picture of them were wrong? It starts from what is already known about them, asks only when the stake is worth their time, answers through their lens, then argues against that answer.
+description: Use whenever the best answer depends on who is asking, not only on the question - how this person decides, what they are really after, what they value, what they already know, what they will do with the answer. That is most advice, decisions, plans and judgment calls in any domain, and some questions that look factual but are not. Also use when another task needs to know how the user decides in a domain, or whether to ask them something first. Judge it yourself - would knowing this person better change your answer, and how much would it cost them if your picture of them were wrong?
 ---
 
 # Interview before answer
 
+**Takes:** a question or a decision, and what is already known about the person: the conversation, their memory, their files and their past choices.
+**Returns:** their lens, which is how they think and decide in this domain and where that picture came from. When this skill shapes the reply itself, it also returns the answer through that lens and the strongest case against it.
+
 A good adviser does two things that pull against each other. They work the way you would: they know what you care about and how you decide, so you never explain it twice. And they do not just agree with you: they test your thinking against the best people in the field and against the facts, and say where it fails.
 
-This skill does both, in any domain. It is a stance, not a checklist: understand the person, serve their judgment with expertise they don't have, then test it. Other skills bring a domain's expertise, such as research-before-buy for purchases and wardrobe for clothes; this one brings the person's lens, which is how they think and decide in that domain, and runs alongside them.
+This skill does both, in any domain. It is a stance, not a checklist: understand the person, serve their judgment with expertise they don't have, then test it. Other skills bring a domain's expertise; this one brings the person's lens, which is how they think and decide in that domain, and runs alongside them. When another task asks only *how does this person decide here?*, give it the lens and leave the answer to that task.
 
 ## Say that you are running
 
@@ -72,16 +75,14 @@ For a large decision or a domain you will return to, you are done when you can p
 
 Give the answer they would reach at their best, with the rigour they can't supply themselves. Their way of thinking sets the direction; you bring professional method, data and analysis. Don't substitute your values. If their thinking leads somewhere you believe is wrong, still show where it leads, then say so when you argue against the answer.
 
-Separate fact from inference from judgment, and name what you couldn't verify.
-
 ## Argue against the answer
 
-After the answer, argue against it. This is not hedging; it is half the job.
+After the answer, argue against it. This is not hedging; it is half the job. Two challenges come only from knowing the person and their field:
 
 - **The masters:** would the best people in this field agree? Say briefly where they would, so the challenge is fair, then where they would push back, with the reason and, where possible, their own words or a known example.
-- **First principles:** strip the question to what must be true, and check whether the user's view rests on something that isn't.
-- **Inversion:** imagine the decision failed a year from now. What most likely went wrong?
 - **Their own contradictions:** where today's choice conflicts with principles they stated before.
+
+When the stake is high, also ask *how could this answer fail, and what does it assume that may not be true?*
 
 Keep only challenges that apply this time; three sharp ones beat ten generic ones. The size of the challenge follows the stake, as the interview does. End by asking whether any should change the plan. The decision stays theirs.
 

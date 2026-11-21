@@ -49,7 +49,7 @@ The scripts need yt-dlp, and frames also need ffmpeg. Speech-to-text needs faste
 - **Audio and podcasts.** Treat them like video without frames. Look first for show notes or a transcript on the episode's page.
 - **Image posts and screenshots.** Read the images. The facts are often in them, not in the text.
 - **Comment threads.** Read the top comments and the newest ones. The top ones show what most viewers think. The newest ones show what changed since the item was made.
-- **Pages and PDFs.** Fetch the page. If the fetch fails, or the page builds itself with JavaScript, or it shows the content only after a click or a login, open it in the user's Chrome if this session has it, else in a browser that this session has. Search snippets are leads, not findings. If nothing can reach a page that matters, ask the user for a screenshot. Never get past a captcha or a login page on your own.
+- **Pages and PDFs.** Fetch the page. If the fetch fails, or the page builds itself with JavaScript, or it shows the content only after a click or a login, open it in a browser that this session has. The user's Chrome is signed in as them, so use it for the few pages that need it, such as a known shop or forum page, and read the many unknown pages outside it. Search snippets are leads, not findings. If nothing can reach a page that matters, ask the user for a screenshot. Never get past a captcha or a login page on your own.
 
 Reading is always fine. A click that changes something, such as adding to a cart, posting, sending or signing up, is an action. Stop there and ask the user.
 

@@ -1,10 +1,13 @@
 ---
 name: wardrobe
 description: >-
-  Use when someone is deciding whether to buy a piece of clothing, shoes, a bag or jewellery and their wardrobe or style profile is known or can be found; when they add clothes they own to a wardrobe; or when they ask what goes with something they own or want. Judges colour, versatility and pairing with what they own, proportion on their body, material and how long the brand's pieces last, and cost per wear, and gives buy, wait or skip with the reason. For which brand, product or shop to choose, research-before-buy also applies.
+  Use when someone is deciding whether to buy a piece of clothing, shoes, a bag or jewellery and their wardrobe or style profile is known or can be found; when they add clothes they own to a wardrobe; or when they ask what goes with something they own or want. Judges colour, versatility and pairing with what they own, proportion on their body, material and how long the brand's pieces last, and cost per wear. Also use when another task needs to know whether a piece works for this person's body, colouring and wardrobe.
 ---
 
 # Wardrobe
+
+**Takes:** a candidate piece (a photo or a link, its composition, its size chart and its price) and what is known about the person: body, colouring, style, life and the wardrobe they own.
+**Returns:** buy, wait or skip, with the one reason that decided it; the outfits it makes with what they own; where the hem falls, if length matters; the cost per wear; and what to check before ordering.
 
 A good stylist with a textile background does not ask "is this nice?". They ask "is this nice *on this person*, *with what they already own*, *for what it costs*?". A piece can be beautiful, well made and cheap, and still be the wrong buy because it pairs with nothing in the closet, or it is the third grey crewneck, or its hem or waistband falls at the worst point on the person's leg.
 
@@ -18,7 +21,7 @@ What matters about the person:
 
 - **Body:** height and build, and any fit notes they gave. Height changes almost every proportion call.
 - **Colouring:** a colour season or analysis if they have one, and whether it was tested or guessed. A guessed season is a hypothesis: use it to shape advice, mark advice that depends on it, and suggest how to test it.
-- **What they want clothes to do for their shape, in their own words:** what they would like to balance, hide or show. Ask once if the record does not say. Never list what you see as flaws; work from what they said, and if they said nothing, judge proportion without it.
+- **What they want clothes to do for their shape, in their own words:** what they would like to balance, hide or show. If the record does not say and the call depends on it, ask *how does this person decide here?* Never list what you see as flaws; work from what they said, and if they said nothing, judge proportion without it.
 - **Style in their own words:** the direction they want, not the one their old photos show. People often keep photos for proportion, not as an ideal; do not copy a past outfit as a style reference unless they say it is one.
 - **Life:** what they actually do in a week (desk work, site visits, the gym, running, travel). Clothes that do not fit the week do not get worn.
 - **How they spend:** cheap is fine for some things, and some are worth real money. Learn where their line is.
@@ -75,13 +78,13 @@ Price says what the brand charges. Fibre, weight and construction say what you g
 - **Weight and weave matter as much as fibre.** A heavy cotton jersey or a dense merino holds its shape; a thin one twists and goes see-through. Say when the listing hides this and what to look for (fabric weight, a close photo, reviews about shape after washing).
 - **Signs of good construction:** matched patterns at seams, clean finishing inside, real buttonholes, enough seam allowance, lining where it is needed.
 - **Function counts for sportswear:** sweat handling, stretch recovery, chafe-free seams, and fit when moving, not standing.
-- **Will this brand's piece last?** Say what the brand, and this line of it, is known for: how its knits pill, how its cotton holds shape after washing, how its seams and zips wear. A brand is a prior, not a verdict: quality varies by line and changes over the years, and the composition and make of this item decide. When you are not sure how the brand makes things now, say so and check current owner reviews about wear, or name what to look at before ordering.
+- **Will this brand's piece last?** Say what the brand, and this line of it, is known for: how its knits pill, how its cotton holds shape after washing, how its seams and zips wear. A brand is a prior, not a verdict: quality varies by line and changes over the years, and the composition and make of this item decide. When you are not sure how the brand makes things now, say so and ask *what do current owners actually report and show about how this line wears?*: their photos after washing, pilling, seams and zips. Or name what to look at before ordering.
 
 ### Value
 
 - **Cost per wear** is price divided by (wears per year × years it will last). It turns "expensive" into a real number and makes a good coat look cheap and a fast-fashion party top look dear.
 - **Where to spend:** pieces worn often, next to the skin, or that set the whole look (coats, shoes, bags, good knitwear, a trouser that fits) earn their price. Basics, trend pieces and experiments in a new style are best bought cheap; a good basics brand is the right tool there, not a compromise.
-- If a cheaper piece does the same job, or a better one costs a little more, say so in one line.
+- If a cheaper piece does the same job, or a better one costs a little more, say so in one line. Which brand, product or shop to buy from is a separate question, *how do I decide this purchase?*; ask it when the person needs that answer too.
 
 ### Style
 
