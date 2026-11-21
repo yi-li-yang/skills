@@ -1,10 +1,15 @@
 ---
 name: research-before-buy
 description: >-
-  Use when the user is choosing what to buy or which provider/plan to pick, or an agent is about to choose a purchase for them: 买哪个 / 怎么选 / 值不值得买 / 哪家好 / 要不要买, X vs Y, is the expensive one worth it, repair or replace, rent or buy, China or local. Researches live like a domain expert and returns a short brief with a call. Skip groceries, reorders of a known item, and plain link requests.
+  Use when the user is choosing what to buy or which provider/plan to pick, or an agent is about to choose a purchase for them: 买哪个 / 怎么选 / 值不值得买 / 哪家好 / 要不要买, X vs Y, is the expensive one worth it, repair or replace, rent or buy, China or local. Skip groceries, reorders of a known item, plain link requests, and free tools, libraries or technical approaches (no money or provider is at stake).
 ---
 
 # Research Before Buy
+
+**Takes:** what the person wants to buy, or which provider or plan to pick, and whatever is known about their use, their limits and how they decide.
+**Returns:** a short brief with a call (what to buy, and where or on which terms), the reasoning and the tradeoff behind it, then a research report as the evidence.
+
+Some steps below ask a question that this skill does not answer itself, written in italics, such as *how does this person decide here?* When you reach one and its condition holds, check whether one of your skills answers that question. If one does, load it and use its answer. If none does, answer the question yourself.
 
 ## Say that you are running
 
@@ -32,7 +37,7 @@ decision, it **becomes the relevant expert** and reasons from inside the field:
 
 "Buying" here is broad: physical objects, services, experiences, subscriptions,
 financial products, digital goods. The type changes what expertise is needed and
-which lenses apply — recognise it early (see
+which research areas apply — recognise it early (see
 `references/purchase-types-and-scenarios.md`). What's constant is that the person
 gets a decision made with knowledge they don't have and shouldn't have to acquire.
 
@@ -50,13 +55,13 @@ and constant; human burden is held near zero.
 
 This skill is **not** a recommender and **not** a search wrapper. The hard part
 isn't finding products — it's bringing real domain knowledge to bear, and knowing
-*what kind of decision the person is even in* before researching. So the prime
-directive is:
+*what kind of decision the person is even in* before researching. So the main
+principle is:
 
 > **Become the right expert. Read the axis first. Research live.**
 
-Almost nothing here is a stored fact, because lineups, prices and terms rot within
-months. The skill carries *method*: how to become the right expert and diagnose
+Almost nothing here is a stored fact, because lineups, prices and terms go out of date
+within months. The skill carries *method*: how to become the right expert and diagnose
 the decision, then do the live research.
 
 ## The one rule that overrides the rest
@@ -66,7 +71,7 @@ research. If using this skill ever costs the person more time or thought than
 doing nothing would have, it has failed — but the fix is for the *agent* to
 absorb more of the work, never to hand research back to the person, and never to
 make them wait out of proportion to the size of the decision. Bias toward fewer
-questions, research handed over already filtered, and a clean push to decide.
+questions, research handed over already filtered, and a clear prompt to decide.
 
 ## The stopping rule: the flip test
 
@@ -123,17 +128,17 @@ much they're asked to do.
 
 - **Information problem** — they lack knowledge of the category. → Run the full
   flow; the agent does the digging and hands back the picture.
-- **Commitment problem** — they already know enough and can't pull the trigger.
+- **Commitment problem** — they already know enough and can't bring themselves to decide.
   → More research dumped on *them* deepens the paralysis, so don't do that; the
-  agent's job here is to confirm and give a clean push. Jump to Phase 6.
+  agent's job here is to confirm and help them decide. Jump to Phase 6.
 - **Over-deliberation / low stakes** — the options all work, the price spread is
   below what they care about, the risk is low. → Nothing can flip the call, so the
   agent does the quick check itself, then hands back a confident safe default and
   ends it (see `references/axis-selector.md` → low-stakes axis switch).
 
-Ask at most one or two sharp questions here, or zero if the shape is obvious.
-Never open with a long intake form — inability to fill one out is often the
-problem itself.
+When the call depends on what the person values and nothing on record says it,
+ask *how does this person decide here?* Never open with a long intake form:
+being unable to fill one in is often the problem itself.
 
 ### Phase 1 — Frame the decision
 
@@ -142,14 +147,19 @@ recognise the *type*, read the *axis*, reframe to the *goal*.
 
 **Recognise the purchase type** (see `references/purchase-types-and-scenarios.md`).
 Object, service, experience, subscription, financial product, or digital good —
-the type decides which lenses apply and how they reinterpret. For a service,
+the type decides which research areas apply and how they reinterpret. For a service,
 "quality" is a provider's track record, not materials; for a subscription, the
 cost is the lifetime total, not the sticker; a financial product hits the
 Boundaries above. Also catch the cross-cutting scenarios that change the play
-(gift, repair-vs-replace, used, urgent, negotiable, values-driven).
+(gift, repair-vs-replace, used, urgent, negotiable, values-driven). When the
+purchase is clothing, shoes, a bag or jewellery, the technical facts about the
+piece are their own question: ask *what is this piece made of, how well is it
+made, and what do they already own like it?* Whether it looks good on them stays
+the person's call.
 
-**Read the decision axis (the router).** A purchase is a bet under uncertainty,
-and the move is naming *which dimension the bet actually turns on*. Pick the
+**Read the decision axis.** It decides which path the rest of the work takes.
+A purchase is a bet under uncertainty, and the first task is to name *which
+dimension the bet actually depends on*. Pick the
 wrong axis and every fact gathered afterward is wasted. Read
 `references/axis-selector.md`; the main axes:
 
@@ -161,14 +171,14 @@ wrong axis and every fact gathered afterward is wasted. Read
 - **Budget as an output, not an input.** Do not ask "what's your budget." Ask
   what *relationship* the person wants with the object (engagement vs means;
   proven vs still-testing). The spend falls out of the answer. Only record a
-  hard cap if a real wall exists.
-- **Stakes below the noise floor.** When the person is price-insensitive at this
+  hard cap if a real limit exists.
+- **Stakes too small to matter.** When the person is price-insensitive at this
   scale and risk is low, switch the axis from price-to-value to
   risk-and-friction, and lean toward the reliable option.
 - **Divergence as signal.** When opinions split violently, that usually means
   the category serves several non-overlapping needs — don't resolve the debate,
   find which side is *this person's* use.
-- **Objective vs subjective (the taste ceiling).** When the call is dominated by
+- **Objective vs subjective (where expertise stops).** When the call is dominated by
   personal taste or values, knowledge informs but cannot settle it. Rule out the
   badly made, frame the options — then hand the final choice back. Don't
   manufacture a "right answer" where there's only preference.
@@ -187,20 +197,35 @@ expensive, recurring, or novice-domain buys, never a cheap one-off.
 ### Phase 2 — Become the expert and research
 
 Research live whenever a question needs it. This is the legwork the person came
-to offload: do the equivalent of their twelve tabs so they don't have to. See
+to offload: the searching, watching and reading they would otherwise do in a dozen
+browser tabs. Its question is *what do the reviews, owners and tests actually say
+and show?*, and it is asked in waves. First ask it openly, to map the field ("which
+robot vacuums do long-term owners and independent testers rate, and why?"); the
+answer brings leads, the models and sources that come up again and again. Then
+narrow, with the axis and the flip test, to the 2–3 candidates and the unknowns
+that could flip the call, and ask it again about each unknown. A search snippet
+about a review is a lead, not evidence: an unknown that could flip the call is
+settled by what the review, the owner's report or the test itself says and shows,
+which is how the person would settle it if they had the time. When you can, send
+the long material to subagents, so the raw material stays out of the conversation.
+Give each subagent the question as it is written above and the unknown it is about,
+and tell it to check whether one of its skills answers the question. Use a subagent
+that can use skills and run scripts, not one that can only fetch pages. See
 `references/market-scan.md` for the sweep and `references/value-curve.md` for
-interpreting it. Comprehensiveness lives in the **input, never the output** (scan
+interpreting it. Comprehensiveness belongs in the **input, never the output** (scan
 wide, hand back little), and the effort goes where the flip test says the call
 could change.
 
-The lenses below are a **menu the type, axis, and flip test select from — not a
+The research areas below are a **menu the type, axis, and flip test select from — not a
 checklist to run every time.** Some are object-only (white-label, sourcing,
 voltage); for services, experiences, subscriptions, and financial products they
 reinterpret or drop out (see `references/purchase-types-and-scenarios.md`). Run
 what the decision needs:
 
 - **Become the category's expert first** (see `references/domain-and-premium.md`).
-  This is the soul of the skill: don't survey the category from outside, adopt the
+  When the category has moved since training, or your knowledge of it is thin,
+  first ask *what does an expert in this category know now?*, and keep the answer
+  for the next purchase in the same category. This is the most important part of the skill: don't survey the category from outside, adopt the
   practitioner's perspective and reason from inside it. Every category has its own
   body of expert knowledge, invisible to a layperson and hidden by marketing —
   fibre/weave/cut/sewing for clothes, ingredient chemistry for skincare, joinery
@@ -240,19 +265,20 @@ what the decision needs:
   Then **decompose the price** (see `references/domain-and-premium.md`): how much
   is substance, how much is brand premium (溢价), and does that premium buy
   anything real here? Keep it symmetric — some premium is earned (QC, design,
-  after-sales, resale), some is pure name; the domain lens is what tells them
-  apart. Naming where the money goes is often the single most useful output.
+  after-sales, resale), some buys only the name; domain expertise is what tells
+  them apart. Naming where the money goes is often the single most useful output.
 
-### Phase 3 — Filter the information (the anti-manipulation engine)
+### Phase 3 — Filter the information (resist manipulation)
 
-The information environment is adversarial. See `references/source-weighting.md`.
-**Mechanism first:** a claim that contradicts how the thing actually works loses
-weight however many people repeat it, and your own reasoning from the mechanism
-outranks what others say — state its basis, and mark it as inference. Then
-discount affiliate "best of" lists and inflated star averages; privilege
-failure-mode reports, longevity and teardown evidence, and genuine community
-consensus. Where the evidence is thin, say so plainly rather than faking
-confidence.
+The information environment is adversarial. See `references/source-weighting.md`
+for the sources that purchases attract. When evidence conflicts on a point the
+call depends on, or the only evidence comes from someone who gains, ask *which
+evidence do I believe?* Discount affiliate "best of" lists and inflated star
+averages; privilege failure-mode reports, longevity and teardown evidence, and
+genuine community consensus. Purchases also draw pages written to be found by
+search tools and LLMs: vendor-written comparisons, astroturfed forum threads and
+AI-generated review farms. Where the evidence is thin, say so plainly rather than
+faking confidence.
 
 ### Phase 4 — Pick WHAT
 
@@ -276,27 +302,30 @@ current.
 
 What "how" means depends on the type:
 
-- **Object** → where/country. Always price **both the local and the
-  China-domestic source** (the cheaper direction isn't fixed), then weigh the
-  channels — see `references/sourcing-uk-china.md` (a physical-goods module, worked
-  through a UK/China buyer; elicit the person's actual geography). Urgency,
-  region-lock, warranty, and voltage can each force the local channel regardless
-  of price. Compute landed cost; weigh warranty, returns, counterfeit risk.
-  **Verify any duty/VAT/platform figures live — that file's facts decay.**
+- **Object** → where. Ask whether another place is much cheaper or much better,
+  and whether the gap survives the cost of getting it (geographic arbitrage,
+  地理套利; see `references/sourcing-arbitrage.md`). Do not survey every country:
+  guess from the item where the gap likely lives, look once, and go deeper only if
+  the gap is big. Urgency, region lock, warranty and voltage can each force the
+  local channel whatever the price. Compare landed cost, and weigh warranty,
+  returns and counterfeit risk. **Verify any duty, VAT or platform figure live;
+  those facts decay.**
 - **Service** → which provider, and on what contract terms (scope, deposit,
   recourse). A vetted referral usually beats a marketplace beats an ad.
 - **Subscription** → which plan and billing term, and the cancellation/exit terms
   — check the exit before the entrance.
 - **Experience** → which booking route and *when* (dynamic pricing, booking
   windows).
-- **Financial / digital** → which issuer/store and which terms or licence; mind
+- **Financial / digital** → which issuer/store, in which region (a store or
+  billing region can change the price), and which terms or licence; mind
   legitimacy and the Boundaries above.
 
 ### Phase 6 — Commit
 
-Close the loop so it actually terminates. State the flip-test result (what could
+Finish the decision so that it actually ends. State the flip-test result (what could
 still change the call, or that nothing can), apply a quick regret test ("if this
-is merely fine, am I okay with that?"), and say when to stop. Before the final
+is merely fine, am I okay with that?"), and say when to stop. When the decision is
+expensive or hard to undo, first ask *how could this call fail?* Before the final
 push, a last check: is this comfortably affordable, and is it a
 regulated/high-consequence decision that warrants a professional (see
 Boundaries)? If so, inform and defer rather than push. This is where
@@ -315,7 +344,7 @@ without reading further. This is the only part the person must read.
 
 **Part 2 — The Research Report (the evidence layer; scan or read).** Complete and
 scannable, with headers. This is everything the agent
-found — the market landscape, the domain lens, the price decomposition, the
+found — the market landscape, the quality markers, the price decomposition, the
 decision prices, tech timing, hype-vs-real, insider knowledge, sourcing, source
 quality, the candidates in detail, and an honest **confidence & gaps** section
 naming what's well-evidenced, what's thin, and what was assumed but not verified.

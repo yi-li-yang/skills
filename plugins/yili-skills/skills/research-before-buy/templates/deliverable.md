@@ -26,8 +26,7 @@ instead of guessing.]
 choice]
 
 **Confidence:** [how sure, and the one or two things that would flip the call if
-they turned out different — so the person knows where the decision is load-
-bearing]
+they turned out different — so the person knows what the decision depends on]
 
 **Prices:** [one line: prices as of {time, place}; verified / partly verified /
 unverified; which finalists are not verified. If any finalist is not fully
@@ -56,7 +55,7 @@ the person may not have known existed]
 white-label layers; the low-end (floor — minimum that solves it) and high-end
 (ceiling — what the best does) brackets; where the knee sits]
 
-**The domain lens:** [the category's real quality markers and what they revealed
+**Quality markers:** [the category's real quality markers and what they revealed
 about substance — fabric/cut/construction, ingredient chemistry, joinery, etc.]
 
 **Where the money goes:** [price decomposition — how much is substance vs brand

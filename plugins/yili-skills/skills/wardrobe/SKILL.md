@@ -1,12 +1,17 @@
 ---
 name: wardrobe
 description: >-
-  Use when someone keeps a record of the clothes they own, is looking at a piece of clothing, shoes, a bag or jewellery in a shop or online, or asks about a fabric, a construction method, a brand or the clothing industry. Acts as the wardrobe's record and a textile and industry expert: what a piece is made of and how, whether the make is worth the price, a brand's strengths and weaknesses from sourced evidence, how it fits their measurements, and what they already own like it. Taste is theirs: it does not judge whether something looks good. For which brand, product or shop to choose, research-before-buy also applies.
+  Use when someone keeps a record of the clothes they own, is looking at a piece of clothing, shoes, a bag or jewellery in a shop or online, or asks about a fabric, a construction method, a brand or the clothing industry. Also use when another task needs to know what a piece is made of, how well it is made, how it fits the person's measurements, or what they already own like it. Acts as the wardrobe's record and a textile and industry expert. Taste is theirs: it does not judge whether something looks good or whether to buy it.
 ---
 
 # Wardrobe
 
-The people own the taste. They decide what looks good, what suits them and what to buy. This skill does the two jobs they can't easily do in a shop:
+**Takes:** the person's wardrobe record, or a piece to add to it; a piece they are looking at (a photo of the item or its label, a product page, or a name and a price); or a question about a fabric, a construction method, a brand or the industry.
+**Returns:** the record, kept up to date; and for a piece, the technical facts: whether the make matches the price and the one fact that decides it, what it is made of and how, the brand's strengths and weaknesses for this line, where it lands on them and what could be altered, what they already own like it, the cost per wear, and what to check by hand. No verdict on looks or on whether to buy.
+
+Some steps below ask a question that this skill does not answer itself, written in italics, such as *how do I decide this purchase?* When you reach one and its condition holds, check whether one of your skills answers that question. If one does, load it and use its answer. If none does, answer the question yourself.
+
+The person owns the taste. They decide what looks good, what suits them and what to buy. This skill does the two jobs they can't easily do in a shop:
 
 1. **It is the wardrobe's record:** a digital twin of what they own, so they can see it anywhere.
 2. **It is a technical expert:** textile production, garment construction and the brands and industry behind them.
@@ -76,7 +81,7 @@ Price says what the brand charges. Research with the University of Leeds found d
 
 ### The brand
 
-Give the brand's strengths and weaknesses, by line or item rather than for the whole brand. For each, give the evidence and its date, and how strong the evidence is. Take them from `evidence.md`, the page's brand records and their own notes, in that order. Quality changes over the years. If the evidence is older than about a year or is thin, say so. Never present marketing, affiliate listicles or reputation as evidence.
+Give the brand's strengths and weaknesses, by line or item rather than for the whole brand. For each, give the evidence and its date, and how strong the evidence is. Take them from `evidence.md`, the page's brand records and their own notes, in that order. Quality changes over the years. If the evidence is older than about a year or is thin, say so, and ask *what do current owners actually report and show about how this line wears?* Never present marketing, affiliate listicles or reputation as evidence.
 
 When they ask about the industry, such as where something is made, how a process works, or why a fabric costs what it does, answer as a technical expert, and mark what you know from sources apart from what you believe.
 
@@ -118,7 +123,7 @@ Lead with the technical bottom line: whether the make matches the price, and the
 - cost per wear
 - what to check by hand before paying
 
-The decision is theirs. End with the facts, not with a recommendation to buy.
+The decision is theirs. End with the facts, not with a recommendation to buy. If they ask which brand, product or shop to buy from, that is a separate question, *how do I decide this purchase?*; ask it.
 
 ## Showing it on the person
 

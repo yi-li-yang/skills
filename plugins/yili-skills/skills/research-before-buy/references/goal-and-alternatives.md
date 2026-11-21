@@ -1,9 +1,9 @@
 # Goal Reframe & Alternatives
 
-Used at the end of Phase 1, before any research. The single highest-leverage move
+Used at the end of Phase 1, before any research. The single most valuable step
 in the skill: question the *premise* of the purchase, not just the choice within
 it. Everything else helps choose well inside a named purchase; this asks whether
-the named purchase is the right vehicle at all — and surfaces options the person
+the named purchase is the right route to the goal at all — and surfaces options the person
 doesn't know exist.
 
 ## The named purchase is an answer, not the question
@@ -20,11 +20,11 @@ in the person's frame. Searching the *job* breaks out of it and surfaces the
 alternatives they couldn't ask for because they didn't know they existed:
 
 - Named product: "Priority Pass" → trapped.
-- Job: "ways to get airport lounge access" → opens the real space.
+- Job: "ways to get airport lounge access" → shows the real options.
 
 ## The alternative classes to scan
 
-Once you have the job, re-open the full solution space. Alternatives often span
+Once you have the job, consider every kind of solution again. Alternatives often span
 categories the person never considered:
 
 - **Bundled access** — the job comes free or cheaper *inside* something else
@@ -39,12 +39,12 @@ categories the person never considered:
 
 ## Two things to get right
 
-- **Match to usage volume.** The best vehicle depends on frequency: a membership
+- **Match to usage volume.** The best route depends on frequency: a membership
   pays off above N uses/year, a bundle in a middle band, pay-per-use below it.
   This needs the usage data from Phase 1 — get it before recommending.
 - **Evaluate the alternative's *whole* value, not just the one job.** A premium
   card may cost a similar fee but bundle insurance, points, and other perks, so
-  judging it only on lounge access undercounts it. Count the full basket.
+  judging it only on lounge access undercounts it. Count all of it.
 
 ## Do not become a contrarian (the failure mode)
 
@@ -54,14 +54,14 @@ asked for. That is its own paralysis. Discipline:
 - Surface the alternatives **once**, clearly. If one genuinely dominates for this
   person's usage, say so and why.
 - If the person's original choice still stands after seeing them, **back it and
-  move on.** Don't relitigate.
-- **Gate by stakes.** Reframe expensive, recurring, or novice-domain purchases.
+  move on.** Don't argue it again.
+- **Let the stakes decide.** Reframe expensive, recurring, or novice-domain purchases.
   Don't reframe a cheap one-off — "have you considered alternatives to this £12
-  item" is the paralysis this skill exists to kill.
+  item" is the paralysis this skill exists to prevent.
 
 ## Output
 
 When an alternative beats the named purchase, say it plainly and early: "Priority
 Pass works, but for how often you fly, card X bundles the same lounge access plus
 [other value] for a similar fee — here's the comparison." Then proceed to choose
-within whichever vehicle the person picks.
+within whichever route the person picks.

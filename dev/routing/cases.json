@@ -1,0 +1,66 @@
+[
+  {
+    "id": "buy-vacuum",
+    "prompt": "Which robot vacuum should I buy for a small flat with a cat? I don't have a fixed budget.",
+    "expect": ["research-before-buy"],
+    "forbid": ["wardrobe"]
+  },
+  {
+    "id": "wardrobe-coat",
+    "prompt": "I'm thinking of buying a camel wool coat from COS for about 250 pounds. Is it a good buy for me?",
+    "expect": ["wardrobe"]
+  },
+  {
+    "id": "peers-coat-and-shop",
+    "prompt": "Help me choose a winter coat that works with what I already own, and tell me which shop or brand to buy it from.",
+    "expect": ["wardrobe", "research-before-buy"],
+    "patience": 12
+  },
+  {
+    "id": "expert-batteries",
+    "prompt": "Before we talk about electric cars, get up to speed on where solid-state batteries stand right now.",
+    "expect": ["updated-domain-expert"],
+    "forbid": ["research-before-buy"]
+  },
+  {
+    "id": "need-expert-category",
+    "prompt": "I'm deciding which robot vacuum to buy. The category has changed a lot since 2024, so first I need to know what an expert in robot vacuums knows now.",
+    "expect": ["updated-domain-expert"]
+  },
+  {
+    "id": "interview-job",
+    "prompt": "Should I take the job offer in Zurich or stay in my current job in London?",
+    "expect": ["interview-me-before-answer"]
+  },
+  {
+    "id": "think-conflicting-tests",
+    "prompt": "Two tests disagree on whether this air purifier removes formaldehyde. One comes from the maker and one from a consumer group. Which one do I believe, and how could relying on either go wrong?",
+    "expect": ["i-think-like-this"]
+  },
+  {
+    "id": "digest-video",
+    "prompt": "Watch this review and tell me what it actually shows about the battery life, not just what the reviewer says: https://www.youtube.com/watch?v=aqz-KE-bpKQ",
+    "expect": ["digest-distill-information"]
+  },
+  {
+    "id": "need-material",
+    "prompt": "Find out what long-term owners and independent lab tests actually show about suction loss in robot vacuums: the review videos, the owner photos and the comments. Bring back only what matters.",
+    "expect": ["digest-distill-information"]
+  },
+  {
+    "id": "write-email",
+    "prompt": "Draft a short email to my landlord asking them to fix the boiler this week.",
+    "expect": ["write-like-myself"]
+  },
+  {
+    "id": "explain-concept",
+    "prompt": "Explain what a race condition is.",
+    "expect": ["talk-standard-tech-eng"],
+    "forbid": ["research-before-buy", "wardrobe", "updated-domain-expert", "digest-distill-information", "interview-me-before-answer"]
+  },
+  {
+    "id": "nothing-needed",
+    "prompt": "What is 17 times 23?",
+    "forbid": ["research-before-buy", "wardrobe", "updated-domain-expert", "digest-distill-information", "interview-me-before-answer", "i-think-like-this"]
+  }
+]

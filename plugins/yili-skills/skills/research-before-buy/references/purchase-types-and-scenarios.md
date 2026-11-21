@@ -1,9 +1,9 @@
 # Purchase Types & Corner-Case Scenarios
 
-The skill's lenses were first written for physical objects, but "buying" spans
-far more. **Recognise the type first** — it decides which lenses apply and how
+The skill's research areas were first written for physical objects, but "buying" spans
+far more. **Recognise the type first** — it decides which research areas apply and how
 they reinterpret. Then check the cross-cutting scenarios, which can overlay any
-type. This file is the coverage backbone; consult it early (Phase 1).
+type. This file maps what the skill covers; consult it early (Phase 1).
 
 ## Part A — Purchase types
 
@@ -13,8 +13,8 @@ what the dominant risk is.
 
 ### Object (physical good) — the default
 - Quality = materials + construction. Premium = brand vs white-label. Channel =
-  where/country (see `sourcing-uk-china.md`). Risk = defects, durability,
-  counterfeit. Timing = product cycle. All existing lenses apply directly.
+  where (see `sourcing-arbitrage.md`). Risk = defects, durability,
+  counterfeit. Timing = product cycle. All research areas apply directly.
 
 ### Service (contractor, tradesperson, professional, repair, cleaning, salon)
 - You are buying a *provider's future performance*, not a SKU — and variability
@@ -26,8 +26,8 @@ what the dominant risk is.
   of person, sometimes better at the smaller shop. Channel = *which provider, found
   how* — a vetted referral beats a marketplace beats an ad.
 - No returns: you commit before you see the output, so **recourse** (contract,
-  deposit terms, dispute path) matters more than for goods. The insider lens is
-  gold here — how does the trade vet its own?
+  deposit terms, dispute path) matters more than for goods. Insider knowledge is
+  especially valuable here — how does the trade vet its own?
 
 ### Experience (travel, dining, events, a course taken for its own sake)
 - Largely subjective, one-shot, non-returnable, time-bound, valued as memory.
@@ -81,21 +81,21 @@ what the dominant risk is.
 - Condition variance dominates spec. The protective move is inspection or
   verification before committing. Scam vectors: too-cheap, off-platform payment,
   refusal of inspection. There's often a depreciation sweet spot — let the first
-  owner eat the steepest drop.
+  owner take the steepest drop in value.
 
 ### Negotiable or dynamic pricing (cars, property, markets, B2B; flights, hotels)
-- The price is a *move*, not a fact. Don't treat a quote as the value. For
+- The price is a *starting position*, not a fact. Don't treat a quote as the value. For
   negotiable: leverage, walk-away point, timing. For dynamic: booking windows and
   volatility. Surface the realistic transacted price, not the asking price.
 
 ### Urgent / emergency
 - No time to optimise. Compress to "safe, fast, good-enough, reversible if
   possible." Avoid the panic-priced buy and the predatory urgency upsell — you can
-  optimise the *permanent* replacement later, once the fire is out.
+  optimise the *permanent* replacement later, once the emergency is over.
 
 ### Ethics / values-driven
 - When the dominant axis is sustainability, labour, origin, or animal welfare,
-  treat values as a first-class constraint, research the *actual* practices (watch
+  treat values as a constraint as real as price, research the *actual* practices (watch
   greenwashing — pair with `hype-filter.md`), and accept the person may rationally
   pay more for alignment. Don't override their values with pure price/value logic.
 
