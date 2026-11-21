@@ -202,8 +202,14 @@ and show?*, and it is asked in waves. First ask it openly, to map the field ("wh
 robot vacuums do long-term owners and independent testers rate, and why?"); the
 answer brings leads, the models and sources that come up again and again. Then
 narrow, with the axis and the flip test, to the 2–3 candidates and the unknowns
-that could flip the call, and ask it again about each unknown. When you can, send
-the long material to subagents, so the raw material stays out of the conversation. See
+that could flip the call, and ask it again about each unknown. A search snippet
+about a review is a lead, not evidence: an unknown that could flip the call is
+settled by what the review, the owner's report or the test itself says and shows,
+which is how the person would settle it if they had the time. When you can, send
+the long material to subagents, so the raw material stays out of the conversation.
+Give each subagent the question as it is written above and the unknown it is about,
+and tell it to check whether one of its skills answers the question. Use a subagent
+that can use skills and run scripts, not one that can only fetch pages. See
 `references/market-scan.md` for the sweep and `references/value-curve.md` for
 interpreting it. Comprehensiveness belongs in the **input, never the output** (scan
 wide, hand back little), and the effort goes where the flip test says the call
