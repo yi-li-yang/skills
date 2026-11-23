@@ -28,7 +28,11 @@ love. Record a hard cap only if one exists.
 If price does not bind and the risk is low, judge risk and friction instead of
 price and value. Ask what the premium buys: only the brand (buy cheap),
 durability (buy durable if they hate buying twice), safety (buy up), or a nicer
-daily finish (buy nicer). Then lean toward the reliable option. If the need
+daily finish (buy nicer). "Both work" usually means only that both work out of
+the box, and the difference often shows later, in how long each lasts and how it
+fails, as with a cheap charger that fails unsafely. When overpaying does not
+hurt, the only thing that can hurt is going cheap and meeting a failure or a
+safety risk, so lean toward the reliable option. If the need
 itself is fuzzy, a cheap probe teaches more than research.
 
 ## Taste and values

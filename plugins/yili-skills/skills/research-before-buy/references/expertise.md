@@ -7,19 +7,25 @@ behind a proxy such as the brand, the price or one headline spec: fibre, weave
 and construction for clothes and bedding; actives and their concentration for
 skincare; joinery for furniture; steel and edge geometry for knives; panel and
 chipset for electronics; for a service, how the trade vets its own. Aim for
-reasoning a professional would recognise as their own, tie each quality claim
-to something found live, and learn only as much as the unknowns that could flip
-the call need.
+reasoning a professional would recognise as their own, and tie each quality
+claim to something found live. Your own sense of which brands are good partly
+reflects how well known they are, so check it more than most of what you know.
+Learn only as much as the unknowns that could flip the call need.
 
 ## Where the money goes
 
 A price is substance, plus brand premium, plus marketing and margin. Much of
 what is sold, especially from China, is one factory's output under several
 labels, so find the unbranded equivalent first. Then ask what the premium buys:
-consistent quality control, a real design or formulation advantage, after-sales
-and resale are earned; a logo and an ad budget are not. Only the quality markers
-tell the two apart. Telling the person in a line where their money goes is often
-the most useful thing the research produces.
+consistent quality control, a real design or formulation advantage, after-sales,
+resale and a signal the person truly needs are earned; a logo and an ad budget
+are not. Only the quality markers tell the two apart. The same question applies
+beyond goods. For a service, ask whether a known firm's work is better, or only
+dearer for its name and overhead than a solo practitioner doing the same job.
+For a subscription or a financial product, the premium is the fees and terms
+over the holding period, against what a leaner option gives. Telling the person
+in a line where their money goes is often the most useful thing the research
+produces.
 
 ## The curve and the knee
 
