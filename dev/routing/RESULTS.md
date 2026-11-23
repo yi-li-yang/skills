@@ -53,3 +53,44 @@ Total cost of the runs above: about 21 USD (18.91 for whole sessions, 1.79 for t
 On 2026-11-21 the reasoning skill was made to load whenever sources conflict. The cue in each asking skill said to load the answering skill even if Claude could answer the question itself, a disagreement became a standing condition at any phase, and the reasoning skill's description led with disagreement inside other tasks. It then loaded in 6 of 6 frying-pan runs (0 of 5 before), and when a conflict first appeared during research, and still not for a kettle with no conflict.
 
 It was rolled back the same day. Claude settling a conflict itself is acceptable: the connections are soft by design, and every run reached the same sound call with or without the reasoning skill, so forcing it added loads and text without a better answer. Two small changes from that work were kept, because they help whenever the skills meet: the reasoning skill's `[Thought]` marker gives way when another skill sets how the reply opens, and the reading skill reports each side where items disagree instead of choosing quietly. The commit that forced the loading, `0d6ad47`, shows how to do it again if it is ever wanted.
+
+## Net price and timing: before and after (2026-11-23)
+
+The purchase skill gained `references/net-price-and-timing.md`: what the person pays in the end by each route (what comes off at checkout, what money comes back and on which condition, what the route costs), and whether to pay now or later. Whole sessions with `session.py`, default model (Opus 5.5). "Before" is version 2.1.0, without the file. "After" is version 2.2.0 before three wording fixes (one name for instalment plans, the sentence on variants, "recovered").
+
+| Prompt | Before | After |
+| --- | --- | --- |
+| "I've already decided on the Sony WH-1000XM6. It's Black Friday week in the UK: should I buy now or wait, and how do I get them cheapest?" | Buy this week at £298 from Amazon or Currys. It read the price history (PriceSpy, deal articles), called the "was" price an anchor, ruled out marketplace sellers for warranty risk and named Section 75. Cashback was "usually a few percent", with no condition. 0.56 USD, 73 s. | Same call, now argued as a bet with a cost on each side: waiting saves about £15 at best, and the colour may sell out at £298. It compared routes (Currys with cashback, Amazon, marketplaces, price matching), said that a voucher code cancels the cashback and that claims are sometimes declined, and found that other colours cost more. It did not name Section 75 this time, did not ask which cards the person holds, and the only step after buying was the returns window, not a check that the cashback tracked. 0.73 USD, 100 s. |
+| "亚马逊上一台 Ninja 双篮空气炸锅，黑五标着原价 £249.99，现在 £129.99。家里还没有空气炸锅，值得买吗？" | Mostly worth it, but check the model. It called £249.99 an anchor, read camelcamelcamel, split the call between the 7.6 L and 9.5 L models, and asked whether two drawers fit the household. 0.50 USD, 63 s. | Same call. It also saw that a sale started the question, worked out the saving against the usual price (about £50–70, not £120), named the likely regret (a thing the home never had often goes unused) and made the now-or-wait call. 0.51 USD, 62 s. |
+| "Which kettle should I buy?" (after only, to check proportion) | — | Pass. Discounts got one line ("if one of them is on sale, buy it then") and no hunt for codes. The interview skill also loaded, from the question in Phase 0; the kettle run on 2026-11-21 loaded only the purchase skill, so this is run-to-run variation. 0.51 USD, 52 s. |
+
+The routing eval passed 5 of 5 (0.42 USD): a purchase already chosen and a "was" price in Chinese both loaded the purchase skill, "How do cashback websites make money?" did not, and two old cases still passed.
+
+What this shows:
+
+- **Much of the price work happens without the new file.** The history check, the "was" price as an anchor, the model-number check and the seller risk were all in the runs before. So the file holds only what was missing, and its worked example names only this person's own routes.
+- **The file changed what it was written for.** Money back now comes with its conditions, waiting is weighed against its cost, variants are priced separately, and the saving is counted against the usual price, not the "was" price.
+- **Three parts did not show up in one run each:** the person's own cards, the ordered steps, and the checks after buying. One run per prompt cannot separate the file from run-to-run variation, and the connections are soft by design, so nothing was added to force them.
+
+The routing runner crashed twice on Windows before these results. It removes the temporary folder of a session it has just stopped, and Python 3.11's `TemporaryDirectory` recurses without end when that folder is still locked. Both runners now use `scratch_folder()` in `run.py`, which leaves such a folder behind instead.
+
+Cost: 1.06 USD before, 1.75 USD after, 0.42 USD for routing, and two routing runs that crashed early.
+
+### Reading where deal hunters already did the work (same day)
+
+The question was whether the skill uses third-party sites such as MoneySavingExpert well. In the five runs above, Claude read PriceSpy, camelcamelcamel and hotukdeals on its own but never MoneySavingExpert, and the skill did not say how to weigh such places. `net-price-and-timing.md` gained a section, "Who has already done the hunt". It names three kinds of place: price trackers; deal communities, whose comments hold what the post leaves out; and consumer-advice sites, which are strong for how a discount works and for renewals and weak for whether this item at this price is right. Each is weighed by who is paid when a reader buys.
+
+| Prompt | Version | Outcome |
+| --- | --- | --- |
+| "My broadband contract with Virgin Media ends next month, and the renewal price they quoted is £62 a month. What should I do?" | Before the section | It used MoneySavingExpert on its own: the haggling poll, the forum thread of Virgin retention deals and the comparison tool. It set the new-customer price as the target, and named One Touch Switch and Ofcom's rule that rises are stated in pounds. 0.48 USD, 58 s. |
+| Same | Section in the reference only | It never opened the reference, did not use MoneySavingExpert, and said it found no reports of Virgin retention offers this month. 0.43 USD, 49 s. |
+| Same | One sentence added to Phase 5 of SKILL.md | It used MoneySavingExpert's guide to haggling with Virgin, the forum thread and the poll again. Same call as before the section. 0.43 USD, 46 s. |
+| The XM6 prompt above | Latest version | It read the reference. From hotukdeals threads it found student and Blue Light prices and a refurbished listing. It picked Argos for a price guarantee that runs to 25 December, so buying now costs nothing if the price falls, and gave the dates to check the price after buying. It also said that the sites it used earn from readers but mostly report the same price. Still no Section 75 and no question about the person's cards. 0.72 USD, 89 s. |
+
+What this shows:
+
+- **Claude already uses these sites well when the question points at them:** MoneySavingExpert for a broadband renewal, and hotukdeals and the trackers for a product. One run each cannot show that the section adds to that.
+- **A reference helps only when the work reaches it.** The broadband run went from SKILL.md straight to search and never opened `net-price-and-timing.md`. So the idea now also has one sentence in Phase 5 of SKILL.md, which always loads.
+- **The latest product run used more of the file than the first run after the change did:** discounts for who is buying, price protection as a way to make buying now safe, dates to check after buying, and a weight on sources that earn from readers.
+
+Cost: 2.06 USD for these four runs.

@@ -50,21 +50,23 @@ Model and variant · seller (retailer or marketplace third party) · price · cu
 · how it was read (1–5 above) · region the page was read from.
 
 Check that the variant on the page is the candidate you mean. Delivery and stock
-are part of the price.
+are part of the price. Record any member price, code, money back or instalment
+plan apart from the price, with its condition.
 
 ## Handoff list
 
 When a finalist's price was not read, append this to the Brief, filled in:
 
 ```
-取价清单：打开下面这些页面，各读价格、币种、是否含税、运费、库存、卖家和你读取的时间，按表格回我。遇到验证码或登录页就停下告诉我。
+取价清单：打开下面这些页面，各读价格、币种、是否含税、运费、库存、卖家和你读取的时间；页面上显示的会员价、优惠码、返现或分期优惠也一并记下。按表格回我。遇到验证码或登录页就停下告诉我。
 1. {candidate A} — {URL}
 2. {candidate A, second seller} — {URL}
 3. {candidate B} — {URL}
 ```
 
 (English: open these pages and read price, currency, tax included or not, delivery
-cost, stock, seller and the time you read it; reply as a table; stop at any captcha
+cost, stock, seller and the time you read it, and any member price, code,
+cashback or instalment plan the page shows; reply as a table; stop at any captcha
 or login page.) The person pastes it into the Chrome side panel.
 
 ## Rules for prices
@@ -75,8 +77,8 @@ or login page.) The person pastes it into the Chrome side panel.
 - **Say where the page was read from.** A cloud agent is often not in the
   person's country, so currency, tax, stock and price can differ from what they
   will see. Convert currencies with a live rate and state its date.
-- **A crossed-out "was" price is not evidence of a discount.** Do not call
-  something a deal on that basis.
+- **A crossed-out "was" price is the seller's claim, not evidence of a
+  discount.** The item's own price history decides.
 - For a comparison across places, the landed-cost method in
   `sourcing-arbitrage.md` still applies; duty and VAT figures are checked live
   there too.

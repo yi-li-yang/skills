@@ -51,6 +51,10 @@ sits in the technology cycle. Check, for the category:
 - **Ecosystem & lock-in trajectory.** Where the platform/accessory ecosystem is
   heading, so today's buy is not left unsupported.
 
+The product cycle is one of two drivers of timing. The other is where the price
+sits in its own history and in the market's sale calendar; see
+`net-price-and-timing.md`.
+
 ## Output discipline
 
 After scanning broadly, surface only what bears on *this* decision: the few

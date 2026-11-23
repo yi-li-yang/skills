@@ -15,6 +15,7 @@ A wrong load, or no load, points to the description of the skill that should hav
 never in the prompt. Each case costs one short session (about 0.2-0.5 USD with the default model).
 """
 import argparse
+import contextlib
 import json
 import shutil
 import subprocess
@@ -45,12 +46,26 @@ def claude_executable():
     return [found or "claude"]
 
 
+@contextlib.contextmanager
+def scratch_folder():
+    """A temporary folder that is removed afterwards, if it can be.
+
+    On Windows a killed session can still hold the folder for a moment. Python 3.11's TemporaryDirectory then
+    recurses without end while it removes it, so remove it here and leave it behind if it is still in use.
+    """
+    path = tempfile.mkdtemp()
+    try:
+        yield path
+    finally:
+        shutil.rmtree(path, ignore_errors=True)
+
+
 def run_case(case, model):
     """Run one case and return the skills it loaded, the reason it stopped, and its cost."""
     loaded, stopped, cost, listed = [], "end", None, []
     expected = {PREFIX + name for name in case.get("expect", [])}
     patience, other_calls = case.get("patience", 0), 0  # tool calls allowed before the routing counts as decided
-    with tempfile.TemporaryDirectory() as empty:  # no CLAUDE.md or project files to steer the choice
+    with scratch_folder() as empty:  # no CLAUDE.md or project files to steer the choice
         settings = Path(empty) / "settings.json"
         settings.write_text(SETTINGS, encoding="utf-8")
         # The prompt goes in on stdin, so no shell ever parses it.

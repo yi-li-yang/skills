@@ -23,12 +23,11 @@ import os
 import shutil
 import subprocess
 import sys
-import tempfile
 import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from run import PLUGIN_DIR, SETTINGS, claude_executable  # noqa: E402
+from run import PLUGIN_DIR, SETTINGS, claude_executable, scratch_folder  # noqa: E402
 
 
 def prepared_plugin(workdir, without, renames, swaps):
@@ -81,7 +80,7 @@ def main():
 
     record = {"prompt": args.prompt, "without": args.without, "rename": args.rename, "swap": args.swap,
               "disallow": args.disallow, "allow": args.allow, "skills_listed": [], "steps": [], "result": None, "cost": None}
-    with tempfile.TemporaryDirectory() as workdir:
+    with scratch_folder() as workdir:
         plugin = prepared_plugin(workdir, args.without, args.rename, args.swap)
         settings = Path(workdir) / "settings.json"
         settings.write_text(SETTINGS, encoding="utf-8")

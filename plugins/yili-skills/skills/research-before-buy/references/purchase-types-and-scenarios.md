@@ -93,6 +93,13 @@ what the dominant risk is.
   possible." Avoid the panic-priced buy and the predatory urgency upsell — you can
   optimise the *permanent* replacement later, once the emergency is over.
 
+### A sale started the question
+- Would they buy it at its usual price? If not, the discount is the reason, and a
+  discount on something they do not need is a cost, not a saving.
+- A sale can choose between candidates that serve the use, between routes and
+  between dates; it cannot make WHAT. Most sales come back, so a countdown is the
+  seller's tool, not a reason.
+
 ### Ethics / values-driven
 - When the dominant axis is sustainability, labour, origin, or animal welfare,
   treat values as a constraint as real as price, research the *actual* practices (watch

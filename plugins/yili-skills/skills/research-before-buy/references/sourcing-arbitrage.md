@@ -106,7 +106,8 @@ goods and China-only products are often much cheaper.
 
 ### Landed cost (applies to channels 2 and 3)
 
-Compare *landed* cost, not sticker: item + (shipping or trip-attributable cost) +
+Compare *landed* cost, not sticker: the item's net price on that side (a subsidy
+or a sale can make the gap or erase it) + (shipping or trip-attributable cost) +
 import duty + VAT + forwarder/handling + any re-entry duty above the allowance. A
 "half price" item can land near parity. Verify the current duty/VAT/allowance
 figures live before relying on them.

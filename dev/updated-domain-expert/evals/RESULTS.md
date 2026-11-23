@@ -1,6 +1,6 @@
 # A/B results
 
-**Does `/expertise` make Claude's answers better, by how much, and does it cause problems of its own?** Run on 2026-10-06, following [PROTOCOL.md](PROTOCOL.md). Every number below comes from the files in this folder and can be recomputed with `tools/score.py` and `tools/agree.py`.
+**Does `/expertise` make Claude's answers better, by how much, and does it cause problems of its own?** Run on 2026-10-06, following [PROTOCOL.md](PROTOCOL.md). Every number below comes from the run files (answers, judgings, audits and build research). They stay on the author's machine and are not in the repository; `tools/score.py` and `tools/agree.py` recompute the numbers from them.
 
 ## Bottom line
 
@@ -144,7 +144,7 @@ Judges can disagree with sources that disagree with each other. The third kanna 
 
 ## 6. Are the briefings right?
 
-Separate auditors checked every claim in each briefing against its cited source and other primary sources ([Claude Code](claude-code-extensibility/briefing-audit.md), [League](league-of-legends/briefing-audit.md), [kanna](kanna/briefing-audit.md)).
+Separate auditors checked every claim in each briefing against its cited source and other primary sources (each topic's `briefing-audit.md`, kept with the run files).
 
 | Briefing | Claims | Correct | Wrong | Mis-cited (true, wrong source) | Unverifiable |
 |---|---|---|---|---|---|
@@ -175,7 +175,7 @@ The corrected briefings are in [`examples/`](../examples/); each records its cor
   - where to save briefings
   - a README promise that the next conversation "starts current"
 
-  All were fixed before the A/B run ([cold-review.md](build/skill-review/cold-review.md)).
+  All were fixed before the A/B run (`build/skill-review/cold-review.md`, kept with the run files).
 - **Skipped steps.** None seen.
   - The three builds were run by this session's orchestrator, following SKILL.md. Each wrote a prior first (from a fresh agent with no tools), ran 5–6 parallel research agents, and wrote the briefing.
   - The refresh agent, reading SKILL.md cold, also wrote its prior, probed, and logged its changes.
