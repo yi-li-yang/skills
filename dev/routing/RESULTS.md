@@ -94,3 +94,31 @@ What this shows:
 - **The latest product run used more of the file than the first run after the change did:** discounts for who is buying, price protection as a way to make buying now safe, dates to check after buying, and a weight on sources that earn from readers.
 
 Cost: 2.06 USD for these four runs.
+
+## The purchase skill, cut to a hint (2026-11-23)
+
+The user asked for the strengths of two bedding answers to be combined, and for the skill to be as short and general as it can be, because a skill is a hint, not a constraint. The two answers were the old version on claude.ai, with memory, five research subagents and several turns, and version 2.2.0 in one headless run. SKILL.md became seven questions, and twelve references became four (`framing`, `expertise`, `evidence`, `acquisition`), from about 13,300 words to 3,300. Taken from the older answer: research in parallel when the decision is worth it, say what the evidence cannot settle, and treat a price lock as a reason to buy now. Taken from the newer one: check what would make an option fail at all (size, standards, what it must fit with) before quality, correct a wrong premise once, and give branches instead of asking first.
+
+| Prompt | Outcome |
+| --- | --- |
+| "床上四件套材质怎么选? 买哪个牌子。我在英国，床是 140×200，被套大一点没关系。" | Size came first: 140×200 fitted sheets from four UK sellers, a King sheet as the fallback, mattress depth, and the duvet cover matched to the duvet, which corrected "a bigger cover is fine". The material was split by running hot or cold, with no question asked first. It warned about inflated thread counts and that "Egyptian cotton" does not mean long-staple. It gave Black Friday or the January sales as the timing, and costed Taobao forwarding with UK VAT. It did not say outright that no independent data ranks the brands, and the 🛒 line was missing, as it was in the run before the change, both times after the writing skill loaded. 1.08 USD, 202 s. |
+| "Which kettle should I buy?" | Branches by what the person drinks, a check against the price history ("about the lowest it has been, so no point waiting"), no hunt for codes, and "if your current kettle still works, you don't need a new one". 0.67 USD, 103 s. |
+
+One run each. Neither run used research subagents, as in most single headless runs.
+
+## Do the example phrases in a description do any work? (2026-11-23)
+
+The purchase skill's description listed Chinese trigger phrases and English examples. Six prompts ran against three versions of the description: as it was, without the Chinese phrases, and with no examples at all. The two prompts that gave different results then ran three more times on each version, with room for three other tool calls.
+
+| Prompt | As it was | No Chinese phrases | No examples |
+| --- | --- | --- | --- |
+| Three Chinese purchase questions worded unlike any listed phrase (an air purifier, a mattress, a vacuum deal), once each | loaded | loaded | loaded |
+| "给我妈挑个生日礼物，五十镑左右，送什么好？" (a gift) | 3 of 4 | 2 of 4 | 4 of 4 |
+| "Is it worth fixing my eight-year-old washing machine, or should I just get a new one?" | 4 of 4 | 4 of 4 | 0 of 4 |
+| A Chinese question about inflation, which should not load it | not loaded | not loaded | not loaded |
+
+- **The Chinese phrases did no work.** Chinese questions in other words loaded the skill without them, and the gift question varied as much with them as without. Claude matches the meaning of a description, not its words.
+- **An example works when it marks an edge of the scope that the main sentence leaves unclear.** Repair or replace is not obviously "choosing what to buy", and without the examples that question never loaded the skill.
+- **The gift question sometimes ends with the interview skill alone,** in every version.
+
+Cost: 2.45 USD.
