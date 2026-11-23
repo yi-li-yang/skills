@@ -68,7 +68,7 @@ All skills come in one plugin, so one update refreshes them all. Each skill stil
 plugins/yili-skills/                the plugin that gets installed
   .claude-plugin/plugin.json
   skills/<skill>/SKILL.md           one folder per skill
-dev/<skill>/                        evals, research, tools and notes; never installed
+dev/<skill>/                        evals, research, tools and notes; never installed; eval outputs stay local
 dev/tests/                          structure test for every skill
 dev/routing/                        routing eval: does each need find its skill?
 .githooks/                          privacy guard for write-like-myself, see dev/write-like-myself

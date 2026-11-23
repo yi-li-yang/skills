@@ -15,6 +15,16 @@ dev/write-like-myself/evals/results/
 *.eml
 *.mbox
 
+# Eval outputs stay on this machine: commit the cases, the tools and a short write-up
+dev/*/results/
+dev/*/evals/build/
+dev/*/evals/*/answers-*.md
+dev/*/evals/*/arm-notes-*.md
+dev/*/evals/*/blind*.md
+dev/*/evals/*/blind*.json
+dev/*/evals/*/judge*.json
+dev/*/evals/*/briefing-audit.md
+
 # Python
 __pycache__/
 *.pyc

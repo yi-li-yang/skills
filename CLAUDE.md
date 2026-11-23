@@ -9,3 +9,4 @@ The master repository for my Claude Code skills. One plugin (`plugins/yili-skill
 - Bump the version in both `plugins/yili-skills/.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` when a skill changes, or installed copies will not update.
 - `.githooks/` holds a privacy guard that blocks private writing material from commits and pushes. Run `git config core.hooksPath .githooks` in a new clone. It needs `dev/write-like-myself/tools/local.toml`, which is not committed; without it only the pattern and path rules run.
 - Every skill's README is at `dev/<skill>/README.md`.
+- Eval outputs stay on this machine: `.gitignore` keeps what a run writes (results, answers, judgings, build research) out of the repository. Commit the cases, the tools and a short write-up of what the run showed.
