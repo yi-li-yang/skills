@@ -309,7 +309,11 @@ the person pays in the end is the net price (到手价) of a route: the decision
 price, less what comes off at checkout, less the money back that is likely to
 arrive, plus what the route itself costs. Prices also move, so *when* to pay is a
 decision too, a bet with a cost on each side. Work out both in proportion to the
-money at stake (see `references/net-price-and-timing.md`). When the best route
+money at stake (see `references/net-price-and-timing.md`). The hunt for a cheaper
+route has usually been done before, so read where deal hunters left it (a deal
+post and its comments, a price tracker, a consumer-advice site such as
+MoneySavingExpert or 什么值得买) before hunting alone, and weigh each by who is paid
+when a reader buys. When the best route
 depends on what the person holds, such as cards, memberships, accounts or a
 status, and nothing on record says it, ask *how does this person decide here, and
 what do they already hold?*

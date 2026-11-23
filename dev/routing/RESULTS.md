@@ -75,3 +75,22 @@ What this shows:
 The routing runner crashed twice on Windows before these results. It removes the temporary folder of a session it has just stopped, and Python 3.11's `TemporaryDirectory` recurses without end when that folder is still locked. Both runners now use `scratch_folder()` in `run.py`, which leaves such a folder behind instead.
 
 Cost: 1.06 USD before, 1.75 USD after, 0.42 USD for routing, and two routing runs that crashed early.
+
+### Reading where deal hunters already did the work (same day)
+
+The question was whether the skill uses third-party sites such as MoneySavingExpert well. In the five runs above, Claude read PriceSpy, camelcamelcamel and hotukdeals on its own but never MoneySavingExpert, and the skill did not say how to weigh such places. `net-price-and-timing.md` gained a section, "Who has already done the hunt". It names three kinds of place: price trackers; deal communities, whose comments hold what the post leaves out; and consumer-advice sites, which are strong for how a discount works and for renewals and weak for whether this item at this price is right. Each is weighed by who is paid when a reader buys.
+
+| Prompt | Version | Outcome |
+| --- | --- | --- |
+| "My broadband contract with Virgin Media ends next month, and the renewal price they quoted is £62 a month. What should I do?" | Before the section | It used MoneySavingExpert on its own: the haggling poll, the forum thread of Virgin retention deals and the comparison tool. It set the new-customer price as the target, and named One Touch Switch and Ofcom's rule that rises are stated in pounds. 0.48 USD, 58 s. |
+| Same | Section in the reference only | It never opened the reference, did not use MoneySavingExpert, and said it found no reports of Virgin retention offers this month. 0.43 USD, 49 s. |
+| Same | One sentence added to Phase 5 of SKILL.md | It used MoneySavingExpert's guide to haggling with Virgin, the forum thread and the poll again. Same call as before the section. 0.43 USD, 46 s. |
+| The XM6 prompt above | Latest version | It read the reference. From hotukdeals threads it found student and Blue Light prices and a refurbished listing. It picked Argos for a price guarantee that runs to 25 December, so buying now costs nothing if the price falls, and gave the dates to check the price after buying. It also said that the sites it used earn from readers but mostly report the same price. Still no Section 75 and no question about the person's cards. 0.72 USD, 89 s. |
+
+What this shows:
+
+- **Claude already uses these sites well when the question points at them:** MoneySavingExpert for a broadband renewal, and hotukdeals and the trackers for a product. One run each cannot show that the section adds to that.
+- **A reference helps only when the work reaches it.** The broadband run went from SKILL.md straight to search and never opened `net-price-and-timing.md`. So the idea now also has one sentence in Phase 5 of SKILL.md, which always loads.
+- **The latest product run used more of the file than the first run after the change did:** discounts for who is buying, price protection as a way to make buying now safe, dates to check after buying, and a weight on sources that earn from readers.
+
+Cost: 2.06 USD for these four runs.

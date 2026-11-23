@@ -57,6 +57,36 @@ must be set up for it: the cashback click comes last before checkout, nothing el
 touches the sale, and the receipt is kept. A code from a voucher-code site is a
 lead, like a search snippet: only the checkout shows whether it works.
 
+## Who has already done the hunt
+
+For most items and most sales, someone has already done the hunt for a cheaper
+route: checked the price history, found what stacks, hit the catch and written it
+down. So before hunting alone, read where that work was left, the way the trade's
+view is read before the storefront's. Each kind of place holds a different part
+of it:
+
+- **A price tracker** records what the price was. It is the hardest source to
+  bend, and it answers only that question.
+- **A deal community** (hotukdeals, the MoneySavingExpert forum, 什么值得买) holds
+  the thread for this item at this seller. The post often carries a commission
+  link, but the comments hold what the post leaves out: what stacked, which
+  cashback did not track, which version is the catch, and that it was cheaper
+  last month. When a thread is long, ask *what do its comments actually say and
+  show?*
+- **A consumer-advice site** (MoneySavingExpert's guides, Which?) explains how a
+  kind of discount works and what the person's rights are: why cashback fails to
+  track, when card protection applies, what a price promise excludes, which sale
+  events bring real lows. It is a strong source for the mechanism and a weak one
+  for whether this item at this price is the right buy.
+- **For services, subscriptions and financial products**, consumer-advice sites
+  also keep what a renewal or a switch needs: the current new-customer prices,
+  how and when to haggle, best-buy tables, and eligibility checks that leave no
+  hard search on a credit file.
+
+Most of these places are paid when a reader buys through them, as any channel
+is, so their headline picks lean toward what pays. Weigh the comments, the votes
+of many buyers and the tracker's record above the headline.
+
 ## Is the discount real?
 
 The item's own price history settles it, not the crossed-out price that the
@@ -134,10 +164,13 @@ and rule here changes, so verify each one live before relying on it.
 
 In the UK, this person can buy through cashback sites (TopCashback, Quidco),
 card-linked offers (Amex Offers) and card rewards, so check each finalist's
-seller against all three. In China, 京东价保 refunds a drop within its window.
-Trade-in subsidies (国补, 以旧换新) can take a large share off appliances and
-phones, but eligibility, caps and whether the fund is open change by province and
-by month. 百亿补贴 prices are often the lowest, but third-party shops sell many of
+seller against all three. MoneySavingExpert's guides and forum cover how each of
+these works and fails, and for broadband, energy, mobile and insurance renewals
+they keep the new-customer prices and the ways to haggle or switch. In China,
+京东价保 refunds a drop within its window. Trade-in subsidies (国补, 以旧换新) can
+take a large share off appliances and phones, but eligibility, caps and whether
+the fund is open change by province and by month, and 小红书 notes often carry
+each province's rules and the stacking that worked there. 百亿补贴 prices are often the lowest, but third-party shops sell many of
 them, so check the recourse. 双11 and 618 now run for weeks, with 满减 and deposit
 presales, and price history is on 慢慢买 and 什么值得买. When the two places are
 compared (see `sourcing-arbitrage.md`), compare the net price on each side,
