@@ -1,101 +1,30 @@
-# Deliverable — two parts
+# Deliverable
 
-The output has two distinct parts with different jobs. Part 1 is for *acting*;
-Part 2 is for *auditing*. Keep them separate. Omit any section that doesn't
-apply. For a low-stakes / over-deliberation case, Part 1 may be two lines and
-Part 2 a short paragraph — scale to the decision, but always offer both.
+Two parts: a brief to act on, then a report to check the work. Scale both to the
+decision (for a small one the brief can be two lines) and leave out what does not
+apply.
 
----
+## Part 1: the brief
 
-# PART 1 — THE BRIEF
-*Read this. One to two minutes. The decision and the full reasoning behind it.*
+- **The call:** what to buy or do, and where and when, if that is in scope.
+- **Why:** the reasoning in a few sentences: what kind of decision this is, the
+  need, why this option over the others. Give branches where an unknown splits
+  the answer.
+- **The tradeoff:** what this choice gives up.
+- **Rules of thumb:** a few of your own, each with its mechanism and when
+  it fails, or one line saying you are not at expert level here.
+- **Confidence:** how sure you are, and what would change the call.
+- **Price:** how current the prices are and how they were read; the net price of
+  the chosen route, with money back shown apart; now or wait; anything to claim
+  or watch after buying, with dates.
+- **Stop here:** what good enough is, and the cue to buy.
 
-**The call:** [the judgment, stated plainly — what to buy / do, and where and
-when to buy it if that was in scope]
+## Part 2: the research report
 
-**Why:** [the full reasoning chain, kept tight — what kind of decision this
-turned out to be, the need it's serving, why this option over the others, in a
-few sentences. Enough logic to stand on its own without Part 2.]
-
-**Rules of thumb for {category} (口诀):** [3–5, your own, each as: the rule in
-one line → why it holds (the mechanism) → when it fails. If you could not pass
-the expert check in `references/domain-and-premium.md`, write one line saying so
-instead of guessing.]
-
-**The tradeoff:** [what you give up with this call — the honest cost of the
-choice]
-
-**Confidence:** [how sure, and the one or two things that would flip the call if
-they turned out different — so the person knows what the decision depends on]
-
-**Prices:** [one line: prices as of {time, place}; verified / partly verified /
-unverified; which finalists are not verified. If any finalist is not fully
-verified, add the handoff list from `references/price-check.md`.]
-
-**Net price and timing:** [the net price of the chosen route, with money back
-and its condition shown apart; now or wait, and why; what to do to buy and to
-claim afterwards, with dates. Omit it when no discount or date could change the
-call.]
-
-**Good enough / stop here:** [the definition of good-enough, what could still
-change the call (the flip-test result) or that nothing can, and the cue to stop
-and buy — so the loop ends]
-
----
-
-# PART 2 — THE RESEARCH REPORT
-*Scan or read. Everything found, so you can see what the agent knows and judge
-whether the call is reliable. Section labels adapt to the purchase type — for a
-service or subscription, "the field" is providers or plans, "where the money
-goes" is fees and terms; drop sections that don't apply.*
-
-**What I took as your need:** [use-derived requirements + hard constraints —
-surfaced so a wrong assumption can be corrected]
-
-**The goal behind the purchase / alternatives considered:** [the underlying job,
-and what other routes to it were weighed and why they lost — including options
-the person may not have known existed]
-
-**The market landscape:** [the field scanned — established, challenger, and
-white-label layers; the low-end (floor — minimum that solves it) and high-end
-(ceiling — what the best does) brackets; where the knee sits]
-
-**Quality markers:** [the category's real quality markers and what they revealed
-about substance — fabric/cut/construction, ingredient chemistry, joinery, etc.]
-
-**Where the money goes:** [price decomposition — how much is substance vs brand
-premium, and whether the premium buys anything real here]
-
-**Decision prices:** [a table: candidate · seller · price · currency and
-tax-included or not · delivery · stock · read time · method (R1–R5) · region ·
-URL. A price that was not read says "unverified" and shows the approximate range,
-marked approximate. See `references/price-check.md`.]
-
-**Net price and timing:** [each route: decision price · checkout discounts ·
-money back (condition, when) · route costs · net price · recourse; where today's
-price sits in its history; the now-or-wait reasoning.]
-
-**Tech currency & timing:** [current generation vs imminent successor, standards
-in transition, support horizon — any timing flag that affects the call]
-
-**Real vs hype:** [features evaluated against the "does it change your use" test;
-which premium features are genuine and which are marketing]
-
-**What the insiders know:** [trade/practitioner findings — what a professional
-would do, where margin hides, defects to check, the channel pros use]
-
-**Acquisition (channel / provider / terms):** [for an object: local vs
-China-domestic pricing and channels, landed cost and risk; for a service: which
-provider and contract terms; for a subscription: which plan, billing term, and
-exit terms; for an experience: booking route and timing]
-
-**Source quality:** [what evidence was trusted vs discounted — failure reports and
-practitioner voices over affiliate lists and inflated averages]
-
-**The candidates in detail:** [the 2–3 options with their evidence, each tied to a
-use and its tradeoff]
-
-**Confidence & gaps (the honest part):** [what's well-evidenced vs thin; where the
-reasoning is inference from specs rather than reports; what was assumed but not
-verified; what couldn't be found. This is what lets the person calibrate trust in
-the call.]
+Scannable, with headers that fit the type: the need as you understood it; the
+job and the alternatives; the field and where the knee sits; quality markers and
+where the money goes; decision prices (seller, price, currency and tax, delivery,
+stock, when, how and where read); routes and timing; the product cycle; real
+improvements and hype; what insiders know; how much each source was trusted; the
+candidates; and the gaps: what is well evidenced, what is thin, and what was
+assumed or not found.
