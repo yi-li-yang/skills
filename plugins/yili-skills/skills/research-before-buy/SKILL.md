@@ -1,13 +1,13 @@
 ---
 name: research-before-buy
 description: >-
-  Use when the user is choosing what to buy or which provider/plan to pick, or an agent is about to choose a purchase for them: 买哪个 / 怎么选 / 值不值得买 / 哪家好 / 要不要买, X vs Y, is the expensive one worth it, repair or replace, rent or buy, China or local. Skip groceries, reorders of a known item, plain link requests, and free tools, libraries or technical approaches (no money or provider is at stake).
+  Use when the user is choosing what to buy, which provider/plan to pick, or where and when to buy something already chosen, or an agent is about to choose a purchase for them: 买哪个 / 怎么选 / 值不值得买 / 哪家好 / 要不要买 / 现在买还是等, X vs Y, is the expensive one worth it, is this deal real, repair or replace, rent or buy, China or local. Skip groceries, routine reorders, plain link requests, and free tools, libraries or technical approaches (no money or provider is at stake).
 ---
 
 # Research Before Buy
 
-**Takes:** what the person wants to buy, or which provider or plan to pick, and whatever is known about their use, their limits and how they decide.
-**Returns:** a short brief with a call (what to buy, and where or on which terms), the reasoning and the tradeoff behind it, then a research report as the evidence.
+**Takes:** what the person wants to buy, which provider or plan to pick, or where and when to buy something already chosen, and whatever is known about their use, their limits and how they decide.
+**Returns:** a short brief with a call (what to buy, and where, when and on which terms), the reasoning and the tradeoff behind it, then a research report as the evidence.
 
 Some steps below ask a question that this skill does not answer itself, written in italics, such as *how does this person decide here?* When you reach one and its condition holds, check whether one of your skills answers that question. If one does, load it and use its answer. If none does, answer the question yourself.
 
@@ -118,7 +118,10 @@ the *map* (kinds, tiers, alternatives), the *trade's view* (how practitioners
 choose) and the *failures* (what breaks, what people regret) — are done in
 whatever order the case calls for, and each reshapes the others. Only three
 orders are fixed: recognise the type before reading the axis; settle WHAT before
-WHERE; run the flip test before stopping.
+WHERE; run the flip test before stopping. When the person arrives with WHAT
+already settled and asks only where, when or how to pay least, start at Phase 5,
+and raise WHAT again only if you find something that would change it, such as a
+successor about to launch or a known defect.
 
 ### Phase 0 — Diagnose: how much should land on the person?
 
@@ -151,7 +154,8 @@ the type decides which research areas apply and how they reinterpret. For a serv
 "quality" is a provider's track record, not materials; for a subscription, the
 cost is the lifetime total, not the sticker; a financial product hits the
 Boundaries above. Also catch the cross-cutting scenarios that change the play
-(gift, repair-vs-replace, used, urgent, negotiable, values-driven). When the
+(gift, repair-vs-replace, used, urgent, negotiable, values-driven, a sale that
+started the question). When the
 purchase is clothing, shoes, a bag or jewellery, the technical facts about the
 piece are their own question: ask *what is this piece made of, how well is it
 made, and what do they already own like it?* Whether it looks good on them stays
@@ -300,6 +304,16 @@ person's own Chrome first, a handoff list if it isn't reachable from this sessio
 "unverified" if neither. A price without a read time and method is never stated as
 current.
 
+**Net price and timing.** The decision price is the seller's opening number. What
+the person pays in the end is the net price (到手价) of a route: the decision
+price, less what comes off at checkout, less the money back that is likely to
+arrive, plus what the route itself costs. Prices also move, so *when* to pay is a
+decision too, a bet with a cost on each side. Work out both in proportion to the
+money at stake (see `references/net-price-and-timing.md`). When the best route
+depends on what the person holds, such as cards, memberships, accounts or a
+status, and nothing on record says it, ask *how does this person decide here, and
+what do they already hold?*
+
 What "how" means depends on the type:
 
 - **Object** → where. Ask whether another place is much cheaper or much better,
@@ -324,7 +338,10 @@ What "how" means depends on the type:
 
 Finish the decision so that it actually ends. State the flip-test result (what could
 still change the call, or that nothing can), apply a quick regret test ("if this
-is merely fine, am I okay with that?"), and say when to stop. When the decision is
+is merely fine, am I okay with that?"), and say when to stop. If the route leaves
+something to do after buying, such as money back to check or claim, or a
+price-protection or return window to watch, give it with its date, so the saving
+is not lost after the decision ends. When the decision is
 expensive or hard to undo, first ask *how could this call fail?* Before the final
 push, a last check: is this comfortably affordable, and is it a
 regulated/high-consequence decision that warrants a professional (see
@@ -345,7 +362,8 @@ without reading further. This is the only part the person must read.
 **Part 2 — The Research Report (the evidence layer; scan or read).** Complete and
 scannable, with headers. This is everything the agent
 found — the market landscape, the quality markers, the price decomposition, the
-decision prices, tech timing, hype-vs-real, insider knowledge, sourcing, source
+decision prices, the net price and timing of each route, tech timing,
+hype-vs-real, insider knowledge, sourcing, source
 quality, the candidates in detail, and an honest **confidence & gaps** section
 naming what's well-evidenced, what's thin, and what was assumed but not verified.
 Its purpose is trust: so the person can see *what the agent knows* and judge

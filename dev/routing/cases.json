@@ -6,6 +6,21 @@
     "forbid": ["wardrobe"]
   },
   {
+    "id": "buy-when-settled",
+    "prompt": "I've already decided on the Sony WH-1000XM6. It's Black Friday week in the UK: should I buy now or wait, and how do I get them cheapest?",
+    "expect": ["research-before-buy"]
+  },
+  {
+    "id": "deal-real-zh",
+    "prompt": "亚马逊上一台 Ninja 双篮空气炸锅，黑五标着原价 £249.99，现在 £129.99。家里还没有空气炸锅，值得买吗？",
+    "expect": ["research-before-buy"]
+  },
+  {
+    "id": "cashback-concept",
+    "prompt": "How do cashback websites make money?",
+    "forbid": ["research-before-buy"]
+  },
+  {
     "id": "wardrobe-coat",
     "prompt": "I'm thinking of buying a camel wool coat from COS for about 250 pounds. Is it a good buy for me?",
     "expect": ["wardrobe"]

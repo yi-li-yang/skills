@@ -10,8 +10,8 @@ Part 2 a short paragraph — scale to the decision, but always offer both.
 # PART 1 — THE BRIEF
 *Read this. One to two minutes. The decision and the full reasoning behind it.*
 
-**The call:** [the judgment, stated plainly — what to buy / do, and where to buy
-it if that was in scope]
+**The call:** [the judgment, stated plainly — what to buy / do, and where and
+when to buy it if that was in scope]
 
 **Why:** [the full reasoning chain, kept tight — what kind of decision this
 turned out to be, the need it's serving, why this option over the others, in a
@@ -31,6 +31,12 @@ they turned out different — so the person knows what the decision depends on]
 **Prices:** [one line: prices as of {time, place}; verified / partly verified /
 unverified; which finalists are not verified. If any finalist is not fully
 verified, add the handoff list from `references/price-check.md`.]
+
+**Net price and timing:** [for the chosen route: the net price and how it was
+reached, with what comes off at checkout and the money back (and its condition)
+shown apart; buy now or wait, and why; the steps to buy, in order, if the route
+has steps; what to do after buying, and by when. Omit it when no discount or date
+could change the call.]
 
 **Good enough / stop here:** [the definition of good-enough, what could still
 change the call (the flip-test result) or that nothing can, and the cue to stop
@@ -65,6 +71,12 @@ premium, and whether the premium buys anything real here]
 tax-included or not · delivery · stock · read time · method (R1–R5) · region ·
 URL. A price that was not read says "unverified" and shows the approximate range,
 marked approximate. See `references/price-check.md`.]
+
+**Net price and timing:** [a table of routes: route (channel, discounts,
+payment) · decision price · checkout discounts · money back, with its condition
+and when it arrives · route costs · net price · recourse. Then the price history
+and where today's price sits in it, the sale calendar, and the now-or-wait
+reasoning. See `references/net-price-and-timing.md`.]
 
 **Tech currency & timing:** [current generation vs imminent successor, standards
 in transition, support horizon — any timing flag that affects the call]
