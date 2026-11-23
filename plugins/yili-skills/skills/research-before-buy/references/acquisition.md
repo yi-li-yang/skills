@@ -8,9 +8,14 @@ An approximate price from any source is enough to find the knee. A decision
 price is what a finalist costs at a seller now, read as close to what the person
 will see at checkout as possible. Their own Chrome sees their region, login and
 member price; a cloud browser is often blocked or in the wrong country; a search
-snippet is a lead. Note where, when and how each price was read, and any member
-price, code or money back the page shows. A price without that is "unverified".
-If their browser cannot be reached from here, end with a short list of pages for
+snippet is a lead. So read the finalists' pages in their browser, but do the
+rest of the research outside it, and do not move the whole conversation there,
+because the research reads many untrusted pages and their browser is signed in.
+A blocked page is a result: say so and read the price another way. Check that
+the page shows the variant you mean. Note where, when and how each price was
+read, and any member price, code or money back the page shows. A price without
+that is "unverified". Convert a currency at a live rate and give its date. If
+their browser cannot be reached from here, end with a short list of pages for
 them to read in the Chrome side panel.
 
 ## Net price and timing
@@ -66,3 +71,11 @@ region-neutral goods that are cheaper or only sold in China; the warranty stays
 in China), or add it to a sea-freight batch (cheap per kilo for bulky goods when
 a batch is already moving; about two months). Imported Western brands are often
 dearer in China; domestic and commodity goods are often much cheaper.
+
+A carry-back works only if the item can wait for the trip, and it must fit the
+luggage; spare lithium batteries and power banks must travel in the cabin, and
+airlines limit them, so check the rules. Region lock is the main problem for a
+connected device bought in China: it may run Chinese firmware without Google
+services, or its app may need a Chinese phone number. Sea freight has fixed
+costs for each shipment, so one small item rarely justifies it, but an item
+added to a batch already moving costs little.
