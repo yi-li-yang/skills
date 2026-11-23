@@ -32,11 +32,10 @@ they turned out different — so the person knows what the decision depends on]
 unverified; which finalists are not verified. If any finalist is not fully
 verified, add the handoff list from `references/price-check.md`.]
 
-**Net price and timing:** [for the chosen route: the net price and how it was
-reached, with what comes off at checkout and the money back (and its condition)
-shown apart; buy now or wait, and why; the steps to buy, in order, if the route
-has steps; what to do after buying, and by when. Omit it when no discount or date
-could change the call.]
+**Net price and timing:** [the net price of the chosen route, with money back
+and its condition shown apart; now or wait, and why; what to do to buy and to
+claim afterwards, with dates. Omit it when no discount or date could change the
+call.]
 
 **Good enough / stop here:** [the definition of good-enough, what could still
 change the call (the flip-test result) or that nothing can, and the cue to stop
@@ -72,11 +71,9 @@ tax-included or not · delivery · stock · read time · method (R1–R5) · reg
 URL. A price that was not read says "unverified" and shows the approximate range,
 marked approximate. See `references/price-check.md`.]
 
-**Net price and timing:** [a table of routes: route (channel, discounts,
-payment) · decision price · checkout discounts · money back, with its condition
-and when it arrives · route costs · net price · recourse. Then the price history
-and where today's price sits in it, the sale calendar, and the now-or-wait
-reasoning. See `references/net-price-and-timing.md`.]
+**Net price and timing:** [each route: decision price · checkout discounts ·
+money back (condition, when) · route costs · net price · recourse; where today's
+price sits in its history; the now-or-wait reasoning.]
 
 **Tech currency & timing:** [current generation vs imminent successor, standards
 in transition, support horizon — any timing flag that affects the call]

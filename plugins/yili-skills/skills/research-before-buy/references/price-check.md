@@ -50,9 +50,8 @@ Model and variant · seller (retailer or marketplace third party) · price · cu
 · how it was read (1–5 above) · region the page was read from.
 
 Check that the variant on the page is the candidate you mean. Delivery and stock
-are part of the price. Record what the page shows on top of the price (a member
-price, a code, money back, an instalment plan) separately from the price, each with
-its condition; `net-price-and-timing.md` turns them into a net price.
+are part of the price. Record any member price, code, money back or instalment
+plan apart from the price, with its condition.
 
 ## Handoff list
 
@@ -79,8 +78,7 @@ or login page.) The person pastes it into the Chrome side panel.
   person's country, so currency, tax, stock and price can differ from what they
   will see. Convert currencies with a live rate and state its date.
 - **A crossed-out "was" price is the seller's claim, not evidence of a
-  discount.** The item's own price history settles whether a discount is real
-  (see `net-price-and-timing.md`).
+  discount.** The item's own price history decides.
 - For a comparison across places, the landed-cost method in
   `sourcing-arbitrage.md` still applies; duty and VAT figures are checked live
   there too.

@@ -94,16 +94,11 @@ what the dominant risk is.
   optimise the *permanent* replacement later, once the emergency is over.
 
 ### A sale started the question
-- A discount, not a need, brought the person here. So first ask whether they
-  would buy this at its usual price. If not, the discount is the reason, and a
-  discount on a thing they do not need is a cost, not a saving.
-- A sale can choose between candidates that each serve the use, between routes
-  and between dates. When it brings a higher tier down to the price of the knee,
-  the knee moves only if the higher tier's extra serves the use. A sale cannot
-  turn a thing that does not serve the use into the right buy.
-- Countdown timers and "only 2 left" are the seller's tools. Most sales come
-  back, so missing one usually costs little. Whether this discount is real at all
-  is in `net-price-and-timing.md`.
+- Would they buy it at its usual price? If not, the discount is the reason, and a
+  discount on something they do not need is a cost, not a saving.
+- A sale can choose between candidates that serve the use, between routes and
+  between dates; it cannot make WHAT. Most sales come back, so a countdown is the
+  seller's tool, not a reason.
 
 ### Ethics / values-driven
 - When the dominant axis is sustainability, labour, origin, or animal welfare,

@@ -118,10 +118,8 @@ the *map* (kinds, tiers, alternatives), the *trade's view* (how practitioners
 choose) and the *failures* (what breaks, what people regret) — are done in
 whatever order the case calls for, and each reshapes the others. Only three
 orders are fixed: recognise the type before reading the axis; settle WHAT before
-WHERE; run the flip test before stopping. When the person arrives with WHAT
-already settled and asks only where, when or how to pay least, start at Phase 5,
-and raise WHAT again only if you find something that would change it, such as a
-successor about to launch or a known defect.
+WHERE; run the flip test before stopping. If WHAT is already settled, start at
+Phase 5, and reopen it only for something that would change it.
 
 ### Phase 0 — Diagnose: how much should land on the person?
 
@@ -304,19 +302,14 @@ person's own Chrome first, a handoff list if it isn't reachable from this sessio
 "unverified" if neither. A price without a read time and method is never stated as
 current.
 
-**Net price and timing.** The decision price is the seller's opening number. What
-the person pays in the end is the net price (到手价) of a route: the decision
-price, less what comes off at checkout, less the money back that is likely to
-arrive, plus what the route itself costs. Prices also move, so *when* to pay is a
-decision too, a bet with a cost on each side. Work out both in proportion to the
-money at stake (see `references/net-price-and-timing.md`). The hunt for a cheaper
-route has usually been done before, so read where deal hunters left it (a deal
-post and its comments, a price tracker, a consumer-advice site such as
-MoneySavingExpert or 什么值得买) before hunting alone, and weigh each by who is paid
-when a reader buys. When the best route
-depends on what the person holds, such as cards, memberships, accounts or a
-status, and nothing on record says it, ask *how does this person decide here, and
-what do they already hold?*
+**Net price and timing.** The decision price is the seller's opening number.
+Think through what the person will pay in the end by each route, and when to
+pay, in proportion to the money at stake (see
+`references/net-price-and-timing.md`). Someone has usually done this hunt
+already, so read them first (a deal post's comments, a price tracker,
+MoneySavingExpert or 什么值得买), weighed by who is paid. When the route depends
+on what the person holds, ask *how does this person decide here, and what do
+they already hold?*
 
 What "how" means depends on the type:
 
@@ -343,9 +336,8 @@ What "how" means depends on the type:
 Finish the decision so that it actually ends. State the flip-test result (what could
 still change the call, or that nothing can), apply a quick regret test ("if this
 is merely fine, am I okay with that?"), and say when to stop. If the route leaves
-something to do after buying, such as money back to check or claim, or a
-price-protection or return window to watch, give it with its date, so the saving
-is not lost after the decision ends. When the decision is
+something to claim or watch after buying, give it with its date. When the
+decision is
 expensive or hard to undo, first ask *how could this call fail?* Before the final
 push, a last check: is this comfortably affordable, and is it a
 regulated/high-consequence decision that warrants a professional (see
