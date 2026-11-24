@@ -1,6 +1,6 @@
 ---
 name: talk-standard-tech-eng
-description: Use when you talk to the user in English, name a thing, explain a concept, or write or rewrite technical or agent-facing text (replies, progress notes, plan steps, READMEs, commit messages, subagent prompts, SKILL.md files). It keeps words plain and names stable, based on ASD-STE100 Simplified Technical English. Do not use it for academic papers, grant text, essays, persuasive or creative writing, quoted text, or any language other than English.
+description: Use when you talk to the user in English, write a plan, name a thing, explain a concept, or write or rewrite technical or agent-facing text (replies, progress notes, READMEs, commit messages, subagent prompts, SKILL.md files). The language of the text decides, not the language of the conversation, so an English plan in a Chinese conversation is in scope. It keeps words plain and names stable, based on ASD-STE100 Simplified Technical English. Do not use it for academic papers, grant text, essays, persuasive or creative writing, quoted text, or text in a language other than English.
 ---
 
 # Plain words for technical communication
@@ -52,7 +52,7 @@ So in agent-facing text, stable names and single meanings matter most. Keep one 
 
 When you rewrite a text into plain words, change the words and not the meaning. The risk of a rewrite is that it changes what the text says and nobody notices. A plain word that is stronger or weaker than the original changes an instruction: "usually" becomes "always", or "can" becomes "must". So keep the scope and the qualifiers of each claim, and keep each instruction, including the ones that are hard to say plainly. If a passage is reasoning, keep it as reasoning. Do not cut it into short separate rules.
 
-Some words are not yours to change. A skill description must match how users talk, so its trigger phrases stay in the users' words. Code identifiers, quoted words, terms of art that a field uses, and text in another language also stay as they are. When you replace a key term, replace it in every place it appears, including other files that refer to it. If you replace it in only some places, the text has two names for one thing, and that is the problem you set out to fix.
+Some words are not yours to change. A skill description decides when the skill loads, so a rewrite of it keeps its scope and the edges it marks. Code identifiers, quoted words, terms of art that a field uses, and text in another language also stay as they are. When you replace a key term, replace it in every place it appears, including other files that refer to it. If you replace it in only some places, the text has two names for one thing, and that is the problem you set out to fix.
 
 After a rewrite, compare the old text and the new text one claim at a time. A reader who did not write the new text finds a change of meaning more easily than the writer, because the writer already knows what the text should say.
 
