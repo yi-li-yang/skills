@@ -31,5 +31,5 @@ def test_compiles(engine, tmp_path):
 
 def test_colours_come_from_tokens():
     text = STY.read_text(encoding="utf-8")
-    assert r"\definecolor{vpink}{HTML}{1A1D18}" in text
+    assert r"\definecolor{vpink}{HTML}{1B1C1A}" in text
     assert r"\definecolor{vplichen}{HTML}{566A26}" in text

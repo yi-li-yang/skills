@@ -4,17 +4,17 @@ figure.facecolor: ffffff
 axes.facecolor: ffffff
 savefig.facecolor: ffffff
 savefig.dpi: 300
-text.color: 1a1d18
-axes.labelcolor: 1a1d18
-axes.titlecolor: 1a1d18
-xtick.color: 5b6158
-ytick.color: 5b6158
-axes.edgecolor: 5b6158
+text.color: 1b1c1a
+axes.labelcolor: 1b1c1a
+axes.titlecolor: 1b1c1a
+xtick.color: 5e5f5c
+ytick.color: 5e5f5c
+axes.edgecolor: 5e5f5c
 axes.spines.top: false
 axes.spines.right: false
 axes.grid: true
 axes.grid.axis: y
-grid.color: cfd3ca
+grid.color: d2d1cd
 grid.linewidth: 0.6
 axes.axisbelow: true
 axes.prop_cycle: cycler('color', ['48606e', '9c3f27', '307f67', '9e8a59', '72679f', '9e7002'])

@@ -34,10 +34,10 @@ def test_mark_is_only_its_accent(accent, hex_):
 
 def test_favicon_is_stop_on_stone():
     text = (MARKS / "favicon.svg").read_text(encoding="utf-8")
-    assert {h.lower() for h in HEX.findall(text)} == {"#131512", "#a3b86c"}
+    assert {h.lower() for h in HEX.findall(text)} == {"#141413", "#a3b86c"}
 
 
-@pytest.mark.parametrize("theme,ink,stop", [("dark", "#e5e8e1", "#a3b86c"), ("light", "#1a1d18", "#566a26")])
+@pytest.mark.parametrize("theme,ink,stop", [("dark", "#e8e7e3", "#a3b86c"), ("light", "#1b1c1a", "#566a26")])
 def test_wordmark_is_outlined(theme, ink, stop):
     text = (MARKS / f"wordmark-{theme}.svg").read_text(encoding="utf-8")
     assert "<text" not in text

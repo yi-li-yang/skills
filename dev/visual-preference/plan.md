@@ -207,7 +207,7 @@
 
 - [ ] **Step 1: Write the failing tests:**
   - both files open in `python-pptx`
-  - the slide master background is `#131512`
+  - the slide master background is `#141413`
   - the layouts include `Title`, `Title and figure` and `Section`
   - the title font is `Albert Sans`
   - a footer shows "Yili Yang" and a lichen square

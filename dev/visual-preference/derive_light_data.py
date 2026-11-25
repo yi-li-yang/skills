@@ -18,7 +18,7 @@ from colour import CVD, contrast, ucs  # noqa: E402
 import functools  # noqa: E402
 import itertools  # noqa: E402
 
-PAPER = "#f2f3ef"
+PAPER = "#f4f2f0"
 ITER = 4000
 DARK = {"data-sky": "#a9cfe6", "data-rust": "#c4573a", "data-spruce": "#4f9a7d", "data-sand": "#d8c48e",
         "data-dusk": "#8a7fb8", "data-ochre": "#c9962e", "data-glacier": "#86b2d4", "data-rose": "#d98ca0",

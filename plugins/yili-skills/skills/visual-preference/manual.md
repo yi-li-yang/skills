@@ -20,17 +20,17 @@ When two principles pull apart, the higher one wins.
 
 ### The ground
 
-Every project shares one ground: a dark, green-grey stone, natural and matte. Dark is home, because Yili works on a dark screen. A light theme exists for paper, papers and READMEs, and it follows the reader's system setting on the web.
+Every project shares one ground: a dark stone grey with the faintest green, natural and matte. Yili asked for it greyer than the first draft. Dark is home, because Yili works on a dark screen. A light theme exists for paper, papers and READMEs, and it follows the reader's system setting on the web.
 
 | Token | Dark | Light | Used for |
 |---|---|---|---|
-| `ground` | #131512 | #f2f3ef | the page |
-| `surface` | #1a1d19 | #e8eae4 | panels and quiet blocks |
-| `raised` | #22261f | #ffffff | panels that float, for example over a map |
-| `rule` | #333832 | #cfd3ca | hairline dividers (decoration only) |
-| `edge` | #6b7168 | #7f857a | borders of controls; 3:1 on the ground |
-| `muted` | #9ca29a | #5b6158 | secondary text, labels, captions, axis text |
-| `ink` | #e5e8e1 | #1a1d18 | text and the strongest marks |
+| `ground` | #141413 | #f4f2f0 | the page |
+| `surface` | #1c1c1b | #ebe9e6 | panels and quiet blocks |
+| `raised` | #242522 | #ffffff | panels that float, for example over a map |
+| `rule` | #363734 | #d2d1cd | hairline dividers (decoration only) |
+| `edge` | #6e6f6c | #82837f | borders of controls; 3:1 on the ground |
+| `muted` | #a0a09d | #5e5f5c | secondary text, labels, captions, axis text |
+| `ink` | #e8e7e3 | #1b1c1a | text and the strongest marks |
 
 Text is never pure white or pure black, and the ground is never pure black. A neutral tinted towards stone reads as a material; pure black reads as a default.
 

@@ -45,9 +45,9 @@ def test_shape(tokens):
 def test_spec_values(tokens):
     c = colours(tokens)
     expected = {
-        "ground": ("#131512", "#f2f3ef"), "surface": ("#1a1d19", "#e8eae4"), "raised": ("#22261f", "#ffffff"),
-        "rule": ("#333832", "#cfd3ca"), "edge": ("#6b7168", "#7f857a"), "muted": ("#9ca29a", "#5b6158"),
-        "ink": ("#e5e8e1", "#1a1d18"), "lichen": ("#a3b86c", "#566a26"), "signal": ("#e2652f", "#b0441a"),
+        "ground": ("#141413", "#f4f2f0"), "surface": ("#1c1c1b", "#ebe9e6"), "raised": ("#242522", "#ffffff"),
+        "rule": ("#363734", "#d2d1cd"), "edge": ("#6e6f6c", "#82837f"), "muted": ("#a0a09d", "#5e5f5c"),
+        "ink": ("#e8e7e3", "#1b1c1a"), "lichen": ("#a3b86c", "#566a26"), "signal": ("#e2652f", "#b0441a"),
         "amber": ("#e0a84a", "#8a5d0c"),
     }
     for name, (dark, light) in expected.items():
@@ -81,7 +81,7 @@ def test_data_distinct(tokens, theme):
 def test_light_data_contrast(tokens):
     c = colours(tokens)
     for name in sorted(set(EARTH6 + EARTH8)):
-        assert contrast(c[name]["light"], "#f2f3ef") >= 3.0, name
+        assert contrast(c[name]["light"], c["ground"]["light"]) >= 3.0, name
 
 
 def test_every_token_has_usage(tokens):

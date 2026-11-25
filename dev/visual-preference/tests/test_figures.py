@@ -25,12 +25,12 @@ def vp():
 def test_use_light_and_dark(vp):
     import matplotlib as mpl
     vp.use("dark")
-    assert mpl.rcParams["figure.facecolor"] == "#131512"
+    assert mpl.rcParams["figure.facecolor"] == "#141413"
     assert mpl.rcParams["axes.spines.top"] is False and mpl.rcParams["axes.spines.right"] is False
     assert [c.lower() for c in mpl.rcParams["axes.prop_cycle"].by_key()["color"]] == EARTH6_DARK
     vp.use("light")
     assert mpl.rcParams["figure.facecolor"] == "#ffffff"
-    assert mpl.rcParams["text.color"] == "#1a1d18"
+    assert mpl.rcParams["text.color"] == "#1b1c1a"
 
 
 def test_unknown_theme_is_refused(vp):

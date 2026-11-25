@@ -132,7 +132,7 @@ Voice: no new voice. Interface words follow Yili's existing plain-English writin
 
 ### 8.3 Direction "Stone and Signal" (stage 7, Yili's pick)
 
-- **Ground:** one shared green-grey stone ground for every project.
+- **Ground:** one shared stone-grey ground for every project (made greyer at the stage 13 review, at Yili's request).
 - **Accents:** they rotate between projects, one per project and never mixed. Lichen green is home (site, CV, papers, mark, and the default for a new project); signal orange and amber are the others.
 - **Details everywhere:** spaced capital labels, square corners, monospace numbers, hairline rules, no shadows, no glow.
 
@@ -140,13 +140,13 @@ Voice: no new voice. Interface words follow Yili's existing plain-English writin
 
 | Token | Dark (home) | Light (paper) | Use |
 |---|---|---|---|
-| ground | `#131512` | `#f2f3ef` | page |
-| surface | `#1a1d19` | `#e8eae4` | panels |
-| raised | `#22261f` | `#ffffff` | floating panels |
-| rule | `#333832` | `#cfd3ca` | dividers |
-| edge | `#6b7168` | `#7f857a` | control borders (3:1) |
-| muted | `#9ca29a` (7.0:1) | `#5b6158` (5.7:1) | secondary text |
-| ink | `#e5e8e1` (14.8:1) | `#1a1d18` (15.3:1) | text |
+| ground | `#141413` | `#f4f2f0` | page |
+| surface | `#1c1c1b` | `#ebe9e6` | panels |
+| raised | `#242522` | `#ffffff` | floating panels |
+| rule | `#363734` | `#d2d1cd` | dividers |
+| edge | `#6e6f6c` | `#82837f` | control borders (3:1) |
+| muted | `#a0a09d` (7.0:1) | `#5e5f5c` (5.7:1) | secondary text |
+| ink | `#e8e7e3` (14.8:1) | `#1b1c1a` (15.3:1) | text |
 | lichen (home) | `#a3b86c` | `#566a26` | accent |
 | signal | `#e2652f` | `#b0441a` | accent |
 | amber | `#e0a84a` | `#8a5d0c` | accent |

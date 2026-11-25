@@ -93,3 +93,7 @@ Print/talks: figures light in papers (journal rules win), stone dark on web/slid
 - Earth 8 = the whole K2 set (glacier, rust, spruce, sand, dusk, rose, olive, sky). K1 plus rose and olive measured 5.0, below the 10.0 an eight-colour set needs. Claude's call; for Yili's review in Task 9.
 - Light-theme data colours, derived by dev/visual-preference/derive_light_data.py (hue within 20 degrees, chroma 0.7-1.6x, 3:1 to 6:1 on paper, Earth 6 >= 11.0 and Earth 8 >= 10.0 under colour-vision simulation). Claude's call; for Yili's review in Task 9:
   sky #48606e, rust #9c3f27, spruce #307f67, sand #9e8a59, dusk #72679f, ochre #9e7002, glacier #6490b0, rose #bc7387, olive #7a801b.
+
+## Stage 13 review (2026-11-25)
+- Yili asked for "more grey". Shown four levels (current; greyer neutrals; plus softer colour; plus muted colour) with their colour-blind cost. Yili picked B: greyer neutrals only (chroma x0.45 in CAM02-UCS); accents and data colours unchanged, so no accessibility cost.
+  New neutrals dark/light: ground #141413/#f4f2f0, surface #1c1c1b/#ebe9e6, raised #242522/#ffffff, rule #363734/#d2d1cd, edge #6e6f6c/#82837f, muted #a0a09d/#5e5f5c, ink #e8e7e3/#1b1c1a.

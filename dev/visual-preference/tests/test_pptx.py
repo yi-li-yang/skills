@@ -30,7 +30,7 @@ def test_files(built):
     assert set(built) == {"slides-dark.pptx", "slides-light.pptx", "poster-a0.pptx"}
 
 
-@pytest.mark.parametrize("name,ground", [("slides-dark.pptx", "131512"), ("slides-light.pptx", "f2f3ef")])
+@pytest.mark.parametrize("name,ground", [("slides-dark.pptx", "141413"), ("slides-light.pptx", "f4f2f0")])
 def test_slides(built, name, ground):
     prs = Presentation(built[name])
     assert master_fill(prs) == ground
@@ -46,7 +46,7 @@ def test_slides(built, name, ground):
 def test_poster(built):
     prs = Presentation(built["poster-a0.pptx"])
     assert abs(prs.slide_width - Mm(841)) < Emu(36000) and abs(prs.slide_height - Mm(1189)) < Emu(36000)
-    assert master_fill(prs) == "f2f3ef"
+    assert master_fill(prs) == "f4f2f0"
 
 
 @pytest.mark.parametrize("name", ["slides-dark.pptx", "slides-light.pptx", "poster-a0.pptx"])
