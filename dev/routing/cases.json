@@ -53,6 +53,16 @@
     "expect": ["i-think-like-this"]
   },
   {
+    "id": "think-added-complexity",
+    "prompt": "Our API is fast enough today, but I want to add a Redis cache and a message queue in front of the database to make it faster. Is it worth it?",
+    "expect": ["i-think-like-this"]
+  },
+  {
+    "id": "think-throwaway",
+    "prompt": "Write a one-off script that renames the photos in this folder by date.",
+    "forbid": ["i-think-like-this"]
+  },
+  {
     "id": "digest-video",
     "prompt": "Watch this review and tell me what it actually shows about the battery life, not just what the reviewer says: https://www.youtube.com/watch?v=aqz-KE-bpKQ",
     "expect": ["digest-distill-information"]
