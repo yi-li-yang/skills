@@ -1,6 +1,9 @@
 # Getting it: price, route and timing
 
-Decide WHAT first; where, when and how to pay are their own decision.
+Decide WHAT first, by fit and quality; then decide where, when and how to pay.
+Keep the finalists open, because a price can change which finalist is the call,
+which route is right, or whether to buy now. When it does, give the call as a
+rule (see `templates/deliverable.md`).
 
 ## Reading a price
 
