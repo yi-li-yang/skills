@@ -240,6 +240,44 @@ def mono_ticks(ax) -> None:
         label.set_family("monospace")
 '''
 
+
+# --------------------------------------------------------------------------------------------- latex
+
+def latex_sty(tokens: dict) -> str:
+    """A LaTeX package: brand faces under XeTeX or LuaTeX (with open fallbacks), standard faces under pdfTeX."""
+    light = colours(tokens, "light")
+    defs = "\n".join(f"\\definecolor{{vp{k.replace('-', '')}}}{{HTML}}{{{v.lstrip('#').upper()}}}" for k, v in light.items())
+    return header(tokens, "%") + r"""% Paper documents: CV, letters, papers. \usepackage{visual-preference}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{visual-preference}[@VERSION@ Yili Yang's document style]
+\RequirePackage{iftex}
+\RequirePackage{xcolor}
+\RequirePackage{titlesec}
+@COLOURS@
+\iftutex
+  \RequirePackage{fontspec}
+  \IfFontExistsTF{Albert Sans}{\setmainfont{Albert Sans}[BoldFont={* SemiBold}]}{\setmainfont{TeX Gyre Heros}}
+  \IfFontExistsTF{Source Serif 4}{\newfontfamily\vpserif{Source Serif 4}[BoldFont={* SemiBold}]}{\newfontfamily\vpserif{TeX Gyre Termes}}
+  \IfFontExistsTF{IBM Plex Mono}{\setmonofont{IBM Plex Mono}}{\setmonofont{Latin Modern Mono}}
+  \newcommand{\vplabel}[1]{{\addfontfeatures{LetterSpace=10}\footnotesize\MakeUppercase{#1}}}
+\else
+  \RequirePackage[T1]{fontenc}
+  \RequirePackage{lmodern}
+  \RequirePackage[scaled=0.92]{helvet}
+  \renewcommand{\familydefault}{\sfdefault}
+  \newcommand{\vpserif}{\rmfamily}
+  \newcommand{\vplabel}[1]{{\footnotesize\MakeUppercase{#1}}}
+\fi
+\newcommand{\vpnum}[1]{{\ttfamily #1}}
+\newcommand{\vprule}{\par\noindent{\color{vplichen}\rule{\linewidth}{0.4pt}}\par}
+\newcommand{\vpstop}{{\color{vplichen}\rule{0.22em}{0.22em}}}
+\titleformat{\section}{\vpserif\Large\bfseries\color{vpink}}{}{0pt}{}
+\titleformat{\subsection}{\vpserif\large\bfseries\color{vpink}}{}{0pt}{}
+\AtBeginDocument{\color{vpink}}
+\endinput
+""".replace("@VERSION@", tokens["meta"]["version"]).replace("@COLOURS@", defs)
+
+
 # --------------------------------------------------------------------------------------------- build
 
 def outputs(tokens: dict, cmaps: dict) -> dict[str, str]:
@@ -252,6 +290,7 @@ def outputs(tokens: dict, cmaps: dict) -> dict[str, str]:
         "figures/visual-preference-dark.mplstyle": mplstyle(tokens, "dark"),
         "figures/visual-preference-light.mplstyle": mplstyle(tokens, "light"),
         "figures/visual_preference.py": figure_module(tokens, cmaps),
+        "latex/visual-preference.sty": latex_sty(tokens),
     }
 
 

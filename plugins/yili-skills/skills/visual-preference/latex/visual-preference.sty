@@ -1,0 +1,47 @@
+% generated from tokens.json by dev/visual-preference/build.py · visual-preference 1.0.0 · do not edit
+% Paper documents: CV, letters, papers. \usepackage{visual-preference}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{visual-preference}[1.0.0 Yili Yang's document style]
+\RequirePackage{iftex}
+\RequirePackage{xcolor}
+\RequirePackage{titlesec}
+\definecolor{vpground}{HTML}{F2F3EF}
+\definecolor{vpsurface}{HTML}{E8EAE4}
+\definecolor{vpraised}{HTML}{FFFFFF}
+\definecolor{vprule}{HTML}{CFD3CA}
+\definecolor{vpedge}{HTML}{7F857A}
+\definecolor{vpmuted}{HTML}{5B6158}
+\definecolor{vpink}{HTML}{1A1D18}
+\definecolor{vplichen}{HTML}{566A26}
+\definecolor{vpsignal}{HTML}{B0441A}
+\definecolor{vpamber}{HTML}{8A5D0C}
+\definecolor{vpdatasky}{HTML}{48606E}
+\definecolor{vpdatarust}{HTML}{9C3F27}
+\definecolor{vpdataspruce}{HTML}{307F67}
+\definecolor{vpdatasand}{HTML}{9E8A59}
+\definecolor{vpdatadusk}{HTML}{72679F}
+\definecolor{vpdataochre}{HTML}{9E7002}
+\definecolor{vpdataglacier}{HTML}{6490B0}
+\definecolor{vpdatarose}{HTML}{BC7387}
+\definecolor{vpdataolive}{HTML}{7A801B}
+\iftutex
+  \RequirePackage{fontspec}
+  \IfFontExistsTF{Albert Sans}{\setmainfont{Albert Sans}[BoldFont={* SemiBold}]}{\setmainfont{TeX Gyre Heros}}
+  \IfFontExistsTF{Source Serif 4}{\newfontfamily\vpserif{Source Serif 4}[BoldFont={* SemiBold}]}{\newfontfamily\vpserif{TeX Gyre Termes}}
+  \IfFontExistsTF{IBM Plex Mono}{\setmonofont{IBM Plex Mono}}{\setmonofont{Latin Modern Mono}}
+  \newcommand{\vplabel}[1]{{\addfontfeatures{LetterSpace=10}\footnotesize\MakeUppercase{#1}}}
+\else
+  \RequirePackage[T1]{fontenc}
+  \RequirePackage{lmodern}
+  \RequirePackage[scaled=0.92]{helvet}
+  \renewcommand{\familydefault}{\sfdefault}
+  \newcommand{\vpserif}{\rmfamily}
+  \newcommand{\vplabel}[1]{{\footnotesize\MakeUppercase{#1}}}
+\fi
+\newcommand{\vpnum}[1]{{\ttfamily #1}}
+\newcommand{\vprule}{\par\noindent{\color{vplichen}\rule{\linewidth}{0.4pt}}\par}
+\newcommand{\vpstop}{{\color{vplichen}\rule{0.22em}{0.22em}}}
+\titleformat{\section}{\vpserif\Large\bfseries\color{vpink}}{}{0pt}{}
+\titleformat{\subsection}{\vpserif\large\bfseries\color{vpink}}{}{0pt}{}
+\AtBeginDocument{\color{vpink}}
+\endinput
