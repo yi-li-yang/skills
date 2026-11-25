@@ -47,3 +47,20 @@ def test_poster(built):
     prs = Presentation(built["poster-a0.pptx"])
     assert abs(prs.slide_width - Mm(841)) < Emu(36000) and abs(prs.slide_height - Mm(1189)) < Emu(36000)
     assert master_fill(prs) == "f2f3ef"
+
+
+@pytest.mark.parametrize("name", ["slides-dark.pptx", "slides-light.pptx", "poster-a0.pptx"])
+def test_text_aligned_left(built, name):
+    """Principle 4: text is aligned left. The default template centres the title slide."""
+    from lxml import etree
+    prs = Presentation(built[name])
+    parts = [prs.slide_master.element] + [l.element for l in prs.slide_layouts]
+    for el in parts:
+        assert 'algn="ctr"' not in etree.tostring(el).decode()
+
+
+def test_title_layout_shares_one_left_edge(built):
+    prs = Presentation(built["slides-dark.pptx"])
+    title = next(l for l in prs.slide_layouts if l.name == "Title")
+    lefts = {ph.left for ph in title.placeholders if ph.placeholder_format.idx in (0, 1)}
+    assert len(lefts) == 1

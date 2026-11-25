@@ -66,6 +66,23 @@ def keep_layouts(prs) -> None:
             layouts.remove(layout)
 
 
+def share_left_edge(prs) -> None:
+    """On the title layout, the subtitle starts where the title starts."""
+    for layout in prs.slide_layouts:
+        phs = {ph.placeholder_format.idx: ph for ph in layout.placeholders}
+        if layout.name == "Title" and 0 in phs and 1 in phs:
+            width = phs[0].width
+            phs[1].left, phs[1].width = phs[0].left, width
+
+
+def align_left(prs) -> None:
+    """Principle 4: text is aligned left. The default template centres some placeholders; make them left."""
+    for element in [prs.slide_master.element] + [layout.element for layout in prs.slide_layouts]:
+        for node in element.iter():
+            if node.get("algn") == "ctr":
+                node.set("algn", "l")
+
+
 def colour_text(prs, ink: str) -> None:
     for shape in prs.slide_master.placeholders:
         for p in shape.text_frame.paragraphs:
@@ -111,6 +128,8 @@ def slides(theme: str) -> Presentation:
     keep_layouts(prs)
     colour_text(prs, c["ink"])
     add_footer(prs, c, c["lichen"])
+    share_left_edge(prs)
+    align_left(prs)
     return prs
 
 
@@ -124,6 +143,8 @@ def poster() -> Presentation:
     keep_layouts(prs)
     colour_text(prs, c["ink"])
     add_footer(prs, c, c["lichen"])
+    share_left_edge(prs)
+    align_left(prs)
     return prs
 
 
