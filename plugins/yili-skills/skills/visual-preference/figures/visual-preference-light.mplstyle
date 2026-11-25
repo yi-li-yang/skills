@@ -1,0 +1,35 @@
+# generated from tokens.json by dev/visual-preference/build.py · visual-preference 1.0.0 · do not edit
+# light theme; plt.style.use(this file). For the colour maps, use visual_preference.use().
+figure.facecolor: ffffff
+axes.facecolor: ffffff
+savefig.facecolor: ffffff
+savefig.dpi: 300
+text.color: 1b1c1a
+axes.labelcolor: 1b1c1a
+axes.titlecolor: 1b1c1a
+xtick.color: 5e5f5c
+ytick.color: 5e5f5c
+axes.edgecolor: 5e5f5c
+axes.spines.top: false
+axes.spines.right: false
+axes.grid: true
+axes.grid.axis: y
+grid.color: d2d1cd
+grid.linewidth: 0.6
+axes.axisbelow: true
+axes.prop_cycle: cycler('color', ['48606e', '9c3f27', '307f67', '9e8a59', '72679f', '9e7002'])
+font.family: sans-serif
+font.sans-serif: Albert Sans, DejaVu Sans
+font.monospace: IBM Plex Mono, DejaVu Sans Mono
+font.size: 10
+axes.titlesize: 11
+axes.titleweight: 600
+axes.titlelocation: left
+axes.labelsize: 10
+xtick.labelsize: 9
+ytick.labelsize: 9
+legend.fontsize: 9
+legend.frameon: false
+lines.linewidth: 1.75
+xtick.major.size: 0
+ytick.major.size: 0

@@ -87,5 +87,20 @@
     "id": "nothing-needed",
     "prompt": "What is 17 times 23?",
     "forbid": ["research-before-buy", "wardrobe", "updated-domain-expert", "digest-distill-information", "interview-me-before-answer", "i-think-like-this"]
+  },
+  {
+    "id": "visual-new-repo",
+    "prompt": "Set up the look for my new repo, a small web app for my plant collection.",
+    "expect": ["visual-preference"]
+  },
+  {
+    "id": "visual-figure",
+    "prompt": "Make this matplotlib figure of permafrost thaw match my usual style.",
+    "expect": ["visual-preference"]
+  },
+  {
+    "id": "visual-kimkim",
+    "prompt": "For the KIMKIM project, design the colour scheme of a client's building facade.",
+    "forbid": ["visual-preference"]
   }
 ]
