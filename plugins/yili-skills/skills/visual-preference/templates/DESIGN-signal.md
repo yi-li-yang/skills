@@ -1,7 +1,8 @@
 ---
 # generated from tokens.json by dev/visual-preference/build.py · visual-preference 1.0.0 · do not edit
+# Copy into the project as DESIGN.md and replace {{project}} with its name; change nothing else.
 name: "{{project}}"
-description: "Built on Yili Yang's visual system 1.0.0. Dark is home; one accent: lichen."
+description: "Built on Yili Yang's visual system 1.0.0. Dark is home; one accent: signal."
 colors:
   ground: "#141413"
   surface: "#1c1c1b"
@@ -10,7 +11,7 @@ colors:
   edge: "#6e6f6c"
   muted: "#a0a09d"
   ink: "#e8e7e3"
-  accent: "#a3b86c"
+  accent: "#e2652f"
   data-sky: "#a9cfe6"
   data-rust: "#c4573a"
   data-spruce: "#4f9a7d"
@@ -28,7 +29,7 @@ colors-light:
   edge: "#82837f"
   muted: "#5e5f5c"
   ink: "#1b1c1a"
-  accent: "#566a26"
+  accent: "#b0441a"
   data-sky: "#48606e"
   data-rust: "#9c3f27"
   data-spruce: "#307f67"
@@ -120,7 +121,7 @@ spacing:
 
 This project uses Yili Yang's visual system, version 1.0.0. The values above come from it; change them there, not here. Its manual explains each choice.
 
-**The accent is lichen.** It marks the one focus or action in a view: the filled button, the selected tab, the focus ring, the full stop after the project's name. It is never used for data and never next to another accent.
+**The accent is signal.** It marks the one focus or action in a view: the filled button, the selected tab, the focus ring, the full stop after the project's name. It is never used for data and never next to another accent.
 
 ## Principles, in order
 

@@ -21,7 +21,7 @@ The values live in `tokens.json`. The files that projects use are built from it,
 
 ## Applying it
 
-**A new project.** Choose its accent: lichen, unless the manual's reasons point to signal or amber. Write the project's `DESIGN.md` from `templates/DESIGN.md`, so that any design tool starts from the system and not from its own defaults. Link or copy the files that the project's surfaces need, as "Using the files" in the manual describes, at the current tag. Then build the surface the way its section in the manual describes.
+**A new project.** Choose its accent: lichen, unless the manual's reasons point to signal or amber. Copy the `DESIGN.md` template for that accent into the project, so that any design tool starts from the system and not from its own defaults. Link or copy the files that the project's surfaces need, as "Using the files" in the manual describes, at the current tag. Then build the surface the way its section in the manual describes.
 
 **An existing project.** First look at what it already has, and why. Replace the look that it borrowed or that a tool invented: its typefaces, neutrals, corners, shadows and accent. Keep what carries meaning, such as a score scale that a reader has learned, when it meets the first principle. Change one surface at a time, and check each one in both themes before moving on.
 

@@ -98,3 +98,11 @@ def test_cdn_url_resolves_to_installed_path():
     assert url.startswith("https://cdn.jsdelivr.net/gh/yi-li-yang/skills@visual-preference-v1.0.0/")
     rel = url.split("@visual-preference-v1.0.0/", 1)[1]
     assert (build.REPO / rel).is_file()
+
+
+def test_tailwind_v4_has_no_self_reference():
+    """A theme variable defined as itself is a cycle: it breaks when tokens.css is layered or in a shadow root."""
+    import re
+    v4 = (SKILL / "web" / "tailwind-v4.css").read_text(encoding="utf-8")
+    for name, ref in re.findall(r"--([\w-]+):\s*var\(--([\w-]+)\)", v4):
+        assert name != ref, name

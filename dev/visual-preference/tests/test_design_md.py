@@ -24,7 +24,10 @@ def test_unknown_accent_is_refused():
         build.design_md(*build.load(), accent="teal", project="x")
 
 
-def test_template_file_is_the_home_accent():
-    text = (build.SKILL / "templates" / "DESIGN.md").read_text(encoding="utf-8")
-    assert front(text)["colors"]["accent"] == "#a3b86c"
+@pytest.mark.parametrize("accent,hex_", [("lichen", "#a3b86c"), ("signal", "#e2652f"), ("amber", "#e0a84a")])
+def test_one_template_per_accent(accent, hex_):
+    """A project copies the template for its accent and fills only its name: no value is ever retyped."""
+    text = (build.SKILL / "templates" / f"DESIGN-{accent}.md").read_text(encoding="utf-8")
+    assert front(text)["colors"]["accent"] == hex_
     assert "{{project}}" in text
+    assert "replace {{project}}" in text.splitlines()[2], "the copy instructions follow the source line"

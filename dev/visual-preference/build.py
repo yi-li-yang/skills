@@ -99,9 +99,9 @@ def tailwind_v4(tokens: dict) -> str:
              "/* Tailwind 4: import after tailwindcss and load tokens.css; utilities follow the active theme. */",
              "@theme inline {"]
     lines += [f"  --color-{k}: var(--{k});" for k in colours(tokens, "dark")]
-    lines += [f"  --font-{k}: var(--font-{k});" for k in tokens["type"]["families"]]
+    lines += [f"  --font-{k}: {v};" for k, v in tokens["type"]["families"].items()]   # literal: same name as tokens.css
     lines += [f"  --spacing-{t['name'].removeprefix('space-')}: var(--{t['name']});" for t in tokens["spacing"]["tokens"]]
-    lines += ["  --radius-none: 0;", "  --radius-dot: var(--radius-dot);", "  --shadow-float: var(--float);",
+    lines += ["  --radius-none: 0;", "  --radius-dot: 9999px;", "  --shadow-float: var(--float);",
               "  --ease-out: var(--out);", "  --container-measure: var(--measure);", "  --container-page: var(--page);", "}"]
     return "\n".join(lines) + "\n"
 
@@ -184,7 +184,8 @@ FIGURE_MODULE = '''"""Yili Yang's figure style. Copy this file into a project, t
 
     import visual_preference as vp
     vp.use("light")          # "light" for papers and email, "dark" for the web and slides
-    plt.plot(...)            # lines take the Earth 6 group colours in order; vp.GROUPS8 for 7-8 groups
+    plt.plot(...)            # lines take the Earth 6 group colours in order
+    colors = vp.groups(8, "light")   # the group colours for n groups (up to 8) in one theme
     plt.imshow(z, cmap="vp.bamako")
 
 Colour maps: @CREDIT@
@@ -232,6 +233,16 @@ def use(theme: str = "light") -> None:
     if not _has("IBM Plex Mono"):
         rc["font.monospace"] = ["DejaVu Sans Mono"]
     matplotlib.rcParams.update(rc)
+
+
+def groups(n: int, theme: str = "light") -> list:
+    """The colours for n groups: Earth 6 for up to six, Earth 8 for seven or eight. More than eight cannot be told
+    apart by colour; label them or show fewer."""
+    if theme not in RC:
+        raise ValueError(f"theme must be 'light' or 'dark', not {theme!r}")
+    if not 1 <= n <= 8:
+        raise ValueError(f"{n} groups: colour can separate at most 8")
+    return (GROUPS if n <= 6 else GROUPS8)[theme][:n]
 
 
 def mono_ticks(ax) -> None:
@@ -358,7 +369,9 @@ def design_md(tokens: dict, cmaps: dict, accent: str, project: str) -> str:
     data = EARTH6 + [n for n in EARTH8 if n not in EARTH6]
     q = json.dumps   # a JSON string is a valid YAML scalar
     description = f"Built on Yili Yang's visual system {tokens['meta']['version']}. Dark is home; one accent: {accent}."
-    lines = ["---", header(tokens, "#").rstrip(), f"name: {q(project)}",
+    lines = ["---", header(tokens, "#").rstrip(),
+             "# Copy into the project as DESIGN.md and replace {{project}} with its name; change nothing else.",
+             f"name: {q(project)}",
              f"description: {q(description)}",
              "colors:"]
     lines += [f"  {n}: {q(dark[n])}" for n in neutral] + [f"  accent: {q(dark[accent])}"]
@@ -405,7 +418,7 @@ def outputs(tokens: dict, cmaps: dict) -> dict[str, str]:
         "marks/wordmark-dark.svg": wordmark_svg(tokens, "dark"),
         "marks/wordmark-light.svg": wordmark_svg(tokens, "light"),
         "templates/social-preview.html": social_preview(tokens),
-        "templates/DESIGN.md": design_md(tokens, cmaps, "lichen", "{{project}}"),
+        **{f"templates/DESIGN-{a}.md": design_md(tokens, cmaps, a, "{{project}}") for a in ACCENTS},
     }
 
 

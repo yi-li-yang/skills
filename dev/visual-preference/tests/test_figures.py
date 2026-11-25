@@ -76,3 +76,11 @@ fig.savefig({str(tmp_path / 'f.png')!r})
     assert (tmp_path / "f.png").stat().st_size > 0
     assert run.stderr.count("Albert Sans is not installed") == 1
     assert "findfont" not in run.stderr
+
+
+def test_groups_helper(vp):
+    assert vp.groups(6, "dark") == EARTH6_DARK
+    assert len(vp.groups(8, "light")) == 8
+    assert vp.groups(3, "dark") == EARTH6_DARK[:3]
+    with pytest.raises(ValueError):
+        vp.groups(9, "dark")

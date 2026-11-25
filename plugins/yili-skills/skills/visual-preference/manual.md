@@ -46,7 +46,7 @@ There are three accents, and each project carries one of them, never two.
 
 The accent marks the one focus or action in a view: the one filled button, the selected tab, the focus ring, the primary link's underline, and the full stop after the project's name. It is never a data colour, and it never fills a large area.
 
-To choose a project's accent, start from lichen. Move to another accent when the project's data already uses a colour close to lichen (a vegetation map, for example), or when the project sits next to another of Yili's projects with the same accent and a reader would confuse the two. Record the choice in the project's `DESIGN.md`.
+To choose a project's accent, start from lichen. Move to another accent when the project's data already uses a colour close to lichen (a vegetation map, for example), or when the project sits next to another of Yili's projects with the same accent and a reader would confuse the two. Record the choice by copying that accent's `DESIGN.md` template, as "Using the files" describes.
 
 ### Data colours
 
@@ -156,10 +156,10 @@ The system does not avoid these by rule. Each one breaks a principle above: most
 
 The tag of a release is `visual-preference-v` followed by the version in `tokens.json` (for example `visual-preference-v1.0.0`).
 
-- **Web:** load `web/fonts.css` and `web/tokens.css` from jsDelivr at the tag, for example `https://cdn.jsdelivr.net/gh/yi-li-yang/skills@visual-preference-v1.0.0/plugins/yili-skills/skills/visual-preference/web/tokens.css`. Then use the custom properties (`var(--ink)`, `var(--lichen)`, `var(--space-4)`) and the type classes (`.vp-body`, `.vp-label`, `.vp-num`). With Tailwind 4, also import `web/tailwind-v4.css`; with Tailwind 3, add `web/tailwind-v3.cjs` as a preset. For maps, `web/colormaps.js` exports the colour maps. Set `data-theme="dark"` or `data-theme="light"` on the page to fix a theme.
+- **Web:** load `web/fonts.css` and `web/tokens.css` from jsDelivr at the tag, for example `https://cdn.jsdelivr.net/gh/yi-li-yang/skills@visual-preference-v1.0.0/plugins/yili-skills/skills/visual-preference/web/tokens.css`. Then use the custom properties (`var(--ink)`, `var(--lichen)`, `var(--space-4)`) and the type classes (`.vp-body`, `.vp-label`, `.vp-num`). Tailwind cannot build utilities from a link, so copy its file into the project (with its version line): with Tailwind 4, import the copied `web/tailwind-v4.css` after Tailwind; with Tailwind 3, add the copied `web/tailwind-v3.cjs` as a preset. For maps, `web/colormaps.js` exports the colour maps. Set `data-theme="dark"` or `data-theme="light"` on the page to fix a theme.
 - **Python figures:** copy `figures/visual_preference.py` into the project, then call `use("light")` or `use("dark")`. The colour maps become `vp.bamako` and the others, and `mono_ticks(ax)` sets an axes' tick numbers in the monospace face. Without the fonts, it falls back to DejaVu Sans and says so once. `figures/visual-preference-light.mplstyle` and the dark one are the same settings as plain style files.
 - **LaTeX:** copy `latex/visual-preference.sty` beside the document and add `\usepackage{visual-preference}`. It works under XeLaTeX, LuaLaTeX and Tectonic with the brand faces or their fallbacks, and under pdfLaTeX with standard faces. `\vpnum{}` sets a number, `\vprule` draws a lichen rule, `\vpstop` draws the stop, and `\vplabel{}` sets a spaced label.
-- **A project's design record:** fill `templates/DESIGN.md` with the project's name and its accent, and keep it at the project's root, where design tools read it.
+- **A project's design record:** copy the template for the project's accent (`templates/DESIGN-lichen.md`, `templates/DESIGN-signal.md` or `templates/DESIGN-amber.md`) to the project's root as `DESIGN.md`, and replace `{{project}}` with its name. Change nothing else: design tools read it there, and its values come from the system.
 - **Social preview:** fill the slots in `templates/social-preview.html` (kicker, name, one line, repo, accent), render it at 1280 × 640, and save it as a PNG for the repo's settings.
 - **Slides and posters:** the `.pptx` templates are attached to each release on GitHub.
 

@@ -72,7 +72,7 @@ skills/
 │  ├─ figures/          visual-preference.mplstyle, colormaps.py           (generated)
 │  ├─ latex/            visual-preference.sty                              (generated)
 │  ├─ marks/            logo, favicon, social preview, README frame (SVG)
-│  └─ templates/        DESIGN.md
+│  └─ templates/        DESIGN-<accent>.md (one per accent), social-preview.html
 └─ dev/visual-preference/                           not installed
    ├─ README.md
    ├─ build.py          tokens.json -> every generated file, and the .pptx

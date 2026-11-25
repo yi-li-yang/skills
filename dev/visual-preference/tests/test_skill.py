@@ -31,3 +31,10 @@ def test_description_keeps_to_own_projects():
     description = parse(build.SKILL / "SKILL.md")[0]["description"]
     assert "own projects" in description
     assert "KIMKIM" in description and "Woodwell" in description
+
+
+def test_manual_says_tailwind_files_are_copied():
+    """Tailwind cannot build utilities from a remote file, so the manual must not send a reader to a link for it."""
+    web = next(line for line in texts()["manual.md"].splitlines() if line.startswith("- **Web:**"))
+    tail = web.split("Tailwind", 1)[1]
+    assert "copy" in tail.lower()

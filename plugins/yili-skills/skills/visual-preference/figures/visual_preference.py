@@ -3,7 +3,8 @@
 
     import visual_preference as vp
     vp.use("light")          # "light" for papers and email, "dark" for the web and slides
-    plt.plot(...)            # lines take the Earth 6 group colours in order; vp.GROUPS8 for 7-8 groups
+    plt.plot(...)            # lines take the Earth 6 group colours in order
+    colors = vp.groups(8, "light")   # the group colours for n groups (up to 8) in one theme
     plt.imshow(z, cmap="vp.bamako")
 
 Colour maps: Crameri, F. (2018). Scientific colour maps. Zenodo. doi:10.5281/zenodo.1243862. bamako, oslo, lajolla, bilbao, lisbon and broc are Fabio Crameri's maps; lichen is Yili Yang's own ramp.
@@ -55,6 +56,16 @@ def use(theme: str = "light") -> None:
     if not _has("IBM Plex Mono"):
         rc["font.monospace"] = ["DejaVu Sans Mono"]
     matplotlib.rcParams.update(rc)
+
+
+def groups(n: int, theme: str = "light") -> list:
+    """The colours for n groups: Earth 6 for up to six, Earth 8 for seven or eight. More than eight cannot be told
+    apart by colour; label them or show fewer."""
+    if theme not in RC:
+        raise ValueError(f"theme must be 'light' or 'dark', not {theme!r}")
+    if not 1 <= n <= 8:
+        raise ValueError(f"{n} groups: colour can separate at most 8")
+    return (GROUPS if n <= 6 else GROUPS8)[theme][:n]
 
 
 def mono_ticks(ax) -> None:
