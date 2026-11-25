@@ -129,6 +129,117 @@ def colormaps_js(tokens: dict, cmaps: dict) -> str:
             + "  return s[Math.max(0, Math.min(s.length - 1, Math.round(t * (s.length - 1))))];\n}\n")
 
 
+
+# ------------------------------------------------------------------------------------------- figures
+
+EARTH6 = ["data-sky", "data-rust", "data-spruce", "data-sand", "data-dusk", "data-ochre"]
+EARTH8 = ["data-glacier", "data-rust", "data-spruce", "data-sand", "data-dusk", "data-rose", "data-olive", "data-sky"]
+ACCENTS = ("lichen", "signal", "amber")
+
+
+def figure_rc(tokens: dict, theme: str) -> dict:
+    """matplotlib settings for one theme. Papers are light and print on white, so the light figure ground is white."""
+    c = colours(tokens, theme)
+    ground = c["raised"] if theme == "light" else c["ground"]
+    cycle = ", ".join(f"'{c[n].lstrip('#')}'" for n in EARTH6)
+    return {
+        "figure.facecolor": ground, "axes.facecolor": ground, "savefig.facecolor": ground, "savefig.dpi": 300,
+        "text.color": c["ink"], "axes.labelcolor": c["ink"], "axes.titlecolor": c["ink"],
+        "xtick.color": c["muted"], "ytick.color": c["muted"], "axes.edgecolor": c["muted"],
+        "axes.spines.top": False, "axes.spines.right": False, "axes.grid": True, "axes.grid.axis": "y",
+        "grid.color": c["rule"], "grid.linewidth": 0.6, "axes.axisbelow": True,
+        "axes.prop_cycle": f"cycler('color', [{cycle}])",
+        "font.family": "sans-serif", "font.sans-serif": "Albert Sans, DejaVu Sans",
+        "font.monospace": "IBM Plex Mono, DejaVu Sans Mono", "font.size": 10,
+        "axes.titlesize": 11, "axes.titleweight": 600, "axes.titlelocation": "left", "axes.labelsize": 10,
+        "xtick.labelsize": 9, "ytick.labelsize": 9, "legend.fontsize": 9, "legend.frameon": False,
+        "lines.linewidth": 1.75, "xtick.major.size": 0, "ytick.major.size": 0, "image.cmap": "vp.bamako",
+    }
+
+
+def mplstyle(tokens: dict, theme: str) -> str:
+    rc = figure_rc(tokens, theme)
+    rc = {k: (str(v).lstrip("#") if isinstance(v, str) and v.startswith("#") else v) for k, v in rc.items()}
+    rc.pop("image.cmap")   # a style file cannot register colour maps; visual_preference.use() does
+    lines = [f"{k}: {str(v).lower() if isinstance(v, bool) else v}" for k, v in rc.items()]
+    return header(tokens, "#") + f"# {theme} theme; plt.style.use(this file). For the colour maps, use visual_preference.use().\n" + "\n".join(lines) + "\n"
+
+
+def figure_module(tokens: dict, cmaps: dict) -> str:
+    rc = {t: figure_rc(tokens, t) for t in ("dark", "light")}
+    for t in rc:
+        rc[t]["axes.prop_cycle"] = [colours(tokens, t)[n] for n in EARTH6]
+    data = {
+        "RC": rc,
+        "GROUPS": {t: [colours(tokens, t)[n] for n in EARTH6] for t in ("dark", "light")},
+        "GROUPS8": {t: [colours(tokens, t)[n] for n in EARTH8] for t in ("dark", "light")},
+        "ACCENTS": {t: {a: colours(tokens, t)[a] for a in ACCENTS} for t in ("dark", "light")},
+        "COLORMAPS": {n: m["stops"] for n, m in cmaps["maps"].items()},
+    }
+    body = "\n".join(f"{k} = {v!r}" for k, v in data.items())
+    return header(tokens, "#") + FIGURE_MODULE.replace("@CREDIT@", cmaps["credit"]).replace("@DATA@", body)
+
+
+FIGURE_MODULE = '''"""Yili Yang's figure style. Copy this file into a project, then:
+
+    import visual_preference as vp
+    vp.use("light")          # "light" for papers and email, "dark" for the web and slides
+    plt.plot(...)            # lines take the Earth 6 group colours in order; vp.GROUPS8 for 7-8 groups
+    plt.imshow(z, cmap="vp.bamako")
+
+Colour maps: @CREDIT@
+"""
+import warnings
+
+import matplotlib
+from cycler import cycler
+from matplotlib import font_manager
+from matplotlib.colors import ListedColormap
+
+@DATA@
+
+_warned = False
+
+
+def _register() -> None:
+    for name, stops in COLORMAPS.items():
+        if f"vp.{name}" not in matplotlib.colormaps:
+            matplotlib.colormaps.register(ListedColormap(stops, name=f"vp.{name}"))
+            matplotlib.colormaps.register(ListedColormap(stops[::-1], name=f"vp.{name}_r"))
+
+
+def _has(family: str) -> bool:
+    return any(f.name == family for f in font_manager.fontManager.ttflist)
+
+
+def use(theme: str = "light") -> None:
+    """Apply the style for "light" or "dark" and register the colour maps as vp.<name>."""
+    global _warned
+    if theme not in RC:
+        raise ValueError(f"theme must be 'light' or 'dark', not {theme!r}")
+    _register()
+    rc = dict(RC[theme])
+    rc["axes.prop_cycle"] = cycler(color=rc["axes.prop_cycle"])
+    rc["font.sans-serif"] = [f.strip() for f in rc["font.sans-serif"].split(",")]
+    rc["font.monospace"] = [f.strip() for f in rc["font.monospace"].split(",")]
+    if not _has("Albert Sans"):
+        rc["font.sans-serif"] = ["DejaVu Sans"]
+        rc["axes.titleweight"] = "bold"   # DejaVu Sans has no 600
+        if not _warned:
+            warnings.warn("Albert Sans is not installed; figures use DejaVu Sans. Install it from Google Fonts.",
+                          stacklevel=2)
+            _warned = True
+    if not _has("IBM Plex Mono"):
+        rc["font.monospace"] = ["DejaVu Sans Mono"]
+    matplotlib.rcParams.update(rc)
+
+
+def mono_ticks(ax) -> None:
+    """Set the tick numbers of one axes in the monospace face, as the system sets every number."""
+    for label in ax.get_xticklabels() + ax.get_yticklabels():
+        label.set_family("monospace")
+'''
+
 # --------------------------------------------------------------------------------------------- build
 
 def outputs(tokens: dict, cmaps: dict) -> dict[str, str]:
@@ -138,6 +249,9 @@ def outputs(tokens: dict, cmaps: dict) -> dict[str, str]:
         "web/tailwind-v4.css": tailwind_v4(tokens),
         "web/tailwind-v3.cjs": tailwind_v3(tokens),
         "web/colormaps.js": colormaps_js(tokens, cmaps),
+        "figures/visual-preference-dark.mplstyle": mplstyle(tokens, "dark"),
+        "figures/visual-preference-light.mplstyle": mplstyle(tokens, "light"),
+        "figures/visual_preference.py": figure_module(tokens, cmaps),
     }
 
 
