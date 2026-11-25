@@ -22,6 +22,7 @@ Each skill answers one question about how I think, and no two skills answer the 
 | [wardrobe](plugins/yili-skills/skills/wardrobe/SKILL.md) | What is this piece made of, how well is it made, how does it fit me, and what do I already own like it? It keeps my wardrobe record; taste stays mine. | Recording clothes I own, looking at a piece of clothing, shoes, a bag or jewellery, or asking about a fabric, a make or a brand. |
 | [write-like-myself](plugins/yili-skills/skills/write-like-myself/SKILL.md) | How do my words read when I write? | Writing or editing any text a person will read. |
 | [talk-standard-tech-eng](plugins/yili-skills/skills/talk-standard-tech-eng/SKILL.md) | How do Claude's technical words stay plain? | Claude talks to me, names a thing, or writes technical or agent-facing text. Not for academic, persuasive or creative writing, or other languages. |
+| [visual-preference](plugins/yili-skills/skills/visual-preference/SKILL.md) | How does my work look: colours, type, the mark, figures, documents and slides? | Making or restyling one of my own repos, sites, apps, maps, figures, documents or talks. Not for Woodwell or KIMKIM work. |
 
 Version 2.0.0 renamed three skills: `prompt-to-think` is now `i-think-like-this`, `interview-before-answer` is now `interview-me-before-answer`, and `expertise` is now `updated-domain-expert`.
 
