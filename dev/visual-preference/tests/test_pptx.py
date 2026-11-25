@@ -64,3 +64,28 @@ def test_title_layout_shares_one_left_edge(built):
     title = next(l for l in prs.slide_layouts if l.name == "Title")
     lefts = {ph.left for ph in title.placeholders if ph.placeholder_format.idx in (0, 1)}
     assert len(lefts) == 1
+
+
+def title_placeholder(layout):
+    return next(ph for ph in layout.placeholders if ph.placeholder_format.idx == 0)
+
+
+@pytest.mark.parametrize("name", ["slides-dark.pptx", "poster-a0.pptx"])
+def test_placeholders_fill_the_page(built, name):
+    """The default template is 4:3; its placeholders must be rescaled to the new page, not left in a corner."""
+    prs = Presentation(built[name])
+    for layout in prs.slide_layouts:
+        title = title_placeholder(layout)
+        assert title.width >= 0.8 * prs.slide_width, layout.name
+        assert title.left + title.width <= prs.slide_width
+    for shape in prs.slide_master.shapes:
+        assert shape.left + shape.width <= prs.slide_width and shape.top + shape.height <= prs.slide_height, shape.name
+
+
+def test_poster_type_is_poster_sized(built):
+    from pptx.util import Pt
+    prs = Presentation(built["poster-a0.pptx"])
+    name = next(sp for sp in prs.slide_master.shapes if sp.has_text_frame and sp.text_frame.text == "Yili Yang")
+    assert name.text_frame.paragraphs[0].runs[0].font.size >= Pt(36)
+    sizes = [int(e.get("sz")) for e in prs.slide_master.element.iter() if e.tag.endswith("defRPr") and e.get("sz")]
+    assert max(sizes) >= 12000, "title text should be at least 120 pt on A0"

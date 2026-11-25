@@ -255,10 +255,11 @@ def latex_sty(tokens: dict) -> str:
 \RequirePackage{titlesec}
 @COLOURS@
 \iftutex
+  % The fallbacks load by file name, so they work where TeX's own fonts are not registered with the system.
   \RequirePackage{fontspec}
-  \IfFontExistsTF{Albert Sans}{\setmainfont{Albert Sans}[BoldFont={* SemiBold}]}{\setmainfont{TeX Gyre Heros}}
-  \IfFontExistsTF{Source Serif 4}{\newfontfamily\vpserif{Source Serif 4}[BoldFont={* SemiBold}]}{\newfontfamily\vpserif{TeX Gyre Termes}}
-  \IfFontExistsTF{IBM Plex Mono}{\setmonofont{IBM Plex Mono}}{\setmonofont{Latin Modern Mono}}
+  \IfFontExistsTF{Albert Sans}{\setmainfont{Albert Sans}[BoldFont={* SemiBold}]}{\setmainfont{texgyreheros}[Extension=.otf, UprightFont=*-regular, BoldFont=*-bold, ItalicFont=*-italic, BoldItalicFont=*-bolditalic]}
+  \IfFontExistsTF{Source Serif 4}{\newfontfamily\vpserif{Source Serif 4}[BoldFont={* SemiBold}]}{\newfontfamily\vpserif{texgyretermes}[Extension=.otf, UprightFont=*-regular, BoldFont=*-bold, ItalicFont=*-italic, BoldItalicFont=*-bolditalic]}
+  \IfFontExistsTF{IBM Plex Mono}{\setmonofont{IBM Plex Mono}}{\setmonofont{lmmono10-regular.otf}}
   \newcommand{\vplabel}[1]{{\addfontfeatures{LetterSpace=10}\footnotesize\MakeUppercase{#1}}}
 \else
   \RequirePackage[T1]{fontenc}
