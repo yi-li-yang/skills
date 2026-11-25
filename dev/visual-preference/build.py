@@ -343,6 +343,49 @@ def social_preview(tokens: dict) -> str:
 """
 
 
+
+# ------------------------------------------------------------------------------------------ DESIGN.md
+
+def design_md(tokens: dict, cmaps: dict, accent: str, project: str) -> str:
+    """A project's DESIGN.md, in the shape design skills read: front matter of values, then the rules in prose.
+    A project carries exactly one accent."""
+    if accent not in ACCENTS:
+        raise ValueError(f"accent must be one of {', '.join(ACCENTS)}, not {accent!r}")
+    dark, light = colours(tokens, "dark"), colours(tokens, "light")
+    fams = tokens["type"]["families"]
+    neutral = ["ground", "surface", "raised", "rule", "edge", "muted", "ink"]
+    data = EARTH6 + [n for n in EARTH8 if n not in EARTH6]
+    q = json.dumps   # a JSON string is a valid YAML scalar
+    description = f"Built on Yili Yang's visual system {tokens['meta']['version']}. Dark is home; one accent: {accent}."
+    lines = ["---", header(tokens, "#").rstrip(), f"name: {q(project)}",
+             f"description: {q(description)}",
+             "colors:"]
+    lines += [f"  {n}: {q(dark[n])}" for n in neutral] + [f"  accent: {q(dark[accent])}"]
+    lines += [f"  {n}: {q(dark[n])}" for n in data]
+    lines += ["colors-light:"] + [f"  {n}: {q(light[n])}" for n in neutral] + [f"  accent: {q(light[accent])}"]
+    lines += [f"  {n}: {q(light[n])}" for n in data]
+    lines += ["typography:"]
+    for family, st in styles(tokens):
+        lines += [f"  {st['name']}:", f"    fontFamily: {q(fams[family])}", f"    fontSize: {q(st['fontSize'])}",
+                  f"    fontWeight: {st['fontWeight']}", f"    lineHeight: {st['lineHeight']}"]
+        if "letterSpacing" in st:
+            lines.append(f"    letterSpacing: {q(st['letterSpacing'])}")
+    lines += ["rounded:", '  none: "0"', '  dot: "9999px"', "spacing:"]
+    lines += [f"  {t['name']}: {q(t['value'])}" for t in tokens["spacing"]["tokens"]]
+    lines += ["---", "", f"# Design System: {project}", "",
+              f"This project uses Yili Yang's visual system, version {tokens['meta']['version']}. The values above come from it; "
+              "change them there, not here. Its manual explains each choice.", "",
+              f"**The accent is {accent}.** It marks the one focus or action in a view: the filled button, the selected tab, "
+              "the focus ring, the full stop after the project's name. It is never used for data and never next to another accent.", "",
+              "## Principles, in order", "",
+              "1. **Readable by everyone.** Text at WCAG AA contrast in both themes; colour is never the only cue.",
+              "2. **The work leads.** The interface stays in the stone neutrals; maps, images and data carry the colour.",
+              "3. **Colour means something.** The accent marks focus or action; the data colours mark data.",
+              "4. **Editorial clarity.** Hierarchy from size, weight and space; text aligned left; units and sources visible.",
+              "5. **Built like an instrument.** Square corners, hairline rules, monospace numbers, matte surfaces: no glow, glass or soft shadow.", ""]
+    return "\n".join(lines) + "\n"
+
+
 # --------------------------------------------------------------------------------------------- build
 
 def outputs(tokens: dict, cmaps: dict) -> dict[str, str]:
@@ -361,6 +404,7 @@ def outputs(tokens: dict, cmaps: dict) -> dict[str, str]:
         "marks/wordmark-dark.svg": wordmark_svg(tokens, "dark"),
         "marks/wordmark-light.svg": wordmark_svg(tokens, "light"),
         "templates/social-preview.html": social_preview(tokens),
+        "templates/DESIGN.md": design_md(tokens, cmaps, "lichen", "{{project}}"),
     }
 
 

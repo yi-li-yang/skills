@@ -78,7 +78,9 @@ def test_tailwind_outputs():
 
 def test_generated_files_start_with_the_source_line():
     for rel, text in build.outputs(*build.load()).items():
-        assert "generated from tokens.json by dev/visual-preference/build.py" in text.splitlines()[0], rel
+        # A file with front matter must open with "---", so its source line is the first line inside it.
+        head = text.splitlines()[1] if text.startswith("---\n") else text.splitlines()[0]
+        assert "generated from tokens.json by dev/visual-preference/build.py" in head, rel
 
 
 def test_check_detects_stale(tmp_path):
