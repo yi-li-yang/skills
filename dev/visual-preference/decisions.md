@@ -88,3 +88,8 @@ Print/talks: figures light in papers (journal rules win), stone dark on web/slid
 ## Part B design approved; build plan approved (2026-11-25)
 - Plan: /mnt/user-data/outputs/visual-preference-plan.md. Execution: native (Claude builds every task in this session), one fresh reviewer at the end.
 - Delivery: Yili grants this session write access to yi-li-yang/skills; Claude pushes a branch and opens a PR.
+
+## Build notes (stage 11)
+- Earth 8 = the whole K2 set (glacier, rust, spruce, sand, dusk, rose, olive, sky). K1 plus rose and olive measured 5.0, below the 10.0 an eight-colour set needs. Claude's call; for Yili's review in Task 9.
+- Light-theme data colours, derived by dev/visual-preference/derive_light_data.py (hue within 20 degrees, chroma 0.7-1.6x, 3:1 to 6:1 on paper, Earth 6 >= 11.0 and Earth 8 >= 10.0 under colour-vision simulation). Claude's call; for Yili's review in Task 9:
+  sky #48606e, rust #9c3f27, spruce #307f67, sand #9e8a59, dusk #72679f, ochre #9e7002, glacier #6490b0, rose #bc7387, olive #7a801b.
