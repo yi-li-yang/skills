@@ -49,6 +49,7 @@ This is a personal skill: it reproduces how its author researches a purchase alo
 - **When to stop:** when further research would not change the choice. The skill's *flip test* is this rule.
 - **Paying less (added 2026-11-23):** go through a cashback site before checkout; pick the card for its offers, points or protection; check the price history and wait for the big sales; on the China side, use the national trade-in subsidy, JD.com's price protection, platform subsidy schemes and spend thresholds.
 - **What the answer gives (added 2026-11-25):** first how the experienced choose in this category and the search keywords that find what passes it, then the call explained by it.
+- **The cue to buy as a rule (added 2026-11-25):** what to buy and its price are coupled, so when the call waits on a price or a date, the brief gives the cue to buy as a rule that someone else can check later: the finalists and routes in order of preference, the net price at which each becomes the call, the last day to order and what to do then, the premises that would make the call wrong, and the date after which the prices are too old to trust.
 
 ## Install
 
