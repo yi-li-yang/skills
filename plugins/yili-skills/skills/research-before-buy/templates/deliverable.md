@@ -6,13 +6,21 @@ apply.
 
 ## Part 1: the brief
 
+The brief teaches first, then decides.
+
+- **How the trade chooses:** in a few sentences, what decides quality and price
+  in this category, then a few rules of thumb the trade uses, each with its
+  mechanism and when it fails. If you are not at expert level here, say so in
+  one line instead.
+- **Search keywords:** the words to type, in each language and store the person
+  will shop in, that find options passing the rules of thumb and leave out the
+  ones that do not. Use the trade's words, because a seller's words lead to its
+  marketing.
 - **The call:** what to buy or do, and where and when, if that is in scope.
 - **Why:** the reasoning in a few sentences: what kind of decision this is, the
-  need, why this option over the others. Give branches where an unknown splits
-  the answer.
+  need, how the rules of thumb apply to this person's use and limits, and why
+  this option over the others. Give branches where an unknown splits the answer.
 - **The tradeoff:** what this choice gives up.
-- **Rules of thumb:** a few of your own, each with its mechanism and when
-  it fails, or one line saying you are not at expert level here.
 - **Confidence:** how sure you are, and what would change the call.
 - **Price:** how current the prices are and how they were read; the net price of
   the chosen route, with money back shown apart; now or wait; anything to claim

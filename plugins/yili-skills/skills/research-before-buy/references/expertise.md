@@ -50,8 +50,14 @@ one independent check they rely on. Prefer named practitioners over listicles of
 
 ## Rules of thumb
 
-Write a few of your own only if you can say what mechanism decides quality and
-price here, how the thing fails, where marketing departs from the mechanism, and
-what would flip your ranking. Give each rule in one line, with the mechanism
-behind it and the condition under which it fails. If you cannot, say so and give
-none: a plausible guess is worse.
+People who work in a field choose with a few short rules. The brief opens with
+them, so the person learns how the trade chooses before they see the call. Build
+the rules from how the trade chooses and check them against the mechanism: the
+research is the input, and the rules are your synthesis, not slogans copied from
+the web. Give each in one line, with the mechanism that makes it hold and the
+condition under which it fails; the failure condition is what lets the person
+overrule you. A rule that rules nothing out is not a rule. Write them only if
+you can say what mechanism decides quality and price here, how the thing fails,
+where marketing departs from the mechanism, and what would flip your ranking.
+Research a gap first; if it stays open, say so and give none: a plausible guess
+is worse.

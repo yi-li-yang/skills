@@ -1,6 +1,6 @@
 # Research Before Buy
 
-**Every purchase, decided by the actual expert for it. Buying a plant pot? A horticulturist. A TV? A display engineer who could've worked on Samsung's panels. It builds that expertise fresh — researching the field to real depth — and hands you back a decision. You never do the research.**
+**Every purchase, decided by the actual expert for it. Buying a plant pot? A horticulturist. A TV? A display engineer who could've worked on Samsung's panels. It builds that expertise fresh — researching the field to real depth — teaches you how the experienced choose, and hands you back a decision explained by it. You never do the research.**
 
 Everyone online is selling you the best. The best chef's knife, the best monitor, the best stroller. So *you* open twelve tabs, read four "best of 2026" lists that flatly contradict each other, watch a teardown video at 1.5x, and two hours later you are *more* unsure than when you started — and you still haven't bought the thing.
 
@@ -29,7 +29,7 @@ Every non-trivial purchase runs you through the same circuit: research → compa
 - **It separates *what* from *where and when*.** Decide the product first; only then weigh platform, country and timing (landed cost, warranty, the China-vs-local question, buy now or wait) as their own decision.
 - **It works out what you will really pay, and when to pay it.** For each discount it asks who pays and why, which tells it whether the discount is real, whether it stacks and how it fails. It reads where deal hunters already did the work, weighs waiting against the cost of waiting, and does all this only where a discount or a date could change the call: a kettle gets no coupon hunt.
 - **It shows you it is running.** Every answer opens with one line, `🛒 research-before-buy active · type · axis · unknowns`, in the language you write in, so you never have to ask whether the skill fired. The line also shows how it read the decision.
-- **It gives you the field's rules of thumb.** Once it can pass its own expert check (the mechanism, how things fail, where marketing departs from the mechanism, what would flip the ranking), it designs a few short rules of its own for the category, each with the mechanism behind it and the condition under which it fails. If it cannot pass the check, it says so and gives none.
+- **It teaches you how the trade chooses, before it gives the call.** Once it can pass its own expert check (the mechanism, how things fail, where marketing departs from the mechanism, what would flip the ranking), it opens the answer with what decides quality and price in the category and a few short rules of thumb of its own, each with the mechanism behind it and the condition under which it fails, and a list of search keywords in the trade's own words that find what passes those rules. Then it gives the call and explains it by those rules, so you can check it, judge the next option yourself, and overrule it where your case is different. If it cannot pass the check, it says so and gives none.
 - **It reads live prices where it can, and says so where it can't.** Cloud agents are often blocked by retailers or sit in the wrong country. So decision prices are read through your own Chrome first; if the session cannot reach it, the brief ends with a ready-to-paste list for the Chrome side panel; and a price with no read time is marked unverified rather than stated as current.
 
 ## What using it feels like
@@ -38,7 +38,7 @@ You: *"Help me pick a frying pan, there are like five materials and everyone dis
 
 It doesn't hand you the pros-and-cons table you've already read five times. It asks one sharp question, works out that you cook eggs most mornings and sear steak on weekends, and tells you the honest thing nobody else will: that's not one pan, it's two — here are the two, here's the use each one owns, and here's where to stop reading.
 
-You get the answer in two parts. First a **short brief** — the call and the full reasoning behind it, readable in a minute. Then a **complete report** of everything it found — the market, the materials, where the money goes, what the trade knows, and an honest list of what it's *not* sure about — which you can read in full or just scan. The brief is so you can act; the report is so you can check its work and know the call is reliable. The only thing you're required to read is the short part.
+You get the answer in two parts. First a **short brief** — how the experienced choose in this category, then the call explained by it, readable in a minute or two. Then a **complete report** of everything it found — the market, the materials, where the money goes, what the trade knows, and an honest list of what it's *not* sure about — which you can read in full or just scan. The brief is so you can act; the report is so you can check its work and know the call is reliable. The only thing you're required to read is the short part.
 
 ## The process this skill replicates
 
@@ -48,6 +48,7 @@ This is a personal skill: it reproduces how its author researches a purchase alo
 - **Who to trust when sources disagree:** repeated, specific failures in negative reviews; long-term or insider reports; rule out whoever earns a commission first; check against the mechanism. **Your own judgment ranks above what others say.**
 - **When to stop:** when further research would not change the choice. The skill's *flip test* is this rule.
 - **Paying less (added 2026-11-23):** go through a cashback site before checkout; pick the card for its offers, points or protection; check the price history and wait for the big sales; on the China side, use the national trade-in subsidy, JD.com's price protection, platform subsidy schemes and spend thresholds.
+- **What the answer gives (added 2026-11-25):** first how the experienced choose in this category and the search keywords that find what passes it, then the call explained by it.
 
 ## Install
 
