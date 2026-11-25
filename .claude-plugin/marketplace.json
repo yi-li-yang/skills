@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Yili Yang's Claude Code skills in one plugin: a thinking framework, interviewing before answering, up-to-date domain briefings, digesting material in any form, purchase research, a wardrobe record with technical clothing facts, writing in his own voice, and plain technical English.",
-    "version": "2.3.3"
+    "version": "2.5.0"
   },
   "plugins": [
     {
       "name": "yili-skills",
       "source": "./plugins/yili-skills",
       "description": "Eight skills that each answer one question and find each other by need: i-think-like-this (how to reason and judge what is true), interview-me-before-answer (who is asking and how they decide), updated-domain-expert (sourced, dated briefings on what an expert knows now), digest-distill-information (what videos, posts, threads and reports actually say and show), research-before-buy (purchase decisions), wardrobe (the wardrobe record, and the technical facts about a piece: fibre, make, brand, fit), write-like-myself (writing in Yili Yang's voice) and talk-standard-tech-eng (plain, stable technical English).",
-      "version": "2.3.3",
+      "version": "2.5.0",
       "strict": true
     }
   ]

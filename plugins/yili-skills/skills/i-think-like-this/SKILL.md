@@ -53,8 +53,7 @@ Question your first understanding before you build on it.
 
 ## Simplicity First
 
-Start with the simplest working solution. Add complexity
-only when needed.
+Start with the simplest working solution. Each part you add, such as a step or a rule, must give clearly more than it costs. The cost is paid on every later day, grows as parts act on each other, and is hard to undo; the gain is an estimate, made by whoever wants the part, before the cost shows. A part that no longer pays for itself is a reason to remove it. Ask for elegance and robustness, not only for a solution that works: few parts that fit well, and a result that holds outside the case it was built for.
 
 ## Inversion
 

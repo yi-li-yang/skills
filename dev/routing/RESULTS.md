@@ -122,3 +122,15 @@ The purchase skill's description listed Chinese trigger phrases and English exam
 - **The gift question sometimes ends with the interview skill alone,** in every version.
 
 Cost: 2.45 USD.
+
+## Complexity must pay: does the description need a clause? (2026-11-25)
+
+The reasoning skill's `Simplicity First` now says that each added part must give clearly more than it costs, and why. A clause was also tried in its description: use it when a choice would add complexity to a system, a plan or a process that will last, or when a task in progress asks whether added complexity is worth its cost. `run.py`, default model (Opus 5.5).
+
+| Prompt | With the clause | Without the clause |
+| --- | --- | --- |
+| "Our API is fast enough today, but I want to add a Redis cache and a message queue in front of the database to make it faster. Is it worth it?" | loaded, 4 of 4 | loaded, 3 of 3 |
+| "Add a Redis cache and a message queue in front of our database so the API gets faster." | not loaded, 0 of 3 | not loaded, 0 of 3 |
+| "Write a one-off script that renames the photos in this folder by date." (should not load) | not loaded, 1 of 1 | not run |
+
+The clause changed nothing. A question about whether added complexity is worth it already reads as a decision that matters, and an instruction to add it loads no reasoning skill with or without the clause. So the clause was removed, and the description is as it was. The instruction prompt is not kept as a case, because the runner stops at the first tool call and cannot see whether the question arises later in the task; `session.py` could check that. Cost: under 1 USD.
