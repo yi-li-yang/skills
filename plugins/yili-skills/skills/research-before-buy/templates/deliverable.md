@@ -27,10 +27,13 @@ The brief teaches first, then decides.
   or watch after buying, with dates.
 - **Stop here:** what good enough is, and the cue to buy. When the call waits on
   a price or a date, the cue to buy is a rule that someone else can check later:
-  the finalists and routes in order of preference; for each, the net price at
-  which it becomes the call; the last day to order and what to do then; the
-  premises that would make the call wrong; and the date after which the prices
-  are too old to trust.
+  the finalists and routes in order of preference; for each, the net price
+  before money back at which it becomes the call (what the route costs after
+  delivery and the discounts the page states, with money back shown apart), and
+  why that price (its price history, its usual sale price, or its worth against
+  the others; today's price alone is not a reason); the last day to order and
+  what to do then; the premises that would make the call wrong; and the date
+  after which the prices are too old to trust.
 
 ## Part 2: the research report
 
