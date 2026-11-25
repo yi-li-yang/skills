@@ -35,3 +35,6 @@ dist/
 *.zip
 .DS_Store
 .claude/settings.local.json
+
+# visual-preference: release builds (slides, posters) and scratch, never committed
+dev/visual-preference/build/

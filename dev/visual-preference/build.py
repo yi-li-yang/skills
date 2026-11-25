@@ -278,6 +278,71 @@ def latex_sty(tokens: dict) -> str:
 """.replace("@VERSION@", tokens["meta"]["version"]).replace("@COLOURS@", defs)
 
 
+
+# --------------------------------------------------------------------------------------------- marks
+
+GLYPHS = Path(__file__).resolve().parent / "glyphs.json"
+
+
+def stop_geometry(advance: float, size: float) -> tuple[float, float, float]:
+    """The square full stop after a word: side 0.22 of the type size, on the baseline, 0.1 of the size after it."""
+    side = 0.22 * size
+    return advance + 0.1 * size, -side, side
+
+
+def svg(tokens: dict, view_box: str, body: str) -> str:
+    return header(tokens, "<!--", "-->") + f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{view_box}">{body}</svg>\n'
+
+
+def wordmark_svg(tokens: dict, theme: str) -> str:
+    g = json.loads(GLYPHS.read_text(encoding="utf-8"))
+    c = colours(tokens, theme)
+    x, y, side = stop_geometry(g["advance"], g["unitsPerEm"])
+    width = round(x + side)
+    body = (f'<path fill="{c["ink"]}" d="{g["path"]}"/>'
+            f'<rect x="{x:g}" y="{y:g}" width="{side:g}" height="{side:g}" fill="{c["lichen"]}"/>')
+    return svg(tokens, f"0 -800 {width} 1100", body)
+
+
+def mark_svg(tokens: dict, accent: str) -> str:
+    return svg(tokens, "0 0 64 64", f'<rect width="64" height="64" fill="{colours(tokens, "dark")[accent]}"/>')
+
+
+def favicon_svg(tokens: dict) -> str:
+    c = colours(tokens, "dark")
+    return svg(tokens, "0 0 64 64", f'<rect width="64" height="64" fill="{c["ground"]}"/>'
+                                    f'<rect x="8" y="8" width="48" height="48" fill="{c["lichen"]}"/>')
+
+
+def social_preview(tokens: dict) -> str:
+    c = colours(tokens, "dark")
+    return header(tokens, "<!--", "-->") + f"""<!-- 1280 x 640 social preview. Fill the slots, render at 1280 x 640, save as PNG for GitHub. -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<link rel="stylesheet" href="{FONTS_URL}">
+<style>
+  html, body {{ margin: 0; }}
+  .sp {{ width: 1280px; height: 640px; box-sizing: border-box; position: relative; padding: 88px 96px;
+        background: {c["ground"]}; color: {c["ink"]}; font-family: "Albert Sans", system-ui, sans-serif; }}
+  .kicker {{ font-size: 22px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: {c["muted"]}; }}
+  .name {{ font-size: 104px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.05; margin-top: 26px; }}
+  .stop {{ display: inline-block; width: 0.22em; height: 0.22em; margin-left: 0.1em; background: {{{{accent}}}}; }}
+  .line {{ font-size: 34px; line-height: 1.3; margin-top: 22px; max-width: 960px; color: {c["ink"]}; opacity: 0.85; }}
+  .foot {{ position: absolute; left: 96px; right: 96px; bottom: 72px; padding-top: 24px; border-top: 1px solid {c["rule"]};
+          display: flex; justify-content: space-between; align-items: baseline; }}
+  .who {{ font-size: 26px; font-weight: 600; }}
+  .who .stop {{ background: {c["lichen"]}; }}
+  .repo {{ font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 24px; color: {c["muted"]}; }}
+</style></head>
+<body><div class="sp">
+  <div class="kicker">{{{{kicker}}}}</div>
+  <div class="name">{{{{name}}}}<span class="stop"></span></div>
+  <div class="line">{{{{line}}}}</div>
+  <div class="foot"><span class="who">Yili Yang<span class="stop"></span></span><span class="repo">{{{{repo}}}}</span></div>
+</div></body></html>
+"""
+
+
 # --------------------------------------------------------------------------------------------- build
 
 def outputs(tokens: dict, cmaps: dict) -> dict[str, str]:
@@ -291,6 +356,11 @@ def outputs(tokens: dict, cmaps: dict) -> dict[str, str]:
         "figures/visual-preference-light.mplstyle": mplstyle(tokens, "light"),
         "figures/visual_preference.py": figure_module(tokens, cmaps),
         "latex/visual-preference.sty": latex_sty(tokens),
+        **{f"marks/mark-{a}.svg": mark_svg(tokens, a) for a in ACCENTS},
+        "marks/favicon.svg": favicon_svg(tokens),
+        "marks/wordmark-dark.svg": wordmark_svg(tokens, "dark"),
+        "marks/wordmark-light.svg": wordmark_svg(tokens, "light"),
+        "templates/social-preview.html": social_preview(tokens),
     }
 
 
