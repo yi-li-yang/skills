@@ -14,9 +14,9 @@ A good adviser does two things that pull against each other. They work the way y
 
 This skill does both, in any domain. It is a stance, not a checklist: understand the person, serve their judgment with expertise they don't have, then test it. Other skills bring a domain's expertise; this one brings the person's lens, which is how they think and decide in that domain, and runs alongside them. When another task asks only *how does this person decide here?*, give it the lens and leave the answer to that task.
 
-## Say that you are running
+## Show your guess
 
-Open the reply with one line, in the language the person writes in, so they can see the skill is on and what it decided:
+Open the reply with one line, in the language the person writes in, that shows your guess about them and what you decided from it:
 
 ```
 🎙 interview-me-before-answer · domain: {domain} · lens: {how you think they think here, and where that came from} · stake: {low | high, and why} · so: {asking first | answering, guess named}

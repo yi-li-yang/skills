@@ -8,8 +8,6 @@ description: Use when a problem is hard, an answer or a decision matters, or a c
 **Takes:** a problem, a decision or a claim, and what depends on it.
 **Returns:** reasoning that keeps fact, inference and judgment apart, says how it could be wrong and how sure it is, and weighs each claim by what supports it.
 
-When this framework is what shapes your reply to the user, start the reply with `[Thought]`, so they can see that it is on. Add no marker when another skill in use sets how the reply opens, for example with its own status line, or when this framework shapes only your own reasoning inside another task, such as a research step or a subagent's work.
-
 ## Stance
 
 Things you know well and things you barely know should not sound
