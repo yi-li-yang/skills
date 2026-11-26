@@ -41,8 +41,8 @@ There are three accents, and each project carries one of them, never two.
 | Accent | Dark | Light | Character |
 |---|---|---|---|
 | `lichen` | #a3b86c | #566a26 | quiet and natural. **Home:** Yili's site, CV, papers and mark, and the default for a new project |
-| `signal` | #e2652f | #b0441a | an instrument's signal. The most visible of the three |
-| `amber` | #e0a84a | #8a5d0c | warm and editorial |
+| `signal` | #e6c13a | #736108 | an instrument's signal, a clear yellow. The most visible of the three |
+| `amber` | #e8873a | #a3500f | a warm orange, editorial |
 
 The accent marks the one focus or action in a view: the one filled button, the selected tab, the focus ring, the primary link's underline, and the full stop after the project's name. It is never a data colour, and it never fills a large area.
 
