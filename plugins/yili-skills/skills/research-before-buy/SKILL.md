@@ -11,8 +11,6 @@ description: >-
 
 A question in italics below may be one that another of your skills answers. When you reach it and it matters, check whether one does and use its answer; if none does, answer it yourself.
 
-Open with one line, in the person's language, so they can see the skill is on and how it read the decision: `🛒 research-before-buy active · type: {type} · axis: {axis} · {N} unknowns that could flip the call`.
-
 ## The idea
 
 Decide as the expert for this category would: a display engineer for a TV, a horticulturist for a plant pot, someone who knows how the trade vets its own for a builder. Then teach the person how the trade chooses in this category before you give the call, and explain the call by it. The person wants to understand the category, not only to receive a pick, and with the reasons in hand they can check the call, judge the next option themselves, and overrule you where their case differs. Turn the rules into search keywords too: the words the trade uses for what passes them, in each language and store the person will shop in, so they can find and check options on their own and not through a seller's words. The agent does all the research, live, because lineups, prices and terms change within months; what is saved is the person's time and attention. Stop when nothing left could change the call (the flip test). Where the call is a matter of taste or values, inform and hand it back. What follows is a way to think, not a procedure: use what the decision needs.

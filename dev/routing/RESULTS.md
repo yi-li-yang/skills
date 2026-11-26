@@ -134,3 +134,30 @@ The reasoning skill's `Simplicity First` now says that each added part must give
 | "Write a one-off script that renames the photos in this folder by date." (should not load) | not loaded, 1 of 1 | not run |
 
 The clause changed nothing. A question about whether added complexity is worth it already reads as a decision that matters, and an instruction to add it loads no reasoning skill with or without the clause. So the clause was removed, and the description is as it was. The instruction prompt is not kept as a case, because the runner stops at the first tool call and cannot see whether the question arises later in the task; `session.py` could check that. Cost: under 1 USD.
+
+## Real use, from the transcripts (2026-11-26)
+
+The question was whether a skill should open its reply with a line that says it is on. Three did: the reasoning skill with `[Thought]`, the purchase skill with `🛒 research-before-buy active · …`, and the interview skill with its status line. `python dev/routing/usage.py` counts the skill loads in the Claude Code transcripts on this machine, at no cost. Each call counts once. A transcript can write the same call several times, in later requests and in resumed or forked sessions, so a plain text search found 230 matches for these 80 loads.
+
+| Skill | Loads | In main threads | In subagents |
+| --- | --- | --- | --- |
+| talk-standard-tech-eng | 24 | 16 | 8 |
+| i-think-like-this | 15 | 1 | 14 |
+| digest-distill-information | 14 | 0 | 14 |
+| write-like-myself | 11 | 11 | 0 |
+| visual-preference | 8 | 8 | 0 |
+| interview-me-before-answer | 3 | 3 | 0 |
+| updated-domain-expert | 2 | 1 | 1 |
+| research-before-buy | 1 | 1 | 0 |
+| wardrobe | 0 | 0 | 0 |
+
+`prompt-to-think`, the old name of the reasoning skill, loaded twice more, before 2026-11-18.
+
+What this shows:
+
+- **The opening lines were rarely seen.** The reasoning skill loaded 15 times, and 14 of them were inside research subagents of one project on 2026-11-25 and 26, where it adds no marker. So `[Thought]` could appear once. The purchase skill's line could also appear once.
+- **The line was also a weak signal.** In the bedding run above, the 🛒 line was missing twice, both times after the writing skill loaded, so a missing line did not mean a missing load. And the record of each load already exists: the `Skill` tool call, which `run.py` and `session.py` read.
+- **So the lines that only say a skill is on were removed in 2.9.0**, and `CLAUDE.md` says why. The interview skill keeps its status line, because the line shows the user the guess about them (lens and stake), which they can correct in one word.
+- **These counts cover Claude Code on this machine only.** Conversations on claude.ai and the phone are not stored here, so a count of zero for the wardrobe skill does not show that it fails to load there.
+
+`python dev/routing/usage.py --prompts <skill>` lists the prompt before each load of one skill, for a review of wrong loads on real prompts.
