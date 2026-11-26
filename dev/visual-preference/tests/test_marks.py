@@ -26,7 +26,7 @@ def test_svg_parses_with_viewbox(path):
     assert root.get("viewBox")
 
 
-@pytest.mark.parametrize("accent,hex_", [("lichen", "#a3b86c"), ("signal", "#e2652f"), ("amber", "#e0a84a")])
+@pytest.mark.parametrize("accent,hex_", [("lichen", "#a3b86c"), ("signal", "#e6c13a"), ("amber", "#e8873a")])
 def test_mark_is_only_its_accent(accent, hex_):
     text = (MARKS / f"mark-{accent}.svg").read_text(encoding="utf-8")
     assert {h.lower() for h in HEX.findall(text)} == {hex_}

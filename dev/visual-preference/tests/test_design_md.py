@@ -9,7 +9,7 @@ def front(text):
     return yaml.safe_load(text.split("---\n")[1])
 
 
-@pytest.mark.parametrize("accent,hex_", [("lichen", "#a3b86c"), ("signal", "#e2652f"), ("amber", "#e0a84a")])
+@pytest.mark.parametrize("accent,hex_", [("lichen", "#a3b86c"), ("signal", "#e6c13a"), ("amber", "#e8873a")])
 def test_accent_and_shape(accent, hex_):
     fm = front(build.design_md(*build.load(), accent=accent, project="Livability Atlas"))
     assert fm["name"] == "Livability Atlas"
@@ -24,7 +24,7 @@ def test_unknown_accent_is_refused():
         build.design_md(*build.load(), accent="teal", project="x")
 
 
-@pytest.mark.parametrize("accent,hex_", [("lichen", "#a3b86c"), ("signal", "#e2652f"), ("amber", "#e0a84a")])
+@pytest.mark.parametrize("accent,hex_", [("lichen", "#a3b86c"), ("signal", "#e6c13a"), ("amber", "#e8873a")])
 def test_one_template_per_accent(accent, hex_):
     """A project copies the template for its accent and fills only its name: no value is ever retyped."""
     text = (build.SKILL / "templates" / f"DESIGN-{accent}.md").read_text(encoding="utf-8")

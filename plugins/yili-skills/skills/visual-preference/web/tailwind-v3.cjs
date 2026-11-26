@@ -1,4 +1,4 @@
-// generated from tokens.json by dev/visual-preference/build.py · visual-preference 1.0.0 · do not edit
+// generated from tokens.json by dev/visual-preference/build.py · visual-preference 1.1.0 · do not edit
 // Tailwind 3 preset: presets: [require('./tailwind-v3.cjs')], and load tokens.css.
 module.exports = {
   "theme": {

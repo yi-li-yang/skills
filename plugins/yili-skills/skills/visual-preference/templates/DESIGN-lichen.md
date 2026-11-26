@@ -1,8 +1,8 @@
 ---
-# generated from tokens.json by dev/visual-preference/build.py · visual-preference 1.0.0 · do not edit
+# generated from tokens.json by dev/visual-preference/build.py · visual-preference 1.1.0 · do not edit
 # Copy into the project as DESIGN.md and replace {{project}} with its name; change nothing else.
 name: "{{project}}"
-description: "Built on Yili Yang's visual system 1.0.0. Dark is home; one accent: lichen."
+description: "Built on Yili Yang's visual system 1.1.0. Dark is home; one accent: lichen."
 colors:
   ground: "#141413"
   surface: "#1c1c1b"
@@ -119,7 +119,7 @@ spacing:
 
 # Design System: {{project}}
 
-This project uses Yili Yang's visual system, version 1.0.0. The values above come from it; change them there, not here. Its manual explains each choice.
+This project uses Yili Yang's visual system, version 1.1.0. The values above come from it; change them there, not here. Its manual explains each choice.
 
 **The accent is lichen.** It marks the one focus or action in a view: the filled button, the selected tab, the focus ring, the full stop after the project's name. It is never used for data and never next to another accent.
 

@@ -97,3 +97,7 @@ Print/talks: figures light in papers (journal rules win), stone dark on web/slid
 ## Stage 13 review (2026-11-25)
 - Yili asked for "more grey". Shown four levels (current; greyer neutrals; plus softer colour; plus muted colour) with their colour-blind cost. Yili picked B: greyer neutrals only (chroma x0.45 in CAM02-UCS); accents and data colours unchanged, so no accessibility cost.
   New neutrals dark/light: ground #141413/#f4f2f0, surface #1c1c1b/#ebe9e6, raised #242522/#ffffff, rule #363734/#d2d1cd, edge #6e6f6c/#82837f, muted #a0a09d/#5e5f5c, ink #e8e7e3/#1b1c1a.
+
+## Signal moves to yellow (2026-11-26)
+
+Yili wanted the red accent warmer, towards yellow or orange. Of three options shown, he chose a clear yellow for `signal` (#e6c13a dark, #736108 light) and moved `amber` to orange (#e8873a dark, #a3500f light) so the two stay apart. The light signal was darkened from #7d6a08 to reach AA on `surface`. Tokens 1.1.0.

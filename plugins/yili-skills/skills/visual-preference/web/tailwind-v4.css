@@ -1,4 +1,4 @@
-/* generated from tokens.json by dev/visual-preference/build.py · visual-preference 1.0.0 · do not edit */
+/* generated from tokens.json by dev/visual-preference/build.py · visual-preference 1.1.0 · do not edit */
 /* Tailwind 4: import after tailwindcss and load tokens.css; utilities follow the active theme. */
 @theme inline {
   --color-ground: var(--ground);

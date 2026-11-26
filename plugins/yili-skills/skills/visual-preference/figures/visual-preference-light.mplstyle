@@ -1,4 +1,4 @@
-# generated from tokens.json by dev/visual-preference/build.py · visual-preference 1.0.0 · do not edit
+# generated from tokens.json by dev/visual-preference/build.py · visual-preference 1.1.0 · do not edit
 # light theme; plt.style.use(this file). For the colour maps, use visual_preference.use().
 figure.facecolor: ffffff
 axes.facecolor: ffffff

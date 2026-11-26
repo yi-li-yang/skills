@@ -47,8 +47,8 @@ def test_spec_values(tokens):
     expected = {
         "ground": ("#141413", "#f4f2f0"), "surface": ("#1c1c1b", "#ebe9e6"), "raised": ("#242522", "#ffffff"),
         "rule": ("#363734", "#d2d1cd"), "edge": ("#6e6f6c", "#82837f"), "muted": ("#a0a09d", "#5e5f5c"),
-        "ink": ("#e8e7e3", "#1b1c1a"), "lichen": ("#a3b86c", "#566a26"), "signal": ("#e2652f", "#b0441a"),
-        "amber": ("#e0a84a", "#8a5d0c"),
+        "ink": ("#e8e7e3", "#1b1c1a"), "lichen": ("#a3b86c", "#566a26"), "signal": ("#e6c13a", "#736108"),
+        "amber": ("#e8873a", "#a3500f"),
     }
     for name, (dark, light) in expected.items():
         assert c[name] == {"dark": dark, "light": light}, name
